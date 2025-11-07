@@ -4,8 +4,8 @@ const footerLinks = {
   product: [
     { name: 'Features', href: '#features' },
     { name: 'How It Works', href: '#how-it-works' },
-    { name: 'Pricing', href: '#pricing' },
-    { name: 'Testnet', href: '#testnet' },
+    { name: 'Node Tiers', href: '#modes' },
+    { name: 'Security', href: '#security' },
   ],
   resources: [
     { name: 'Documentation', href: 'https://docs.noderr.xyz' },
@@ -13,16 +13,15 @@ const footerLinks = {
     { name: 'Blog', href: 'https://blog.noderr.xyz' },
     { name: 'API', href: 'https://docs.noderr.xyz/api' },
   ],
-  company: [
-    { name: 'About', href: '#about' },
-    { name: 'Careers', href: '#careers' },
-    { name: 'Brand Kit', href: '#brand' },
-    { name: 'Contact', href: '#contact' },
+  community: [
+    { name: 'Discord', href: 'https://discord.com/invite/noderr' },
+    { name: 'Telegram', href: 'https://t.me/NoderrSupp' },
+    { name: 'Twitter', href: 'https://twitter.com/NoderrProtocol' },
+    { name: 'Instagram', href: 'https://instagram.com/noderr' },
   ],
   legal: [
-    { name: 'Privacy Policy', href: '#privacy' },
-    { name: 'Terms of Service', href: '#terms' },
-    { name: 'Cookie Policy', href: '#cookies' },
+    { name: 'Terms of Service', href: 'https://noderr.xyz/terms' },
+    { name: 'Privacy Policy', href: 'https://noderr.xyz/privacy' },
   ],
 };
 
@@ -43,7 +42,7 @@ export function Footer() {
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <img 
-                src="/logo-white.png" 
+                src="/logo.png" 
                 alt="Noderr Protocol" 
                 className="w-10 h-10"
               />
@@ -108,11 +107,11 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Company links */}
+          {/* Community links */}
           <div>
-            <h3 className="font-semibold text-foreground mb-4">Company</h3>
+            <h3 className="font-semibold text-foreground mb-4">Community</h3>
             <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
+              {footerLinks.community.map((link) => (
                 <li key={link.name}>
                   <a
                     href={link.href}

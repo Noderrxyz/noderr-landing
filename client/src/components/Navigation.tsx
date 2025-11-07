@@ -43,7 +43,7 @@ export function Navigation() {
             {/* Logo */}
             <a href="#" className="flex items-center gap-3 group">
               <img 
-                src="/logo-white.png" 
+                src="/logo.png" 
                 alt="Noderr Protocol" 
                 className="w-10 h-10 transition-transform group-hover:scale-110"
               />
@@ -56,9 +56,10 @@ export function Navigation() {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-primary transition-all relative group"
                 >
                   {link.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-300" />
                 </a>
               ))}
             </div>

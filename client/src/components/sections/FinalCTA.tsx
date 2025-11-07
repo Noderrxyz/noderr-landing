@@ -63,9 +63,9 @@ export function FinalCTA() {
             transition={{ delay: 0.3 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
           >
-            Ready to Experience
+            Join the Future of
             <br />
-            <span className="text-gradient">Evolutionary AI Trading</span>?
+            <span className="text-gradient">Institutional DeFi</span>
           </motion.h2>
 
           {/* Subheadline */}
@@ -76,7 +76,7 @@ export function FinalCTA() {
             transition={{ delay: 0.4 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12"
           >
-            Join thousands of traders already testing the future of DeFi. Get early access, exclusive rewards, and shape the protocol.
+            Be part of the testnet. Help shape the protocol, earn rewards through merit-based participation, and prepare for mainnet launch.
           </motion.p>
         </motion.div>
 
@@ -101,15 +101,15 @@ export function FinalCTA() {
         >
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary" />
-            <span>12,000+ Users</span>
+            <span>Testnet Live on Base Sepolia</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-accent" />
-            <span>$2.4M+ Volume</span>
+            <span>Merit-Based Governance</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-chart-3" />
-            <span>Audited by CertiK</span>
+            <span>Zero Operational Inflation</span>
           </div>
         </motion.div>
       </div>

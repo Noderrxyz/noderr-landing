@@ -94,7 +94,7 @@ export function TestnetAdvantages() {
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-8 rounded-2xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20">
             <div className="text-left">
               <h3 className="text-2xl font-bold mb-2">Ready to get started?</h3>
-              <p className="text-muted-foreground">Join 12,000+ traders already testing the future of DeFi.</p>
+              <p className="text-muted-foreground">Join the testnet and start earning rewards through merit-based participation.</p>
             </div>
             <button className="px-8 py-4 bg-primary hover:bg-primary/90 rounded-xl font-semibold whitespace-nowrap transition-all hover:scale-105">
               Join Testnet Now

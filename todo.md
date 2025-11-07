@@ -337,3 +337,21 @@ All technical infrastructure is complete. Waiting for user to provide:
 - [x] 4-tier node architecture display
 
 ### Ready for Phase 7-8: Testing & Polish
+
+
+## New Tasks - Logo Fix & Comprehensive Audit
+
+### Critical Fix
+- [x] Fix logo background - remove white square, use transparent PNG
+
+### Comprehensive Audit Tasks
+- [ ] Visual/Design Audit - spacing, typography, colors, consistency
+- [ ] Content Audit - accuracy, clarity, messaging
+- [ ] Performance Audit - bundle size, loading speed, optimization
+- [ ] Accessibility Audit - ARIA labels, keyboard nav, screen readers
+- [ ] UX Audit - interactions, animations, user flow
+- [ ] Mobile Responsiveness Audit - test all breakpoints
+- [ ] Code Quality Audit - clean code, best practices
+
+### Improvements to Implement
+- [ ] (To be determined after audit)
