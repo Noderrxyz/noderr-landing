@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { GitBookPanel } from '@/components/GitBookPanel';
 
 const navLinks = [
   { name: 'Features', href: '#features' },
@@ -14,6 +15,7 @@ const navLinks = [
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isDocsOpen, setIsDocsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,8 +41,12 @@ export function Navigation() {
         <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Logo */}
-            <a href="#" className="flex items-center gap-2 group">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent transition-transform group-hover:scale-110" />
+            <a href="#" className="flex items-center gap-3 group">
+              <img 
+                src="/logo-white.png" 
+                alt="Noderr Protocol" 
+                className="w-10 h-10 transition-transform group-hover:scale-110"
+              />
               <span className="text-xl font-bold text-foreground">Noderr</span>
             </a>
 
@@ -62,12 +68,10 @@ export function Navigation() {
               <Button
                 variant="outline"
                 size="sm"
-                asChild
+                onClick={() => setIsDocsOpen(true)}
                 className="border-primary/20 hover:bg-primary/10"
               >
-                <a href="https://docs.noderr.xyz" target="_blank" rel="noopener noreferrer">
-                  Docs
-                </a>
+                Docs
               </Button>
               <Button
                 size="sm"
@@ -121,11 +125,12 @@ export function Navigation() {
                 <Button
                   variant="outline"
                   className="w-full border-primary/20 hover:bg-primary/10"
-                  asChild
+                  onClick={() => {
+                    setIsDocsOpen(true);
+                    setIsMobileMenuOpen(false);
+                  }}
                 >
-                  <a href="https://docs.noderr.xyz" target="_blank" rel="noopener noreferrer">
-                    Documentation
-                  </a>
+                  Documentation
                 </Button>
                 <Button
                   className="w-full bg-primary hover:bg-primary/90"
@@ -140,6 +145,9 @@ export function Navigation() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      {/* GitBook Documentation Panel */}
+      <GitBookPanel isOpen={isDocsOpen} onClose={() => setIsDocsOpen(false)} />
     </>
   );
 }

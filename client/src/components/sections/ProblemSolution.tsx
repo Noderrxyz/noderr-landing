@@ -2,19 +2,19 @@ import { motion } from 'framer-motion';
 import { X, Check } from 'lucide-react';
 
 const problems = [
-  'Static trading bots that fail in changing markets',
-  'Black-box AI with zero transparency',
-  'Manual trading requires constant monitoring',
-  'High fees across multiple platforms',
-  'No learning from past mistakes',
+  'Centralized node operators create single points of failure',
+  'Opaque reputation systems lack verifiable trust metrics',
+  'Limited governance participation in protocol decisions',
+  'Complex setup barriers prevent widespread adoption',
+  'Reward structures favor large operators over community',
 ];
 
 const solutions = [
-  'AI that evolves and adapts to market conditions',
-  'Full explainability for every decision made',
-  'Autonomous trading that works 24/7',
-  'Cross-protocol optimization for best rates',
-  'Continuous learning from every transaction',
+  'Decentralized network with no single point of failure',
+  'Zero-knowledge proofs provide verifiable trust scores',
+  'Multi-tier governance with weighted voting power',
+  'Simplified node deployment on Base L2',
+  'Fair reward distribution across all tier levels',
 ];
 
 export function ProblemSolution() {
@@ -32,10 +32,10 @@ export function ProblemSolution() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            The Problem with <span className="text-gradient">Traditional DeFi</span>
+            Why <span className="text-gradient">Decentralized Infrastructure</span> Matters
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Current trading solutions are stuck in the past. Noderr Protocol brings the future of AI-powered trading.
+            Traditional node infrastructure is centralized and opaque. Noderr Protocol brings transparency and community control.
           </p>
         </motion.div>
 

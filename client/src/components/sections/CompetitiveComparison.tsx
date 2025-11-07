@@ -2,14 +2,14 @@ import { motion } from 'framer-motion';
 import { Check, X } from 'lucide-react';
 
 const features = [
-  { name: 'Evolutionary AI', noderr: true, traditional: false, competitors: false },
-  { name: 'Full Transparency', noderr: true, traditional: false, competitors: 'partial' },
-  { name: 'Cross-Protocol Optimization', noderr: true, traditional: false, competitors: true },
-  { name: 'Real-time Learning', noderr: true, traditional: false, competitors: false },
-  { name: 'Explainable Decisions', noderr: true, traditional: false, competitors: false },
-  { name: 'Multiple Trading Modes', noderr: true, traditional: false, competitors: 'limited' },
-  { name: 'Non-Custodial', noderr: true, traditional: 'varies', competitors: true },
-  { name: 'Open Source', noderr: true, traditional: false, competitors: 'partial' },
+  { name: 'Zero-Knowledge Proofs', noderr: true, traditional: false, competitors: false },
+  { name: 'Trust Fingerprint System', noderr: true, traditional: false, competitors: 'partial' },
+  { name: 'Multi-Tier Node Architecture', noderr: true, traditional: false, competitors: 'limited' },
+  { name: 'DAO Governance', noderr: true, traditional: false, competitors: 'partial' },
+  { name: 'Automated Vault Strategies', noderr: true, traditional: false, competitors: true },
+  { name: 'Base L2 Integration', noderr: true, traditional: false, competitors: 'varies' },
+  { name: 'Decentralized Infrastructure', noderr: true, traditional: false, competitors: 'partial' },
+  { name: 'Weighted Voting Power', noderr: true, traditional: false, competitors: false },
 ];
 
 function FeatureCell({ value }: { value: boolean | string }) {
@@ -53,7 +53,7 @@ export function CompetitiveComparison() {
             How <span className="text-gradient">Noderr</span> Compares
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            See why leading traders are switching to Noderr Protocol.
+            See why node operators choose Noderr's decentralized infrastructure.
           </p>
         </motion.div>
 
@@ -73,8 +73,8 @@ export function CompetitiveComparison() {
                 <span className="font-semibold text-primary">Noderr</span>
               </div>
             </div>
-            <div className="text-center font-medium text-muted-foreground">Traditional Bots</div>
-            <div className="text-center font-medium text-muted-foreground">Competitors</div>
+            <div className="text-center font-medium text-muted-foreground">Centralized Nodes</div>
+            <div className="text-center font-medium text-muted-foreground">Other Protocols</div>
           </div>
 
           {/* Table rows */}

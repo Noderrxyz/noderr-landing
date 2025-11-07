@@ -54,7 +54,9 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-primary/20 backdrop-blur-sm"
           >
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium">Testnet Now Live</span>
+            <a href="https://app.noderr.xyz/faucet" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-primary transition-colors">
+              Testnet Now Live - Get Tokens
+            </a>
           </motion.div>
 
           {/* Main headline */}
@@ -64,11 +66,11 @@ export function Hero() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight"
           >
-            DeFi's First
+            Decentralized Node Operator
             <br />
-            <span className="text-gradient">Evolutionary AI</span>
+            <span className="text-gradient">Network</span>
             <br />
-            Trading Protocol
+            with Trust-Weighted DeFi Infrastructure
           </motion.h1>
 
           {/* Subheadline */}
@@ -78,10 +80,10 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
           >
-            AI that learns from every trade, adapts to market conditions in real-time, and explains every decision with full transparency.
+            Trust-weighted infrastructure. ZK-governed. DAO-controlled. Built on Base L2 for optimal performance and low fees.
           </motion.p>
 
-          {/* Stats */}
+          {/* Key Features */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -89,18 +91,18 @@ export function Hero() {
             className="flex flex-wrap items-center justify-center gap-8 text-sm"
           >
             <div className="flex items-center gap-2">
-              <TrendingUp className="w-5 h-5 text-primary" />
-              <span className="text-muted-foreground">$2.4M+ Trading Volume</span>
+              <Sparkles className="w-5 h-5 text-primary" />
+              <span className="text-muted-foreground">ZK Proofs</span>
             </div>
             <div className="h-4 w-px bg-border" />
             <div className="flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-accent" />
-              <span className="text-muted-foreground">12,000+ Testnet Users</span>
+              <TrendingUp className="w-5 h-5 text-accent" />
+              <span className="text-muted-foreground">Multi-Tier Nodes</span>
             </div>
             <div className="h-4 w-px bg-border" />
             <div className="flex items-center gap-2">
               <TrendingUp className="w-5 h-5 text-chart-3" />
-              <span className="text-muted-foreground">98.7% Success Rate</span>
+              <span className="text-muted-foreground">Automated Vaults</span>
             </div>
           </motion.div>
 
@@ -140,7 +142,7 @@ export function Hero() {
             transition={{ delay: 1.1 }}
             className="text-sm text-muted-foreground pt-8"
           >
-            Audited by <span className="text-foreground font-semibold">CertiK</span> • Backed by <span className="text-foreground font-semibold">Sequoia</span> • Built on <span className="text-foreground font-semibold">Ethereum</span>
+            Built on <span className="text-foreground font-semibold">Base L2</span> • Powered by <span className="text-foreground font-semibold">Zero-Knowledge Proofs</span> • <span className="text-foreground font-semibold">DAO Governed</span>
           </motion.p>
         </motion.div>
       </div>

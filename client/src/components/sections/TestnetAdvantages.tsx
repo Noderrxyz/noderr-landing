@@ -4,23 +4,23 @@ import { Gift, Users, Trophy, Zap } from 'lucide-react';
 const advantages = [
   {
     icon: Gift,
-    title: 'Early Access Rewards',
-    description: 'Testnet participants receive exclusive NFTs, token airdrops, and priority access to mainnet features.',
+    title: 'Free Testnet Tokens',
+    description: 'Get 1,000 NODR tokens every 24 hours from the faucet. Test all node tiers without cost.',
   },
   {
     icon: Users,
-    title: 'Shape the Future',
-    description: 'Your feedback directly influences protocol development. Help build the future of DeFi trading.',
+    title: 'Community Feedback',
+    description: 'Help shape the protocol by providing feedback on node operations and governance features.',
   },
   {
     icon: Trophy,
-    title: 'Leaderboard Prizes',
-    description: 'Compete for $50K in prizes. Top traders earn bonus tokens and exclusive perks at mainnet launch.',
+    title: 'Early Node Operators',
+    description: 'Build your reputation early. Testnet trust scores may influence mainnet benefits.',
   },
   {
     icon: Zap,
-    title: 'Risk-Free Learning',
-    description: 'Master AI-powered trading with testnet tokens. Learn strategies without risking real capital.',
+    title: 'Risk-Free Testing',
+    description: 'Experiment with staking, governance, and vault strategies using testnet tokens on Base Sepolia.',
   },
 ];
 
@@ -44,7 +44,7 @@ export function TestnetAdvantages() {
             Why Join the <span className="text-gradient">Testnet</span>?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Be among the first to experience evolutionary AI trading and earn exclusive rewards.
+            Test the protocol, provide feedback, and prepare for mainnet launch.
           </p>
         </motion.div>
 

@@ -1,4 +1,4 @@
-import { Twitter, Github, MessageCircle, Send } from 'lucide-react';
+import { Twitter, MessageCircle, Send, Instagram } from 'lucide-react';
 
 const footerLinks = {
   product: [
@@ -28,9 +28,9 @@ const footerLinks = {
 
 const socialLinks = [
   { icon: Twitter, href: 'https://twitter.com/NoderrProtocol', label: 'Twitter' },
-  { icon: Github, href: 'https://github.com/noderr', label: 'GitHub' },
-  { icon: MessageCircle, href: 'https://discord.gg/noderr', label: 'Discord' },
-  { icon: Send, href: 'https://t.me/noderr', label: 'Telegram' },
+  { icon: MessageCircle, href: 'https://discord.com/invite/noderr', label: 'Discord' },
+  { icon: Send, href: 'https://t.me/NoderrSupp', label: 'Telegram' },
+  { icon: Instagram, href: 'https://instagram.com/noderr', label: 'Instagram' },
 ];
 
 export function Footer() {
@@ -41,12 +41,16 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent" />
+            <div className="flex items-center gap-3 mb-4">
+              <img 
+                src="/logo-white.png" 
+                alt="Noderr Protocol" 
+                className="w-10 h-10"
+              />
               <span className="text-xl font-bold text-foreground">Noderr</span>
             </div>
             <p className="text-sm text-muted-foreground mb-6">
-              The first truly evolutionary AI trading protocol for DeFi.
+              Decentralized node operator network with trust-weighted DeFi infrastructure.
             </p>
             {/* Social links */}
             <div className="flex items-center gap-3">
@@ -145,11 +149,11 @@ export function Footer() {
             © {new Date().getFullYear()} Noderr Protocol. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
-            <span>Built on Ethereum</span>
+            <span>Built on Base L2</span>
             <span>•</span>
-            <span>Audited by CertiK</span>
+            <span>ZK-Governed</span>
             <span>•</span>
-            <span>Open Source</span>
+            <span>DAO-Controlled</span>
           </div>
         </div>
       </div>

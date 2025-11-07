@@ -1,24 +1,24 @@
 import { motion } from 'framer-motion';
-import { Wallet, Cpu, Zap } from 'lucide-react';
+import { Wallet, Server, TrendingUp } from 'lucide-react';
 
 const steps = [
   {
     icon: Wallet,
     number: '01',
-    title: 'Connect & Configure',
-    description: 'Link your wallet and set your trading preferences. Choose from Autonomous, Guided, or Pro modes based on your experience level.',
+    title: 'Stake NODR Tokens',
+    description: 'Choose your node tier and stake the required amount of NODR tokens. Higher tiers unlock enhanced rewards and governance power.',
   },
   {
-    icon: Cpu,
+    icon: Server,
     number: '02',
-    title: 'AI Learns & Adapts',
-    description: 'Our evolutionary AI analyzes market conditions, learns from every trade, and continuously optimizes strategies in real-time.',
+    title: 'Run Your Node',
+    description: 'Deploy your node and start validating operations. Build your trust fingerprint through consistent performance and reliability.',
   },
   {
-    icon: Zap,
+    icon: TrendingUp,
     number: '03',
-    title: 'Execute & Earn',
-    description: 'Watch as the AI executes trades across multiple protocols, finding the best opportunities while you maintain full control.',
+    title: 'Earn Rewards',
+    description: 'Receive rewards based on your tier and trust score. Participate in vault strategies and governance decisions to maximize returns.',
   },
 ];
 
@@ -37,7 +37,7 @@ export function HowItWorks() {
             How <span className="text-gradient">Noderr</span> Works
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Get started in minutes. Our AI handles the complexity while you stay in control.
+            Join the decentralized node operator network in three simple steps.
           </p>
         </motion.div>
 

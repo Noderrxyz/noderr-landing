@@ -1,19 +1,19 @@
 import { motion } from 'framer-motion';
-import { MessageCircle, Send, Twitter, Github, BookOpen, FileText } from 'lucide-react';
+import { MessageCircle, Send, Twitter, Instagram, BookOpen, FileText } from 'lucide-react';
 
 const resources = [
   {
     icon: MessageCircle,
     name: 'Discord',
-    description: 'Join 8,000+ traders in our community',
-    link: 'https://discord.gg/noderr',
+    description: 'Join our community for support and updates',
+    link: 'https://discord.com/invite/noderr',
     color: 'from-[#5865F2] to-[#5865F2]',
   },
   {
     icon: Send,
     name: 'Telegram',
     description: 'Get instant updates and support',
-    link: 'https://t.me/noderr',
+    link: 'https://t.me/NoderrSupp',
     color: 'from-[#0088cc] to-[#0088cc]',
   },
   {
@@ -24,16 +24,16 @@ const resources = [
     color: 'from-[#1DA1F2] to-[#1DA1F2]',
   },
   {
-    icon: Github,
-    name: 'GitHub',
-    description: 'Explore our open-source code',
-    link: 'https://github.com/noderr',
-    color: 'from-foreground to-foreground',
+    icon: Instagram,
+    name: 'Instagram',
+    description: 'Visual updates and community highlights',
+    link: 'https://instagram.com/noderr',
+    color: 'from-[#E4405F] to-[#E4405F]',
   },
   {
     icon: BookOpen,
     name: 'Documentation',
-    description: 'Learn how to use Noderr',
+    description: 'Learn how to run a node',
     link: 'https://docs.noderr.xyz',
     color: 'from-primary to-accent',
   },
@@ -64,7 +64,7 @@ export function CommunityResources() {
             Join the <span className="text-gradient">Community</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Connect with traders, developers, and the Noderr team across multiple platforms.
+            Connect with node operators, developers, and the Noderr team across multiple platforms.
           </p>
         </motion.div>
 
@@ -115,33 +115,7 @@ export function CommunityResources() {
           })}
         </div>
 
-        {/* Bottom stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.8 }}
-          className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8"
-        >
-          {[
-            { label: 'Community Members', value: '12,000+' },
-            { label: 'GitHub Stars', value: '2,400+' },
-            { label: 'Discord Members', value: '8,000+' },
-            { label: 'Daily Active Users', value: '1,200+' },
-          ].map((stat, index) => (
-            <motion.div
-              key={stat.label}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.9 + index * 0.1 }}
-              className="text-center"
-            >
-              <div className="text-3xl font-bold text-gradient mb-2">{stat.value}</div>
-              <div className="text-sm text-muted-foreground">{stat.label}</div>
-            </motion.div>
-          ))}
-        </motion.div>
+
       </div>
     </section>
   );

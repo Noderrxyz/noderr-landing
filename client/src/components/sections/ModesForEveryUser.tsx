@@ -1,45 +1,58 @@
 import { motion } from 'framer-motion';
-import { Sparkles, Compass, Code } from 'lucide-react';
+import { Sparkles, Award, Crown, Gem } from 'lucide-react';
 
-const modes = [
+const tiers = [
   {
     icon: Sparkles,
-    name: 'Autonomous',
-    level: 'Beginner Friendly',
-    description: 'Set it and forget it. AI handles everything from strategy selection to execution.',
+    name: 'Bronze',
+    stake: '10,000 NODR',
+    description: 'Entry-level node tier for new operators. Start earning rewards and building trust.',
     features: [
-      'Fully automated trading',
-      'Pre-configured strategies',
-      'Risk management included',
-      'Perfect for beginners',
+      'Basic node operations',
+      'Standard reward rate',
+      'Community governance',
+      'Trust score tracking',
     ],
     color: 'primary',
   },
   {
-    icon: Compass,
-    name: 'Guided',
-    level: 'Intermediate',
-    description: 'AI suggests opportunities, you approve trades. Perfect balance of automation and control.',
+    icon: Award,
+    name: 'Silver',
+    stake: '50,000 NODR',
+    description: 'Enhanced tier with increased rewards and priority in vault allocations.',
     features: [
-      'AI-powered suggestions',
-      'Manual approval required',
-      'Learn as you trade',
-      'Customizable parameters',
+      'Priority vault access',
+      'Enhanced rewards (1.5x)',
+      'Weighted governance votes',
+      'Advanced analytics',
     ],
     color: 'accent',
   },
   {
-    icon: Code,
-    name: 'Pro',
-    level: 'Advanced',
-    description: 'Full control with AI assistance. Build custom strategies and leverage AI insights.',
+    icon: Crown,
+    name: 'Gold',
+    stake: '100,000 NODR',
+    description: 'Premium tier with maximum rewards and exclusive governance privileges.',
     features: [
-      'Custom strategy builder',
-      'Advanced analytics',
-      'API access',
-      'Maximum flexibility',
+      'Maximum reward rate (2x)',
+      'Exclusive vault strategies',
+      'Enhanced voting power',
+      'Priority support',
     ],
     color: 'chart-3',
+  },
+  {
+    icon: Gem,
+    name: 'Platinum',
+    stake: '250,000 NODR',
+    description: 'Elite tier with the highest rewards and full protocol governance access.',
+    features: [
+      'Elite rewards (3x)',
+      'Full governance access',
+      'Custom vault strategies',
+      'Dedicated support',
+    ],
+    color: 'chart-5',
   },
 ];
 
@@ -58,20 +71,20 @@ export function ModesForEveryUser() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            <span className="text-gradient">Three Modes</span> for Every Trader
+            <span className="text-gradient">Multi-Tier</span> Node Architecture
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Whether you're just starting or you're a seasoned pro, Noderr adapts to your experience level.
+            Choose your tier based on stake amount. Higher tiers unlock enhanced rewards and governance power.
           </p>
         </motion.div>
 
-        {/* Modes grid */}
-        <div className="grid lg:grid-cols-3 gap-8">
-          {modes.map((mode, index) => {
-            const Icon = mode.icon;
+        {/* Tiers grid */}
+        <div className="grid lg:grid-cols-4 gap-6">
+          {tiers.map((tier, index) => {
+            const Icon = tier.icon;
             return (
               <motion.div
-                key={mode.name}
+                key={tier.name}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
@@ -90,23 +103,23 @@ export function ModesForEveryUser() {
                         <Icon className="w-7 h-7 text-primary" />
                       </div>
                       <span className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20">
-                        {mode.level}
+                        {tier.stake}
                       </span>
                     </div>
 
                     {/* Title */}
                     <h3 className="text-2xl font-bold mb-3 text-foreground">
-                      {mode.name}
+                      {tier.name}
                     </h3>
 
                     {/* Description */}
                     <p className="text-muted-foreground mb-6 leading-relaxed">
-                      {mode.description}
+                      {tier.description}
                     </p>
 
                     {/* Features */}
                     <ul className="space-y-3">
-                      {mode.features.map((feature, idx) => (
+                      {tier.features.map((feature: string, idx: number) => (
                         <li key={idx} className="flex items-center gap-3 text-sm">
                           <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                           <span className="text-muted-foreground">{feature}</span>
@@ -116,7 +129,7 @@ export function ModesForEveryUser() {
 
                     {/* CTA */}
                     <button className="w-full mt-8 px-6 py-3 rounded-xl bg-primary/10 hover:bg-primary/20 text-primary font-semibold transition-all duration-300 group-hover:scale-105">
-                      Try {mode.name} Mode
+                      Stake {tier.stake}
                     </button>
                   </div>
                 </div>
@@ -133,7 +146,7 @@ export function ModesForEveryUser() {
           transition={{ delay: 0.6 }}
           className="text-center text-muted-foreground mt-12"
         >
-          Switch between modes anytime. No commitment required.
+          Upgrade your tier anytime by staking additional NODR tokens.
         </motion.p>
       </div>
     </section>

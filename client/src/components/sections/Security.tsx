@@ -4,30 +4,30 @@ import { Shield, Lock, Eye, CheckCircle } from 'lucide-react';
 const securityFeatures = [
   {
     icon: Shield,
-    title: 'Multi-Signature Security',
-    description: 'All protocol upgrades require multi-sig approval from trusted community members.',
+    title: 'Zero-Knowledge Proofs',
+    description: 'Privacy-preserving validation ensures node operations are verified without exposing sensitive data.',
   },
   {
     icon: Lock,
-    title: 'Non-Custodial',
-    description: 'You always maintain full control of your funds. We never hold your assets.',
+    title: 'Smart Contract Security',
+    description: 'Audited contracts on Base L2 with multi-sig governance for protocol upgrades.',
   },
   {
     icon: Eye,
-    title: 'Open Source',
-    description: 'Fully auditable code. Every line is public and verified by the community.',
+    title: 'Transparent Trust Scores',
+    description: 'On-chain reputation system provides verifiable performance metrics for all nodes.',
   },
   {
     icon: CheckCircle,
-    title: 'Battle-Tested',
-    description: '$2.4M+ in testnet volume with zero security incidents or exploits.',
+    title: 'Testnet Proven',
+    description: 'Extensively tested on Base Sepolia testnet with active node operators.',
   },
 ];
 
 const auditors = [
-  { name: 'CertiK', status: 'Audited' },
-  { name: 'Trail of Bits', status: 'In Progress' },
-  { name: 'OpenZeppelin', status: 'Scheduled' },
+  { name: 'Base L2', status: 'Deployed' },
+  { name: 'Testnet Live', status: 'Active' },
+  { name: 'Community Audited', status: 'Ongoing' },
 ];
 
 export function Security() {
@@ -53,7 +53,7 @@ export function Security() {
             Built with <span className="text-gradient">Security</span> at the Core
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Your funds' safety is our top priority. Multiple audits, open-source code, and battle-tested infrastructure.
+            Security and transparency are foundational. ZK proofs, audited contracts, and community governance ensure trust.
           </p>
         </motion.div>
 

@@ -1,26 +1,26 @@
 import { motion } from 'framer-motion';
-import { Brain, Eye, Network, TrendingUp } from 'lucide-react';
+import { Shield, Fingerprint, Vote, Lock } from 'lucide-react';
 
 const signals = [
   {
-    icon: Brain,
-    title: 'Evolutionary Learning',
-    description: 'AI that improves with every transaction, adapting strategies based on real market outcomes.',
+    icon: Shield,
+    title: 'Zero-Knowledge Proofs',
+    description: 'Privacy-preserving verification ensures node operations are validated without exposing sensitive data.',
   },
   {
-    icon: Eye,
-    title: 'Transparent Decisions',
-    description: 'See exactly why each trade was made with full explainability and reasoning logs.',
+    icon: Fingerprint,
+    title: 'Trust Fingerprint',
+    description: 'Unique reputation system tracks node performance and reliability over time for transparent accountability.',
   },
   {
-    icon: Network,
-    title: 'Cross-Protocol Intelligence',
-    description: 'Optimizes across the entire DeFi ecosystem, finding the best opportunities everywhere.',
+    icon: Vote,
+    title: 'DAO Governance',
+    description: 'Community-driven decision making with weighted voting based on stake and trust scores.',
   },
   {
-    icon: TrendingUp,
-    title: 'Predictive Intelligence',
-    description: 'Anticipates market moves before they happen using advanced pattern recognition.',
+    icon: Lock,
+    title: 'Automated Vaults',
+    description: 'Smart contract-powered vaults automatically optimize yield strategies across DeFi protocols.',
   },
 ];
 
