@@ -1,3 +1,5 @@
+import { Navigation } from '@/components/Navigation';
+import { BackToTop } from '@/components/BackToTop';
 import { Hero } from '@/components/sections/Hero';
 import { TrustSignals } from '@/components/sections/TrustSignals';
 import { ProblemSolution } from '@/components/sections/ProblemSolution';
@@ -13,17 +15,29 @@ import { Footer } from '@/components/sections/Footer';
 export default function Home() {
   return (
     <div className="min-h-screen">
+      <Navigation />
       <Hero />
-      <TrustSignals />
+      <div id="features">
+        <TrustSignals />
+      </div>
       <ProblemSolution />
-      <HowItWorks />
-      <ModesForEveryUser />
+      <div id="how-it-works">
+        <HowItWorks />
+      </div>
+      <div id="modes">
+        <ModesForEveryUser />
+      </div>
       <TestnetAdvantages />
-      <Security />
+      <div id="security">
+        <Security />
+      </div>
       <CompetitiveComparison />
-      <CommunityResources />
+      <div id="community">
+        <CommunityResources />
+      </div>
       <FinalCTA />
       <Footer />
+      <BackToTop />
     </div>
   );
 }
