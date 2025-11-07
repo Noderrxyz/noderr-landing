@@ -1,11 +1,13 @@
 import { useRef } from "react";
 
-type noop = (...args: any[]) => any;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type Noop = (...args: any[]) => any;
 
 /**
- * usePersistFn 可以替代 useCallback 以降低心智负担
+ * Hook to persist function reference across renders without dependencies
+ * Alternative to useCallback with no dependency array needed
  */
-export function usePersistFn<T extends noop>(fn: T) {
+export function usePersistFn<T extends Noop>(fn: T) {
   const fnRef = useRef<T>(fn);
   fnRef.current = fn;
 

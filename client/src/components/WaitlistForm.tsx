@@ -20,7 +20,12 @@ export function WaitlistForm() {
       await new Promise(resolve => setTimeout(resolve, 1500));
       
       // TODO: Replace with actual API endpoint
-      console.log('Waitlist signup:', { email, walletAddress, timestamp: new Date() });
+      // API call would go here:
+      // await fetch('/api/waitlist', {
+      //   method: 'POST',
+      //   headers: { 'Content-Type': 'application/json' },
+      //   body: JSON.stringify({ email, walletAddress, timestamp: new Date() })
+      // });
 
       setSuccess(true);
       setEmail('');

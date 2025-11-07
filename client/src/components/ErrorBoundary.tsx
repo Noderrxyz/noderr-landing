@@ -21,8 +21,18 @@ class ErrorBoundary extends Component<Props, State> {
     return { hasError: true, error };
   }
 
+  componentDidCatch(error: Error) {
+    // Log to error reporting service in production
+    if (import.meta.env.PROD) {
+      // TODO: Send to error tracking service (e.g., Sentry)
+      console.error('Error caught by boundary:', error);
+    }
+  }
+
   render() {
     if (this.state.hasError) {
+      const isDev = import.meta.env.DEV;
+      
       return (
         <div className="flex items-center justify-center min-h-screen p-8 bg-background">
           <div className="flex flex-col items-center w-full max-w-2xl p-8">
@@ -32,19 +42,25 @@ class ErrorBoundary extends Component<Props, State> {
             />
 
             <h2 className="text-xl mb-4">An unexpected error occurred.</h2>
+            
+            <p className="text-muted-foreground mb-6 text-center">
+              We're sorry for the inconvenience. Please try refreshing the page.
+            </p>
 
-            <div className="p-4 w-full rounded bg-muted overflow-auto mb-6">
-              <pre className="text-sm text-muted-foreground whitespace-break-spaces">
-                {this.state.error?.stack}
-              </pre>
-            </div>
+            {isDev && this.state.error && (
+              <div className="p-4 w-full rounded bg-muted overflow-auto mb-6">
+                <pre className="text-sm text-muted-foreground whitespace-break-spaces">
+                  {this.state.error.stack}
+                </pre>
+              </div>
+            )}
 
             <button
               onClick={() => window.location.reload()}
               className={cn(
                 "flex items-center gap-2 px-4 py-2 rounded-lg",
                 "bg-primary text-primary-foreground",
-                "hover:opacity-90 cursor-pointer"
+                "hover:opacity-90 cursor-pointer transition-opacity"
               )}
             >
               <RotateCcw size={16} />
