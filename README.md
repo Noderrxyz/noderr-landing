@@ -1,12 +1,12 @@
-# Noderr Protocol Landing Page
+# Noderrrr Protocol Landing Page
 
-A world-class landing page for Noderr Protocol - DeFi's first evolutionary AI trading protocol.
+A world-class landing page for Noderrrr Protocol - DeFi's first evolutionary AI trading protocol.
 
 ## 🚀 Features
 
 - **10 Comprehensive Sections**: Hero, Trust Signals, Problem/Solution, How It Works, Trading Modes, Testnet Advantages, Security, Competitive Comparison, Community Resources, and Final CTA
 - **Smooth Animations**: Powered by Framer Motion for engaging user experience
-- **Dark Theme**: Custom Noderr color scheme with primary blue (#0ea5e9), cyan accent (#06b6d4), and yellow highlights
+- **Dark Theme**: Custom Noderrrr color scheme with primary blue (#0ea5e9), cyan accent (#06b6d4), and yellow highlights
 - **Fully Responsive**: Mobile-first design that works beautifully on all devices
 - **SEO Optimized**: Complete meta tags, Open Graph, and Twitter Card support
 - **Accessibility**: WCAG AA compliant with keyboard navigation and screen reader support
@@ -131,7 +131,7 @@ The landing page includes links to:
 
 1. **Hero**: Main value proposition with CTAs
 2. **Trust Signals**: 4 key features (Evolutionary Learning, Transparency, Cross-Protocol, Predictive)
-3. **Problem/Solution**: Comparison of old way vs Noderr way
+3. **Problem/Solution**: Comparison of old way vs Noderrrr way
 4. **How It Works**: 3-step process (Connect, Learn, Execute)
 5. **Trading Modes**: Autonomous, Guided, and Pro modes
 6. **Testnet Advantages**: 4 benefits of joining testnet
@@ -155,12 +155,12 @@ No environment variables required for the landing page. All configuration is han
 
 ## 📄 License
 
-Copyright © 2025 Noderr Protocol. All rights reserved.
+Copyright © 2025 Noderrrr Protocol. All rights reserved.
 
 ## 🤝 Contributing
 
-This is a production landing page. For contributions, please contact the Noderr team.
+This is a production landing page. For contributions, please contact the Noderrrr team.
 
 ---
 
-Built with ❤️ by the Noderr team
+Built with ❤️ by the Noderrrr team

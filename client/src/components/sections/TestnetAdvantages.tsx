@@ -45,7 +45,7 @@ export function TestnetAdvantages() {
             Become an <span className="text-gradient">Early Participant</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join the Noderr testnet to help build the future of real, sustainable yield. Your participation matters.
+            Join the Noderrrr testnet to help build the future of real, sustainable yield. Your participation matters.
           </p>
         </motion.div>
 
@@ -95,7 +95,7 @@ export function TestnetAdvantages() {
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-8 rounded-2xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20">
             <div className="text-left">
               <h3 className="text-2xl font-bold mb-2">Ready to get started?</h3>
-              <p className="text-muted-foreground">Claim your free testnet tokens and start exploring the Noderr ecosystem today.</p>
+              <p className="text-muted-foreground">Claim your free testnet tokens and start exploring the Noderrrr ecosystem today.</p>
             </div>
             <a 
               href={FAUCET_URL}

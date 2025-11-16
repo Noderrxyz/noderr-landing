@@ -15,8 +15,8 @@ const footerLinks = {
   ],
   community: [
     { name: 'Discord', href: 'https://discord.com/invite/noderr' },
-    { name: 'Telegram', href: 'https://t.me/NoderrSupp' },
-    { name: 'Twitter', href: 'https://twitter.com/NoderrProtocol' },
+    { name: 'Telegram', href: 'https://t.me/NoderrrrSupp' },
+    { name: 'Twitter', href: 'https://twitter.com/NoderrrrProtocol' },
     { name: 'Instagram', href: 'https://instagram.com/noderr' },
   ],
   legal: [
@@ -26,9 +26,9 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Twitter, href: 'https://twitter.com/NoderrProtocol', label: 'Twitter' },
+  { icon: Twitter, href: 'https://twitter.com/NoderrrrProtocol', label: 'Twitter' },
   { icon: MessageCircle, href: 'https://discord.com/invite/noderr', label: 'Discord' },
-  { icon: Send, href: 'https://t.me/NoderrSupp', label: 'Telegram' },
+  { icon: Send, href: 'https://t.me/NoderrrrSupp', label: 'Telegram' },
   { icon: Instagram, href: 'https://instagram.com/noderr', label: 'Instagram' },
 ];
 
@@ -43,10 +43,10 @@ export function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <img 
                 src="/logo.png" 
-                alt="Noderr Protocol" 
+                alt="Noderrrr Protocol" 
                 className="w-10 h-10"
               />
-              <span className="text-xl font-bold text-foreground">Noderr</span>
+              <span className="text-xl font-bold text-foreground">Noderrrr</span>
             </div>
             <p className="text-sm text-muted-foreground mb-6">
               Decentralized node operator network with trust-weighted DeFi infrastructure.
@@ -145,7 +145,7 @@ export function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Noderr Protocol. All rights reserved.
+            © {new Date().getFullYear()} Noderrrr Protocol. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-muted-foreground">
             <span>Built on Base L2</span>

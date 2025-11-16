@@ -1,4 +1,4 @@
-# Noderr Technical Deep Dive: Code & Documentation Analysis
+# Noderrrr Technical Deep Dive: Code & Documentation Analysis
 
 **Purpose**: Extract actual technical details from codebase and documentation for landing page refinement
 
@@ -403,7 +403,7 @@ enum ProposalType {
 ### Primary Revenue Sources
 
 1. **Algorithmic Trading Profits** (ATE)
-   - Target: 8-15% APY on deployed capital
+   - Target: 8-28% APY on deployed capital
    - Conservative degradation factor (50% from backtest results)
    - Diversified across 20-30 live strategies
    - Both Floor Engine (stable) and third-party strategies (alpha)
@@ -467,13 +467,13 @@ enum ProposalType {
 3. ✅ **Social**: Guardian/Oracle elections require community approval
 4. ✅ **Technical**: 10% entity vote cap prevents single-entity dominance
 
-**Result**: "Noderr's hybrid economic + social + temporal security model makes 51% attacks economically and practically infeasible."
+**Result**: "Noderrrr's hybrid economic + social + temporal security model makes 51% attacks economically and practically infeasible."
 
 ---
 
 ## 8. KEY DIFFERENTIATORS (FOR LANDING PAGE COPY)
 
-### What Makes Noderr Unique
+### What Makes Noderrrr Unique
 
 1. **Dual Trading System**
    - Floor Engine (stable baseline yield)
@@ -526,25 +526,25 @@ enum ProposalType {
 - "Final authority on strategy promotion to Live Swarm (66% supermajority required)."
 - "Execute large treasury capital proposals with 24-48 hour timelock."
 - "Highest emergency powers to halt protocol during black swan events."
-- "10x voting power multiplier - the stewards of Noderr's future."
+- "10x voting power multiplier - the stewards of Noderrrr's future."
 
 ### ATE Section - Clarify Architecture
 
 **Replace generic "autonomous trading" with**:
 
-"Noderr's Autonomous Trading Engine operates on a dual-system architecture:
+"Noderrrr's Autonomous Trading Engine operates on a dual-system architecture:
 
 **Floor Engine**: Conservative strategies (market-neutral, arbitrage, yield farming) provide a stable 5-8% APY baseline, ensuring consistent returns even in volatile markets.
 
 **Third-Party Strategies**: External quants and data scientists submit advanced trading algorithms that compete in the Shadow Data Swarm™. Only 0.37% survive the rigorous 4-stage approval process (Shadow → Guardian Review → Paper Trading → Live). Contributors earn 20% profit share if their strategy is promoted, aligning incentives for genuine alpha generation.
 
-This dual approach combines stability with innovation, targeting 8-15% APY while maintaining conservative risk management."
+This dual approach combines stability with innovation, targeting 8-28% APY while maintaining conservative risk management."
 
 ### Base-Rate Governor - Add This Section
 
 "**Sustainable Economics Through Smart Caps**
 
-The Base-Rate Governor is Noderr's unique sustainability mechanism. It automatically caps quarterly reward distributions at 35-45% of trailing four-quarter net revenue, ensuring the protocol never over-distributes during exceptional periods.
+The Base-Rate Governor is Noderrrr's unique sustainability mechanism. It automatically caps quarterly reward distributions at 35-45% of trailing four-quarter net revenue, ensuring the protocol never over-distributes during exceptional periods.
 
 This protects treasury reserves, smooths reward volatility, and guarantees long-term viability—even if the ATE underperforms for several quarters."
 
@@ -555,5 +555,5 @@ This protects treasury reserves, smooths reward volatility, and guarantees long-
 1. ✅ Update Node Tier descriptions with actual functions from code
 2. ✅ Clarify ATE architecture (Floor Engine + Third-Party Strategies)
 3. ✅ Add Base-Rate Governor explanation
-4. ✅ Create visualizations for Traditional DeFi vs. Noderr Model
+4. ✅ Create visualizations for Traditional DeFi vs. Noderrrr Model
 5. ✅ Final refinement pass on all sections

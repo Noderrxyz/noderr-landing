@@ -1,4 +1,4 @@
-# Testing Checklist - Noderr Protocol Landing Page
+# Testing Checklist - Noderrrr Protocol Landing Page
 
 ## ✅ Visual Testing
 

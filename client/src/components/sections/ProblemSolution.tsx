@@ -16,7 +16,7 @@ export function ProblemSolution() {
             Beyond Inflationary Yields: <span className="text-gradient">The Problem with Modern DeFi</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Most DeFi protocols rely on inflationary token emissions to attract liquidity. This creates a vicious cycle where high initial yields attract mercenary capital, but constant sell pressure from emissions drives token prices down, eventually collapsing the system. Noderr breaks this cycle with a sustainable, revenue-driven economic model.
+            Most DeFi protocols rely on inflationary token emissions to attract liquidity. This creates a vicious cycle where high initial yields attract mercenary capital, but constant sell pressure from emissions drives token prices down, eventually collapsing the system. Noderrrr breaks this cycle with a sustainable, revenue-driven economic model.
           </p>
         </motion.div>
 
@@ -31,7 +31,7 @@ export function ProblemSolution() {
           <div className="rounded-2xl overflow-hidden border border-border bg-card p-4">
             <img 
               src="/defi-comparison.png" 
-              alt="Traditional DeFi vs Noderr Protocol Comparison" 
+              alt="Traditional DeFi vs Noderrrr Protocol Comparison" 
               className="w-full h-auto"
             />
           </div>
@@ -93,7 +93,7 @@ export function ProblemSolution() {
             </div>
           </motion.div>
 
-          {/* Noderr Model */}
+          {/* Noderrrr Model */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -105,18 +105,18 @@ export function ProblemSolution() {
               <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
                 <TrendingUp className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground">The Noderr Model: Sustainable Revenue</h3>
+              <h3 className="text-2xl font-bold text-foreground">The Noderrrr Model: Sustainable Revenue</h3>
             </div>
             
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              Noderr generates real revenue from autonomous trading and distributes a capped percentage to participants. No inflation, no emissions, no death spiral.
+              Noderrrr generates real revenue from autonomous trading and distributes a capped percentage to participants. No inflation, no emissions, no death spiral.
             </p>
 
             <div className="space-y-4">
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Real Yield (5-35% APY)</h4>
+                  <h4 className="font-semibold text-foreground mb-1">Real Yield (8-28% APY)</h4>
                   <p className="text-sm text-muted-foreground">All rewards funded from ATE trading profits, not token emissions.</p>
                 </div>
               </div>
@@ -161,7 +161,7 @@ export function ProblemSolution() {
               The result is a protocol built for long-term sustainability.
             </p>
             <p className="text-sm text-muted-foreground">
-              Noderr's economic model aligns incentives for long-term participation, not short-term extraction. This is how DeFi should work.
+              Noderrrr's economic model aligns incentives for long-term participation, not short-term extraction. This is how DeFi should work.
             </p>
           </div>
         </motion.div>

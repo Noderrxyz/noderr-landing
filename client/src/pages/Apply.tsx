@@ -89,7 +89,7 @@ export default function Apply() {
           <div className="text-center mb-12">
             <h1 className="text-4xl font-bold mb-3">Node Operator Application</h1>
             <p className="text-lg text-muted-foreground">
-              Apply to join the Noderr Protocol testnet as a Validator, Guardian, or Oracle node operator.
+              Apply to join the Noderrrr Protocol testnet as a Validator, Guardian, or Oracle node operator.
             </p>
           </div>
 
@@ -128,7 +128,7 @@ export default function Apply() {
             <CardHeader>
               <CardTitle className="text-2xl">Application Form</CardTitle>
               <CardDescription className="text-base">
-                Complete the form below to apply for the Noderr Protocol testnet. We'll review your application and contact you within 5-7 business days.
+                Complete the form below to apply for the Noderrrr Protocol testnet. We'll review your application and contact you within 5-7 business days.
               </CardDescription>
             </CardHeader>
             <CardContent>

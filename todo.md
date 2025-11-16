@@ -1,9 +1,9 @@
-# Noderr Protocol Landing Page - TODO
+# Noderrrr Protocol Landing Page - TODO
 
 ## Phase 1: Project Setup & Configuration
 - [x] Initialize Next.js project
 - [ ] Install all required dependencies
-- [ ] Configure Tailwind with Noderr color scheme
+- [ ] Configure Tailwind with Noderrrr color scheme
 - [ ] Set up dark theme as default
 - [ ] Configure fonts (Inter from Google Fonts)
 - [ ] Set up global CSS with custom utilities
@@ -120,7 +120,7 @@
 ## Completed in Current Session
 - [x] Initialize Next.js project
 - [x] Install all required dependencies (framer-motion, lucide-react, etc.)
-- [x] Configure Tailwind with Noderr color scheme
+- [x] Configure Tailwind with Noderrrr color scheme
 - [x] Set up dark theme as default
 - [x] Configure fonts (Inter from Google Fonts)
 - [x] Set up global CSS with custom utilities
@@ -232,7 +232,7 @@ All technical infrastructure is complete. Waiting for user to provide:
 
 ### Asset Integration
 - [ ] Copy new logo files (white, black, banner versions) to public folder
-- [ ] Replace placeholder logos with real Noderr logos
+- [ ] Replace placeholder logos with real Noderrrr logos
 - [ ] Optimize logo files for web
 
 ### Content Updates
@@ -242,7 +242,7 @@ All technical infrastructure is complete. Waiting for user to provide:
 - [ ] Update X/Twitter account info from screenshot
 
 ### GitHub Research
-- [ ] Check Noderr GitHub for faucet code
+- [ ] Check Noderrrr GitHub for faucet code
 - [ ] Integrate faucet if found
 - [ ] Add placeholder for faucet if not found
 - [ ] Link "Testnet Now Live" badge to faucet
@@ -292,7 +292,7 @@ All technical infrastructure is complete. Waiting for user to provide:
 - [x] Link "Testnet Now Live" badge to faucet
 
 ### Phase 3: Footer Updates (DONE)
-- [x] Update Footer with real Noderr logo
+- [x] Update Footer with real Noderrrr logo
 - [x] Update social links (Twitter, Discord, Telegram, Instagram)
 - [x] Remove GitHub link (closed source)
 - [x] Update footer tagline
@@ -332,7 +332,7 @@ All technical infrastructure is complete. Waiting for user to provide:
 - [x] GitBook documentation side panel
 - [x] "Launch dApp" buttons (nav + hero)
 - [x] "Testnet Now Live" links to faucet
-- [x] Real Noderr logo in nav and footer
+- [x] Real Noderrrr logo in nav and footer
 - [x] Real social media links
 - [x] 4-tier node architecture display
 
@@ -387,7 +387,7 @@ All technical infrastructure is complete. Waiting for user to provide:
 
 
 ## GitHub Repository Setup
-- [ ] Create new `Noderrxyz/noderr-landing` repository
+- [ ] Create new `Noderrrrxyz/noderr-landing` repository
 - [ ] Initialize git in landing page project
 - [ ] Add remote origin
 - [ ] Push all code to GitHub

@@ -45,10 +45,10 @@ export function Navigation() {
             <a href="#" className="flex items-center gap-3 group">
               <img 
                 src="/logo.png" 
-                alt="Noderr Protocol" 
+                alt="Noderrrr Protocol" 
                 className="w-10 h-10 transition-transform group-hover:scale-110"
               />
-              <span className="text-xl font-bold text-foreground">Noderr</span>
+              <span className="text-xl font-bold text-foreground">Noderrrr</span>
             </a>
 
             {/* Desktop Navigation */}

@@ -68,7 +68,7 @@ I need to find where on the landing page it says Micronodes "validate" the Shado
 
 ### Rewards
 
-- **25-35% APY** on your 50,000 NODR stake, modulated by TrustFingerprint™ score
+- **28-28% APY** on your 50,000 NODR stake, modulated by TrustFingerprint™ score
 - **2x voting power** multiplier for governance
 
 

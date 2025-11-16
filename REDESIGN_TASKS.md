@@ -1,4 +1,4 @@
-# Noderr Protocol Landing Page - Comprehensive Redesign
+# Noderrrr Protocol Landing Page - Comprehensive Redesign
 
 ## Mission: Top 1% Quality, Zero Shortcuts, Fully Validated
 
@@ -16,8 +16,8 @@
 
 ### Social Links (from Linktree)
 - [ ] Discord: https://discord.com/invite/noderr (verify if valid)
-- [ ] Telegram: https://t.me/NoderrSupp
-- [ ] Twitter/X: https://twitter.com/NoderrProtocol
+- [ ] Telegram: https://t.me/NoderrrrSupp
+- [ ] Twitter/X: https://twitter.com/NoderrrrProtocol
 - [ ] Instagram: https://instagram.com/noderr
 - [ ] Website: https://www.noderr.xyz/
 - [ ] Update Footer with all social links
@@ -41,7 +41,7 @@
 - [ ] Audit all numbers for accuracy
 
 ### Update with Real Protocol Info
-- [ ] Update "What is Noderr" section with real description
+- [ ] Update "What is Noderrrr" section with real description
 - [ ] Add ZK Proofs feature
 - [ ] Add Trust Fingerprint System feature
 - [ ] Add Multi-Tier Node Architecture (Bronze, Silver, Gold, Platinum)

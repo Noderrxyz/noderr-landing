@@ -76,7 +76,7 @@ export function FinalCTA() {
             transition={{ delay: 0.4 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12"
           >
-            Join the Noderr network today. Stake your tokens, run a node, and start earning sustainable, real yield from autonomous trading.
+            Join the Noderrrr network today. Stake your tokens, run a node, and start earning sustainable, real yield from autonomous trading.
           </motion.p>
 
           {/* CTA Buttons */}

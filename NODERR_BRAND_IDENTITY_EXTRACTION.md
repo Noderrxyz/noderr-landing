@@ -1,6 +1,6 @@
-# Noderr Brand Identity & Technical Differentiators
+# Noderrrr Brand Identity & Technical Differentiators
 
-**Purpose**: Extract Noderr's actual brand voice, unique value propositions, and proprietary technology to inform landing page redesign.
+**Purpose**: Extract Noderrrr's actual brand voice, unique value propositions, and proprietary technology to inform landing page redesign.
 
 ---
 
@@ -12,7 +12,7 @@
 
 **Key Features**:
 - Evolutionary algorithms + reinforcement learning
-- Targets 8-15% APY from **actual trading profits** (not token emissions)
+- Targets 8-28% APY from **actual trading profits** (not token emissions)
 - Operates in both bull and bear markets (long/short strategies)
 - Shadow Data Swarm™ for strategy validation
 - Multi-objective optimization (Sharpe Ratio ≥1.5, Max Drawdown <10%)
@@ -20,7 +20,7 @@
 **Competitive Differentiation**: 
 - Chainlink = Data oracles
 - The Graph = Data indexing
-- **Noderr = Autonomous trading + data infrastructure**
+- **Noderrrr = Autonomous trading + data infrastructure**
 
 ### 2. Shadow Data Swarm™
 **NOT**: Generic node network  
@@ -86,10 +86,10 @@
 ## VALUE PROPOSITIONS BY AUDIENCE
 
 ### For Institutional Investors
-**Message**: "Noderr delivers sustainable, non-inflationary DeFi yields through autonomous algorithmic trading and merit-based network operations, targeting 8-15% APY backed by realized net revenue rather than token emissions."
+**Message**: "Noderrrr delivers sustainable, non-inflationary DeFi yields through autonomous algorithmic trading and merit-based network operations, targeting 8-28% APY backed by realized net revenue rather than token emissions."
 
 **Key Points**:
-- Conservative 8-15% APY target (50% degradation from backtest results)
+- Conservative 8-28% APY target (50% degradation from backtest results)
 - Zero operational inflation (100M fixed supply)
 - Institutional share class fees (1.5%/20%)
 - Professional-grade reporting
@@ -117,10 +117,10 @@
 ## QUANTIFIED DIFFERENTIATORS (USE THESE NUMBERS)
 
 ### Economic Model
-- **Target APY**: 8-15% (conservative, non-guaranteed)
+- **Target APY**: 8-28% (conservative, non-guaranteed)
 - **Token Supply**: 100 million NODR (fixed, no inflation)
 - **Revenue Sources**: Algorithmic trading, DeFi yield farming, infrastructure services
-- **Safety Margin**: 50% degradation factor from backtest results (20-60% → 8-15%)
+- **Safety Margin**: 50% degradation factor from backtest results (20-60% → 8-28%)
 
 ### Performance Thresholds
 - **Sharpe Ratio**: ≥1.5 (risk-adjusted return quality)
@@ -131,7 +131,7 @@
 
 ### Network Stats (Target State)
 - **Micro Nodes**: 10,000+ (80-90% of network)
-- **Validators**: 500-1,000 (8-15% of network)
+- **Validators**: 500-1,000 (8-28% of network)
 - **Guardians**: 50-100 (1-3% of network)
 - **Oracles**: 15-30 (<1% of network)
 
@@ -168,13 +168,13 @@
 
 ## COMPETITIVE POSITIONING
 
-### What Noderr IS NOT
+### What Noderrrr IS NOT
 ❌ Generic staking protocol (like Lido, Rocket Pool)
 ❌ Simple oracle network (like Chainlink, API3)
 ❌ Data indexing service (like The Graph)
 ❌ Token emission-based yield farm
 
-### What Noderr IS
+### What Noderrrr IS
 ✅ **Autonomous trading system** with decentralized infrastructure
 ✅ **Quantitative hedge fund** operating on blockchain
 ✅ **Merit-based network** with trust-weighted governance
@@ -182,12 +182,12 @@
 
 ### Key Differentiators vs. Competitors
 
-| Feature | Noderr | Chainlink | The Graph | Lido | Rocket Pool |
+| Feature | Noderrrr | Chainlink | The Graph | Lido | Rocket Pool |
 |---------|--------|-----------|-----------|------|-------------|
 | **Primary Function** | Autonomous trading + infrastructure | Oracle data feeds | Data indexing | Liquid staking | Decentralized staking |
 | **Yield Source** | Trading profits | Service fees | Query fees | Staking rewards | Staking rewards |
 | **Inflation** | Zero (100M fixed) | Yes (token emissions) | Yes (token emissions) | No (ETH staking) | No (ETH staking) |
-| **Target APY** | 8-15% | Variable | Variable | 2.6% | 2.41-3.31% |
+| **Target APY** | 8-28% | Variable | Variable | 2.6% | 2.41-3.31% |
 | **Unique Tech** | ATE + Shadow Swarm™ + TrustFingerprint™ | Decentralized oracles | Subgraphs | stETH liquidity | DVT + solo migration |
 | **Governance** | Multi-tier (elected Oracles) | Token-weighted | Token-weighted | DAO | Token-weighted |
 
@@ -201,10 +201,10 @@
 2. "Sustainable Yields from Algorithmic Trading" (emphasizes value prop)
 3. "Where Quantitative Finance Meets Decentralized Infrastructure" (emphasizes positioning)
 
-**Subheadline**: "Noderr combines evolutionary trading algorithms with merit-based node operations to generate 8-15% APY from real market activity—not token emissions."
+**Subheadline**: "Noderrrr combines evolutionary trading algorithms with merit-based node operations to generate 8-28% APY from real market activity—not token emissions."
 
 **Key Stats to Display**:
-- **8-15% Target APY** (from trading profits)
+- **8-28% Target APY** (from trading profits)
 - **100M Fixed Supply** (zero inflation)
 - **$X Total Value Secured** (if available from testnet)
 - **X,000+ Nodes** (target or current)
@@ -254,7 +254,7 @@
 ## TONE EXAMPLES (DO vs. DON'T)
 
 ### ✅ DO (Professional, Specific, Authoritative)
-"Noderr targets a conservative 8-15% APY backed by algorithmic trading profits, applying a 50% degradation factor to academic backtest results for sustainable long-term performance."
+"Noderrrr targets a conservative 8-28% APY backed by algorithmic trading profits, applying a 50% degradation factor to academic backtest results for sustainable long-term performance."
 
 ### ❌ DON'T (Generic, Vague, Hype)
 "Earn amazing yields with our revolutionary DeFi protocol! Join the future of finance today!"
@@ -266,7 +266,7 @@
 "Our AI-powered reputation system uses blockchain technology to reward good nodes!"
 
 ### ✅ DO (Honest, Transparent)
-"Target APY of 8-15% is non-guaranteed and subject to market conditions. All rewards are funded exclusively from realized net revenue, not token emissions."
+"Target APY of 8-28% is non-guaranteed and subject to market conditions. All rewards are funded exclusively from realized net revenue, not token emissions."
 
 ### ❌ DON'T (Overpromising, Misleading)
 "Guaranteed 15% APY! Passive income forever!"
@@ -276,7 +276,7 @@
 ## CRITICAL QUESTIONS ANSWERED
 
 1. **What's your biggest number?**
-   - 8-15% APY (if no testnet data yet)
+   - 8-28% APY (if no testnet data yet)
    - OR $X TVL / X,000 nodes (if testnet data available)
 
 2. **What's your unique value prop?**
@@ -302,7 +302,7 @@
 
 ## RECOMMENDED LANDING PAGE STRUCTURE
 
-1. **Hero**: Unique value prop + key stat (8-15% APY)
+1. **Hero**: Unique value prop + key stat (8-28% APY)
 2. **Problem/Solution**: Why token emissions are unsustainable → Real trading profits
 3. **Proprietary Tech**: ATE + Shadow Swarm™ + TrustFingerprint™ (visual showcase)
 4. **How It Works**: 3-step process (simple, visual)

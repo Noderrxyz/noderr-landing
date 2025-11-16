@@ -67,7 +67,7 @@ All `.io` references were replaced with `.xyz` in commit `b7876ec`.
 ## Official Terminology (FROM TERMINOLOGY_GUIDE.md - Nov 14, 2025)
 
 ### Autonomous Trading System (ATS)
-**Definition:** The complete Noderr Protocol intelligent trading ecosystem encompassing all components from strategy generation to execution and yield optimization.
+**Definition:** The complete Noderrrr Protocol intelligent trading ecosystem encompassing all components from strategy generation to execution and yield optimization.
 
 **Scope:** 100% of protocol operations
 
@@ -77,7 +77,7 @@ All `.io` references were replaced with `.xyz` in commit `b7876ec`.
 **Definition:** The active trading execution component within the ATS responsible for deploying approved algorithmic strategies with real capital.
 
 **Capital Allocation:** 8-25% of total AUM
-**Target APY:** 8-15%
+**Target APY:** 8-28%
 **Risk Profile:** MEDIUM
 
 **When to use:** When specifically referring to active trading execution, order routing, live strategy deployment.

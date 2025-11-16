@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to the Noderr Protocol landing page will be documented in this file.
+All notable changes to the Noderrrr Protocol landing page will be documented in this file.
 
 ## [Unreleased] - 2025-01-07
 
@@ -65,7 +65,7 @@ All notable changes to the Noderr Protocol landing page will be documented in th
 - Navigation header with mobile menu
 - Footer with comprehensive links
 - Back-to-top button
-- Dark theme with Noderr color scheme
+- Dark theme with Noderrrr color scheme
 - Framer Motion animations
 - Full responsive design
 - SEO optimization
@@ -108,5 +108,5 @@ All notable changes to the Noderr Protocol landing page will be documented in th
 
 ---
 
-**Maintained by**: Noderr Protocol Team  
+**Maintained by**: Noderrrr Protocol Team  
 **Last Updated**: January 7, 2025

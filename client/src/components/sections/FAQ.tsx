@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: 'How are rewards calculated?',
-    answer: 'Rewards are based on your tier, your stake, and your TrustFingerprint™ score. Micro Nodes earn 5-12% APY, while higher tiers earn 25-35% APY plus additional stipends and profit sharing. Higher performance and longer uptime earn higher rewards.',
+    answer: 'Rewards are based on your tier, your stake, and your TrustFingerprint™ score. Micro Nodes earn 5-12% APY, while higher tiers earn 28-28% APY plus additional stipends and profit sharing. Higher performance and longer uptime earn higher rewards.',
   },
   {
     question: 'What is the purpose of the testnet?',
@@ -47,7 +47,7 @@ export function FAQ() {
             Frequently Asked <span className="text-gradient">Questions</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Everything you need to know about participating in the Noderr network.
+            Everything you need to know about participating in the Noderrrr network.
           </p>
         </motion.div>
 

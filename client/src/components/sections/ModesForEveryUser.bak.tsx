@@ -10,7 +10,7 @@ const tiers = [
     stake: '0 NODR minimum',
     audience: 'Retail Participants, Students, Hobbyists',
     valueProposition: 'Put your old devices to work. Earn real yield.',
-    description: 'Micro Nodes operate as AI agents in a mesh network, providing compute resources to the Noderr Protocol when overhead capacity is reached. Put your old Androids and iPhones to use, or install our browser extension.',
+    description: 'Micro Nodes operate as AI agents in a mesh network, providing compute resources to the Noderrrr Protocol when overhead capacity is reached. Put your old Androids and iPhones to use, or install our browser extension.',
     functions: [
       'Operate as AI agents in a distributed mesh network',
       'Provide compute resources when overhead capacity is reached',
@@ -36,7 +36,7 @@ const tiers = [
       'Provide optimized data queries and analytics for the protocol',
       'Track risk metrics and backtest results for strategy evaluation',
     ],
-    rewards: '25-35% APY, plus transaction fees',
+    rewards: '28-28% APY, plus transaction fees',
     cta: 'Become a Validator',
     ctaUrl: VALIDATOR_APPLICATION_URL,
     color: 'accent',
@@ -55,7 +55,7 @@ const tiers = [
       'Vote on strategy promotion from Shadow to Paper Trading',
       'Must be elected by peers from the Validator pool (TrustFingerprint™ ≥0.75)',
     ],
-    rewards: '25-35% APY, plus a stipend and 5% of strategy profit share',
+    rewards: '28-28% APY, plus a stipend and 5% of strategy profit share',
     cta: 'Express Interest in Guardian Role',
     ctaUrl: 'https://form.typeform.com/to/01KA5J8C7F4Q5MWWH1928GJB3R',
     color: 'chart-3',
@@ -74,7 +74,7 @@ const tiers = [
       'Oversee Base-Rate Governor parameters and sustainability metrics',
       'Must be elected by peers from the Guardian pool (TrustFingerprint™ ≥0.90)',
     ],
-    rewards: '25-35% APY, plus a $50,000 stipend and 10% of strategy profit share',
+    rewards: '28-28% APY, plus a $50,000 stipend and 10% of strategy profit share',
     cta: 'Express Interest in Oracle Role',
     ctaUrl: 'https://form.typeform.com/to/01KA5J8C7F4Q5MWWH1928GJB3R',
     color: 'chart-5',
@@ -93,10 +93,10 @@ export function ModesForEveryUser() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            The Noderr Network: <span className="text-gradient">A Role for Everyone</span>
+            The Noderrrr Network: <span className="text-gradient">A Role for Everyone</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Noderr's multi-tier architecture maximizes decentralization and security through specialized roles for every level of participation. Whether you are a casual user, a professional infrastructure operator, or a DeFi governance expert, you can contribute meaningfully and earn real rewards.
+            Noderrrr's multi-tier architecture maximizes decentralization and security through specialized roles for every level of participation. Whether you are a casual user, a professional infrastructure operator, or a DeFi governance expert, you can contribute meaningfully and earn real rewards.
           </p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">

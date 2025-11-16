@@ -43,7 +43,7 @@ export function HowItWorks() {
             From <span className="text-gradient">Idea to Execution</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Noderr uses a multi-stage validation pipeline to select the highest-quality trading strategies for managing protocol capital. This is how we turn algorithmic concepts into sustainable yield.
+            Noderrrr uses a multi-stage validation pipeline to select the highest-quality trading strategies for managing protocol capital. This is how we turn algorithmic concepts into sustainable yield.
           </p>
         </motion.div>
 

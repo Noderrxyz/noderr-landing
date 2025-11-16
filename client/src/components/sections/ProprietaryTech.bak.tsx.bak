@@ -8,7 +8,7 @@ const technologies = [
     id: 'nft-zk',
     name: 'Soulbound NFT & ZK Proofs',
     icon: ShieldCheck, // Or a more specific icon if available
-    description: 'Noderr pioneers a revolutionary security architecture combining Soulbound Utility NFTs with Groth16 ZK-SNARKs to create a verifiable, private, and Sybil-resistant ecosystem.',
+    description: 'Noderrrr pioneers a revolutionary security architecture combining Soulbound Utility NFTs with Groth16 ZK-SNARKs to create a verifiable, private, and Sybil-resistant ecosystem.',
     docUrl: `${GITBOOK_URL}/protocol/security`,
     details: [
       {
@@ -29,7 +29,7 @@ const technologies = [
     id: 'ate',
     name: 'Autonomous Trading Engine',
     icon: Cpu,
-    description: 'NThe Autonomous Trading Engine (ATE) is the core of the Noderr protocol. It operates on a dual-system architecture, combining the stability of a Floor Engine with the alpha-generating potential of competitive third-party strategies.',
+    description: 'NThe Autonomous Trading Engine (ATE) is the core of the Noderrrr protocol. It operates on a dual-system architecture, combining the stability of a Floor Engine with the alpha-generating potential of competitive third-party strategies.',
     docUrl: `${GITBOOK_URL}/protocol/ate`,
     details: [
       {
@@ -141,7 +141,7 @@ export function ProprietaryTech() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            The <span className="text-gradient">Noderr Difference</span>
+            The <span className="text-gradient">Noderrrr Difference</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Our protocol combines proprietary, interconnected technologies that deliver security, sustainability, and performance.
