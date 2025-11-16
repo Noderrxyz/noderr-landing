@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'wouter';
 
 export default function Privacy() {
   return (
@@ -306,17 +306,7 @@ export default function Privacy() {
             </p>
           </section>
 
-          {/* Notice Box */}
-          <div className="bg-accent-cyan/10 border border-accent-cyan/30 rounded-lg p-6 mt-12">
-            <p className="text-sm text-text-secondary">
-              <strong className="text-accent-cyan">⚠️ DRAFT NOTICE:</strong> This
-              Privacy Policy document is a draft prepared by AI and has not been
-              reviewed by a legal professional. Before publishing, it must be
-              reviewed and approved by a qualified attorney and privacy expert
-              licensed in your jurisdiction. Additional clauses may be required
-              based on your specific data practices and applicable laws.
-            </p>
-          </div>
+
         </div>
       </div>
     </div>
