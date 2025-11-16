@@ -9,6 +9,7 @@ import { HowItWorks } from '@/components/sections/HowItWorks';
 import { ModesForEveryUser } from '@/components/sections/ModesForEveryUser';
 import { TestnetAdvantages } from '@/components/sections/TestnetAdvantages';
 import { Security } from '@/components/sections/Security';
+import { DaoGovernance } from '@/components/sections/DaoGovernance';
 import { NodeRequirements } from '@/components/sections/NodeRequirements';
 import { FAQ } from '@/components/sections/FAQ';
 import { FinalCTA } from '@/components/sections/FinalCTA';
@@ -35,6 +36,7 @@ export default function Home() {
         <div id="security">
           <Security />
         </div>
+        <DaoGovernance />
         <FAQ />
         <FinalCTA />
       </main>
