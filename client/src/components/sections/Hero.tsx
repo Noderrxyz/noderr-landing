@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { GITBOOK_URL, DAPP_URL } from "@/const";
 
 const stats = [
-  { value: "8-15%", label: "Target APY" },
+  { value: "5-35%", label: "Target APY" },
   { value: "100M", label: "Fixed Supply" },
   { value: "0%", label: "Inflation" },
   { value: "$5B+", label: "Est. Attack Cost" },
