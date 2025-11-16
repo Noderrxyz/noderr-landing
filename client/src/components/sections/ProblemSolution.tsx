@@ -30,7 +30,7 @@ export function ProblemSolution() {
         >
           <div className="rounded-2xl overflow-hidden border border-border bg-card p-4">
             <img 
-              src="/defi-comparison-pro.png" 
+              src="/defi-comparison.png" 
               alt="Traditional DeFi vs Noderr Protocol Comparison" 
               className="w-full h-auto"
             />
@@ -116,7 +116,7 @@ export function ProblemSolution() {
               <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-semibold text-foreground mb-1">Real Yield (8-15% APY)</h4>
+                  <h4 className="font-semibold text-foreground mb-1">Real Yield (5-35% APY)</h4>
                   <p className="text-sm text-muted-foreground">All rewards funded from ATE trading profits, not token emissions.</p>
                 </div>
               </div>
