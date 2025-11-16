@@ -11,19 +11,19 @@ const steps = [
   {
     icon: ShieldCheck,
     title: '2. Curate & Approve',
-    description: 'The top-performing strategies (0.37% survival rate) are promoted to the Guardian Council. These elected experts perform code reviews and risk assessments, selecting the most robust and secure algorithms to proceed. A 4/5 majority vote is required for approval.',
+    description: 'Top-performing strategies (0.37% survival rate) undergo Guardian code review and risk assessment. Approved strategies are automatically deployed to the Live Swarm with gradual capital allocation, monitored by Oracle oversight.',
     color: 'accent',
   },
   {
     icon: Paperclip,
     title: '3. Paper Trade & Validate',
-    description: 'Approved strategies enter a 4-12 week paper trading phase, executing trades with simulated capital against live market data. This step validates performance in real-world conditions before any protocol capital is deployed.',
+    description: 'Strategies that pass Guardian review are deployed with gradual capital allocation, starting with minimal capital and scaling up only after proven live performance over 30-90 days.',
     color: 'chart-3',
   },
   {
     icon: Zap,
     title: '4. Execute & Distribute',
-    description: 'After a final 66% approval vote from the Oracle council, strategies are deployed to the Live Swarm with a gradual capital allocation. Profits are automatically routed to the treasury and distributed to node operators as real, sustainable yield.',
+    description: 'Oracles provide final oversight on high-risk decisions and treasury management. Profits from the Live Swarm are automatically routed to the treasury and distributed to node operators as real, sustainable yield.',
     color: 'chart-5',
   },
 ];

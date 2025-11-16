@@ -35,7 +35,7 @@ const technologies = [
       },
       {
         title: 'Third-Party Strategies (20% Profit Share)',
-        text: 'External quants and data scientists contribute advanced algorithms to our open marketplace. If their strategies pass the 4-stage validation process (0.37% survival rate), they earn a 20% profit share on all generated returns, paid quarterly via smart contract.'
+        text: 'External quants and data scientists contribute advanced algorithms to our open marketplace. If their strategies pass the 3-stage validation process (0.37% survival rate), they earn a 20% profit share on all generated returns, paid quarterly via smart contract.'
       }
     ]
   },
@@ -94,7 +94,7 @@ const technologies = [
       },
       {
         title: '4-Stage Validation Pipeline',
-        text: 'Strategies must pass a 4-stage process: Shadow (automated screening), Guardian Review (human code audit), Paper Trading (live data simulation), and finally Live (Oracle approval).'
+        text: 'Strategies must pass a 3-stage promotion process: Shadow Data Swarm™ backtesting (automated), Guardian Review (expert assessment), and Live Deployment (gradual allocation with Oracle oversight).'
       },
       {
         title: '0.37% Survival Rate',

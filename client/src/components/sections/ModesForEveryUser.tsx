@@ -9,9 +9,10 @@ const tiers = [
     icon: Sparkles,
     name: 'Micro Nodes',
     subtitle: 'The Foundation of the Swarm',
-    description: 'Micro Nodes form a distributed mesh network, providing the computational power for the Shadow Data Swarm™. Put your old Android and iOS devices to work, or install our browser extension to earn passive, real-world yield.',
+    description: 'Micro Nodes operate as AI agents in a mesh network, providing compute resources to the Noderr Protocol when overhead capacity is reached. Put your old Android and iOS devices to work, or install our browser extension to earn passive, real-world yield.',
     functions: [
-      'Provide compute resources for backtesting trading strategies',
+      'Run AI-driven automation tasks as distributed agents',
+      'Provide compute resources for strategy backtesting in the Shadow Data Swarm™',
       'Build on-chain reputation (TrustFingerprint™) through consistent uptime',
       'Earn passive income with minimal hardware and no minimum stake',
     ],

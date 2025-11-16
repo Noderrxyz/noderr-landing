@@ -73,7 +73,7 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
           >
-            Noderr is a decentralized autonomous trading system that generates sustainable, real-world yields. Its dual-component Autonomous Trading Engine (ATE) — combining a Floor Engine for baseline stability and a competitive marketplace for third-party strategies — produces pure, transparent performance with zero inflationary emissions.
+            Noderr is a decentralized autonomous trading system that generates sustainable, real-world yields. Its dual-component Autonomous Trading Engine (ATE), combining a Floor Engine for baseline stability and a competitive marketplace for third-party strategies, produces pure, transparent performance with zero inflationary emissions.
           </motion.p>
 
           {/* Key Stats */}
@@ -127,7 +127,7 @@ export function Hero() {
             transition={{ delay: 1.3 }}
             className="text-sm text-muted-foreground pt-8"
           >
-            Built on <span className="text-foreground font-semibold">Base L2</span> • Powered by <span className="text-foreground font-semibold">Evolutionary Algorithms</span> • Governed by <span className="text-foreground font-semibold">a Meritocratic DAO</span>
+            <span className="text-foreground font-semibold">Trust-Weighted Infrastructure</span> • <span className="text-foreground font-semibold">ZK-Governed</span> • <span className="text-foreground font-semibold">DAO-Controlled</span>
           </motion.p>
         </motion.div>
       </div>
