@@ -10,6 +10,8 @@ const navLinks = [
   { name: 'Modes', href: '#modes' },
   { name: 'Security', href: '#security' },
   { name: 'Community', href: '#community' },
+  { name: 'Careers', href: '/careers' },
+  { name: 'Partnerships', href: '/partnerships' },
 ];
 
 export function Navigation() {

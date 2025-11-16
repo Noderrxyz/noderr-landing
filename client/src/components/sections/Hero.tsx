@@ -118,8 +118,8 @@ export function Hero() {
               asChild
               className="group px-8 py-6 text-lg font-semibold bg-primary hover:bg-primary/90 transition-all"
             >
-              <a href="https://app.noderr.xyz" target="_blank" rel="noopener noreferrer">
-                Launch dApp
+              <a href="/apply">
+                Apply to Become a Node Operator
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
@@ -129,8 +129,8 @@ export function Hero() {
               className="px-8 py-6 text-lg font-semibold border-primary/20 hover:bg-primary/10"
               asChild
             >
-              <a href="#waitlist">
-                Join Waitlist
+              <a href="/faucet">
+                Get Testnet Tokens
               </a>
             </Button>
           </motion.div>
