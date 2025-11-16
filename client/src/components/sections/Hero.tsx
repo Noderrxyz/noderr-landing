@@ -12,7 +12,7 @@ const stats = [
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-24">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-32">
       {/* Animated gradient background */}
       <div className="absolute inset-0 gradient-hero opacity-10" />
       
