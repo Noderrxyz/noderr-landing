@@ -23,3 +23,8 @@ export const getLoginUrl = () => {
 };
 
 export const GITBOOK_URL = "https://docs.noderr.xyz";
+export const DAPP_URL = "https://app.noderr.xyz";
+export const NODE_DOWNLOAD_URL = "https://app.noderr.xyz/nodes";
+export const VALIDATOR_APPLICATION_URL = "https://app.noderr.xyz/stake";
+export const GUARDIAN_APPLICATION_URL = "https://app.noderr.xyz/governance";
+export const ORACLE_APPLICATION_URL = "https://app.noderr.xyz/governance";

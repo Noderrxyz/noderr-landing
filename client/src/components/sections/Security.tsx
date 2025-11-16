@@ -27,7 +27,7 @@ const securityFeatures = [
 const auditors = [
   { name: 'Base L2', status: 'Deployed' },
   { name: 'Testnet Live', status: 'Active' },
-  { name: 'Community Audited', status: 'Ongoing' },
+  { name: 'Bug Bounty', status: 'Active' },
 ];
 
 export function Security() {
@@ -53,7 +53,7 @@ export function Security() {
             Built with <span className="text-gradient">Security</span> at the Core
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Security and transparency are foundational. ZK proofs, audited contracts, and community governance ensure trust.
+            Security and transparency are foundational. ZK proofs, verifiable on-chain activity, and community governance ensure trust.
           </p>
         </motion.div>
 

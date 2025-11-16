@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Cpu, Users, GitBranch, ShieldCheck, Scale } from 'lucide-react';
+import { Cpu, Users, GitBranch, ShieldCheck, Scale, ArrowRight } from 'lucide-react';
+import { GITBOOK_URL } from '@/const';
 
 const technologies = [
   {
@@ -8,6 +9,7 @@ const technologies = [
     name: 'Autonomous Trading Engine',
     icon: Cpu,
     description: 'Noderr\'s ATE operates on a dual-system architecture, combining the stability of a Floor Engine with the alpha-generating potential of competitive third-party strategies.',
+    docUrl: `${GITBOOK_URL}/protocol/ate`,
     details: [
       {
         title: 'Floor Engine (Stable Baseline Yield)',
@@ -28,6 +30,7 @@ const technologies = [
     name: 'Shadow Data Swarm™',
     icon: Users,
     description: 'A massively parallel, high-fidelity simulated environment where thousands of algorithms compete, adapt, and prove their viability before touching real capital.',
+    docUrl: `${GITBOOK_URL}/protocol/shadow-data-swarm`,
     details: [
       {
         title: 'Massively Parallel Testing',
@@ -48,6 +51,7 @@ const technologies = [
     name: 'TrustFingerprint™',
     icon: ShieldCheck,
     description: 'A multi-dimensional, time-weighted reputation system that makes governance takeover economically and practically infeasible. Trust cannot be bought, only earned.',
+    docUrl: `${GITBOOK_URL}/protocol/trustfingerprint`,
     details: [
       {
         title: 'Sybil Resistant',
@@ -68,6 +72,7 @@ const technologies = [
     name: 'Base-Rate Governor',
     icon: Scale,
     description: 'A unique sustainability mechanism that ensures the protocol never distributes more rewards than it earns, guaranteeing long-term treasury health and preventing inflation.',
+    docUrl: `${GITBOOK_URL}/protocol/base-rate-governor`,
     details: [
       {
         title: 'Sustainable Reward Caps',
@@ -91,8 +96,8 @@ export function ProprietaryTech() {
   const activeTech = technologies.find(tech => tech.id === activeTab);
 
   return (
-    <section class="section-padding bg-background">
-      <div class="container max-w-7xl mx-auto px-4">
+    <section className="section-padding bg-background">
+      <div className="container max-w-7xl mx-auto px-4">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -100,17 +105,17 @@ export function ProprietaryTech() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 class="text-4xl sm:text-5xl font-bold mb-4">
-            The <span class="text-gradient">Noderr Difference</span>
+          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
+            The <span className="text-gradient">Noderr Difference</span>
           </h2>
-          <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Our protocol is built on a foundation of proprietary, interconnected technologies designed for security, sustainability, and performance.
           </p>
         </motion.div>
 
-        <div class="grid lg:grid-cols-12 gap-12 items-start">
+        <div className="grid lg:grid-cols-12 gap-12 items-start">
           {/* Tabs */}
-          <div class="lg:col-span-4 flex flex-col gap-2">
+          <div className="lg:col-span-4 flex flex-col gap-2">
             {technologies.map(tech => {
               const Icon = tech.icon;
               return (
@@ -119,7 +124,7 @@ export function ProprietaryTech() {
                   onClick={() => setActiveTab(tech.id)}
                   className={`w-full text-left p-4 rounded-lg transition-all duration-300 border ${activeTab === tech.id ? 'bg-primary/10 border-primary/30' : 'bg-card border-border hover:bg-muted/50'}`}
                 >
-                  <div class="flex items-center gap-4">
+                  <div className="flex items-center gap-4">
                     <div className={`w-12 h-12 rounded-md flex items-center justify-center flex-shrink-0 ${activeTab === tech.id ? 'bg-primary/20 text-primary' : 'bg-muted text-muted-foreground'}`}>
                       <Icon className="w-6 h-6" />
                     </div>
@@ -133,7 +138,7 @@ export function ProprietaryTech() {
           </div>
 
           {/* Content */}
-          <div class="lg:col-span-8 min-h-[450px]">
+          <div className="lg:col-span-8 min-h-[450px]">
             <AnimatePresence mode="wait">
               {activeTech && (
                 <motion.div
@@ -142,11 +147,11 @@ export function ProprietaryTech() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
-                  className="p-8 rounded-2xl bg-card border border-border"
+                  className="p-8 rounded-2xl bg-card border border-border flex flex-col h-full"
                 >
                   <h3 className="text-2xl font-bold mb-4 text-foreground">{activeTech.name}</h3>
                   <p className="text-muted-foreground mb-8">{activeTech.description}</p>
-                  <div className="space-y-6">
+                  <div className="space-y-6 flex-grow">
                     {activeTech.details.map((detail, index) => (
                       <div key={index} className="flex items-start gap-4">
                         <div className="w-6 h-6 flex-shrink-0 bg-primary/10 text-primary rounded-full flex items-center justify-center mt-1">
@@ -158,6 +163,17 @@ export function ProprietaryTech() {
                         </div>
                       </div>
                     ))}
+                  </div>
+                  <div className="mt-8 pt-6 border-t border-border">
+                    <a 
+                      href={activeTech.docUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center font-semibold text-primary hover:text-primary/80 transition-colors group"
+                    >
+                      Learn More
+                      <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </a>
                   </div>
                 </motion.div>
               )}

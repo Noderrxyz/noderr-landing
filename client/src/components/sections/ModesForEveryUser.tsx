@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Sparkles, Award, Crown, Gem, CheckCircle2 } from 'lucide-react';
+import { NODE_DOWNLOAD_URL, VALIDATOR_APPLICATION_URL, GUARDIAN_APPLICATION_URL, ORACLE_APPLICATION_URL } from '@/const';
 
 const tiers = [
   {
@@ -8,8 +9,8 @@ const tiers = [
     subtitle: 'The Foundation of the Swarm',
     stake: '0 NODR minimum',
     audience: 'Retail Participants, Students, Hobbyists',
-    valueProposition: 'Earn passive income from your browser. No technical expertise, no minimum stake.',
-    description: 'Micro Nodes form the backbone of the Shadow Data Swarm™, providing the distributed computational power needed for strategy backtesting and network telemetry. By simply keeping a browser tab open or running a lightweight desktop application, you can contribute to the network and earn real rewards.',
+    valueProposition: 'Put your old devices to work. No technical expertise, no minimum stake.',
+    description: 'Micro Nodes form the backbone of the Shadow Data Swarm™, providing the distributed computational power needed for strategy backtesting and network telemetry. Put your old cell phones, tablets, or spare computers to use—just install the lightweight app and start earning real rewards while contributing to the network.',
     functions: [
       'Provide computational power for the Shadow Data Swarm™',
       'Participate in massively parallel strategy backtesting',
@@ -17,7 +18,8 @@ const tiers = [
       'Build TrustFingerprint™ score through uptime and performance',
     ],
     rewards: 'Base APY (5-10%) on staked amount, scaled by TrustFingerprint™ score',
-    cta: 'Become a Micro Node',
+    cta: 'Download Node Software',
+    ctaUrl: NODE_DOWNLOAD_URL,
     color: 'primary',
   },
   {
@@ -35,7 +37,8 @@ const tiers = [
       'Maintain validator-grade server with 99%+ uptime',
     ],
     rewards: '1.5x Base APY multiplier, plus transaction fees',
-    cta: 'Apply to be a Validator',
+    cta: 'Become a Validator',
+    ctaUrl: VALIDATOR_APPLICATION_URL,
     color: 'accent',
   },
   {
@@ -48,37 +51,39 @@ const tiers = [
     description: 'Guardians are a council of elected technical experts who serve as the final line of defense for strategy deployment. They perform rigorous code reviews and risk assessments on all strategies promoted from the Shadow Data Swarm™, ensuring only the highest-quality algorithms manage protocol capital.',
     functions: [
       'Perform code reviews on trading strategies for bugs and security vulnerabilities',
-      'Assess market impact and correlation to ensure diversification',
-      'Vote to approve/reject strategies (4/5 approval required for promotion)',
-      'Create emergency proposals to protect the protocol from threats',
+      'Assess risk exposure for each strategy (leverage, volatility, correlation)',
+      'Vote on strategy promotion from Shadow to Paper Trading (requires 4/5 majority)',
+      'Elected by peers with 66% approval vote',
     ],
-    rewards: '2.5x Base APY multiplier, plus governance participation rewards',
-    cta: 'Learn About Guardian Elections',
+    rewards: '2x Base APY multiplier, plus 5% of strategy profit share',
+    cta: 'Apply for Guardian Council',
+    ctaUrl: GUARDIAN_APPLICATION_URL,
     color: 'chart-3',
   },
   {
     icon: Gem,
     name: 'Oracles',
-    subtitle: 'The Stewards of Governance',
-    stake: '500,000 NODR',
-    audience: 'Long-term Strategic Partners, Protocol Politicians, Industry Leaders',
-    valueProposition: 'Govern the future of autonomous finance.',
-    description: 'Oracles hold the highest level of responsibility and influence within the Noderr DAO. They have the final authority on strategy approvals, protocol parameter changes, and constitutional amendments. This role is reserved for the most trusted, long-term aligned participants who have demonstrated an unwavering commitment to the protocol\'s success.',
+    subtitle: 'The Stewards of the Treasury',
+    stake: '250,000 NODR',
+    audience: 'Institutional Investors, Protocol Founders, Governance Specialists',
+    valueProposition: 'Govern the protocol. Oversee the treasury.',
+    description: 'Oracles are the highest tier of governance, responsible for the final approval of live strategy deployment and oversight of the protocol treasury. They represent the most trusted and aligned participants in the network, with a TrustFingerprint™ score of ≥0.90 (requiring 3+ years of flawless participation).',
     functions: [
-      'Final authority on strategy promotion to Live Swarm (66% supermajority required)',
-      'Execute large treasury capital proposals with a 24-48 hour timelock',
-      'Highest emergency powers to halt the protocol during black swan events',
-      'Govern strategic decisions and protocol parameters with 10x voting power',
+      'Final approval vote (66% majority) to promote strategies from Paper Trading to Live',
+      'Execute treasury proposals and capital allocation decisions',
+      'Oversee Base-Rate Governor parameters and sustainability metrics',
+      'Elected by peers with 66% approval vote and TrustFingerprint™ ≥0.90',
     ],
-    rewards: '5x Base APY multiplier, plus significant governance influence (10x vote weight)',
-    cta: 'Read the Governance Charter',
+    rewards: '3x Base APY multiplier, plus 10% of strategy profit share',
+    cta: 'Apply for Oracle Council',
+    ctaUrl: ORACLE_APPLICATION_URL,
     color: 'chart-5',
   },
 ];
 
 export function ModesForEveryUser() {
   return (
-    <section className="section-padding relative overflow-hidden bg-muted/30">
+    <section id="modes" className="section-padding relative overflow-hidden bg-muted/30">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,oklch(0.7_0.15_195_/_0.1),transparent_50%)]" />
       
@@ -157,9 +162,14 @@ export function ModesForEveryUser() {
                     </div>
 
                     {/* CTA */}
-                    <button className="w-full px-6 py-3 bg-primary/10 hover:bg-primary/20 border border-primary/30 hover:border-primary rounded-xl font-semibold text-primary transition-all">
+                    <a 
+                      href={tier.ctaUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full px-6 py-3 bg-primary/10 hover:bg-primary/20 border border-primary/30 hover:border-primary rounded-xl font-semibold text-primary transition-all text-center"
+                    >
                       {tier.cta}
-                    </button>
+                    </a>
                   </div>
                 </div>
               </motion.div>
