@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Shield, Activity, TrendingUp, TrendingDown, BarChart3 } from 'lucide-react';
 
-const vaults = [
+const topRowVaults = [
   {
     id: 'low-risk',
     name: 'Low Risk Vault',
@@ -38,6 +38,9 @@ const vaults = [
     description: 'Maximum returns with higher volatility.',
     strategy: 'Leveraged positions, momentum trading, and high-yield DeFi protocols.',
   },
+];
+
+const bottomRowVaults = [
   {
     id: 'hedged',
     name: 'Hedged Vault',
@@ -64,6 +67,38 @@ const vaults = [
   },
 ];
 
+function VaultCard({ vault, index }: { vault: typeof topRowVaults[0], index: number }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.1 + index * 0.05 }}
+      className={`group relative p-8 rounded-2xl bg-card border ${vault.borderColor} overflow-hidden`}
+    >
+      <div className={`absolute top-0 left-0 w-full h-full ${vault.bgColor} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
+      <div className="relative z-10">
+        <div className="flex items-start justify-between mb-6">
+          <div className={`p-3 rounded-lg ${vault.bgColor}`}>
+            <vault.icon className={`w-6 h-6 ${vault.riskColor}`} />
+          </div>
+          <div className={`px-3 py-1 rounded-full text-sm font-semibold ${vault.bgColor} ${vault.riskColor}`}>
+            {vault.risk} Risk
+          </div>
+        </div>
+        <h3 className="text-2xl font-bold text-foreground mb-2">{vault.name}</h3>
+        <p className="text-muted-foreground mb-6">{vault.description}</p>
+        <div className="mb-6">
+          <div className="text-sm text-muted-foreground">APY Range</div>
+          <div className={`text-3xl font-bold ${vault.riskColor}`}>{vault.apy}</div>
+        </div>
+        <div className="text-sm text-muted-foreground mb-2">Strategy</div>
+        <p className="text-sm text-foreground">{vault.strategy}</p>
+      </div>
+    </motion.div>
+  );
+}
+
 export function YieldVaults() {
   return (
     <section id="vaults" className="section-padding bg-background">
@@ -82,37 +117,20 @@ export function YieldVaults() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {vaults.map((vault, index) => (
-            <motion.div
-              key={vault.id}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 + index * 0.05 }}
-              className={`group relative p-8 rounded-2xl bg-card border ${vault.borderColor} overflow-hidden`}
-            >
-              <div className={`absolute top-0 left-0 w-full h-full ${vault.bgColor} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
-              <div className="relative z-10">
-                <div className="flex items-start justify-between mb-6">
-                  <div className={`p-3 rounded-lg ${vault.bgColor}`}>
-                    <vault.icon className={`w-6 h-6 ${vault.riskColor}`} />
-                  </div>
-                  <div className={`px-3 py-1 rounded-full text-sm font-semibold ${vault.bgColor} ${vault.riskColor}`}>
-                    {vault.risk} Risk
-                  </div>
-                </div>
-                <h3 className="text-2xl font-bold text-foreground mb-2">{vault.name}</h3>
-                <p className="text-muted-foreground mb-6">{vault.description}</p>
-                <div className="mb-6">
-                  <div className="text-sm text-muted-foreground">APY Range</div>
-                  <div className={`text-3xl font-bold ${vault.riskColor}`}>{vault.apy}</div>
-                </div>
-                <div className="text-sm text-muted-foreground mb-2">Strategy</div>
-                <p className="text-sm text-foreground">{vault.strategy}</p>
-              </div>
-            </motion.div>
-          ))}
+        <div className="space-y-8">
+          {/* Top row - 3 vaults */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {topRowVaults.map((vault, index) => (
+              <VaultCard key={vault.id} vault={vault} index={index} />
+            ))}
+          </div>
+
+          {/* Bottom row - 2 vaults centered */}
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {bottomRowVaults.map((vault, index) => (
+              <VaultCard key={vault.id} vault={vault} index={index + 3} />
+            ))}
+          </div>
         </div>
       </div>
     </section>
