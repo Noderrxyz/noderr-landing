@@ -132,9 +132,12 @@ export function Security() {
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
             Help us keep Noderr secure. Report vulnerabilities and earn up to $100,000 in rewards.
           </p>
-          <button className="px-8 py-3 bg-primary hover:bg-primary/90 rounded-xl font-semibold transition-all hover:scale-105">
-            Learn More
-          </button>
+          <a 
+            href="mailto:security@noderr.io"
+            className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 rounded-xl font-semibold transition-all hover:scale-105"
+          >
+            Report a Vulnerability
+          </a>
         </motion.div>
       </div>
     </section>

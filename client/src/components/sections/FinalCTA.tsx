@@ -1,10 +1,10 @@
 import { motion } from 'framer-motion';
-import { Sparkles } from 'lucide-react';
-import { WaitlistForm } from '@/components/WaitlistForm';
+import { ArrowRight, Sparkles } from 'lucide-react';
+import { DAPP_URL, GITBOOK_URL } from '@/const';
 
 export function FinalCTA() {
   return (
-    <section id="waitlist" className="section-padding relative overflow-hidden">
+    <section id="get-started" className="section-padding relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,oklch(0.65_0.2_210_/_0.15),transparent_70%)]" />
@@ -52,7 +52,7 @@ export function FinalCTA() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6"
           >
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-semibold text-primary">Limited Testnet Spots</span>
+            <span className="text-sm font-semibold text-primary">Testnet Live on Base Sepolia</span>
           </motion.div>
 
           {/* Headline */}
@@ -63,9 +63,9 @@ export function FinalCTA() {
             transition={{ delay: 0.3 }}
             className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
           >
-            Join the Future of
+            Ready to Start Earning
             <br />
-            <span className="text-gradient">Institutional DeFi</span>
+            <span className="text-gradient">Real Yield?</span>
           </motion.h2>
 
           {/* Subheadline */}
@@ -76,19 +76,35 @@ export function FinalCTA() {
             transition={{ delay: 0.4 }}
             className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12"
           >
-            Be part of the testnet. Help shape the protocol, earn rewards through merit-based participation, and prepare for mainnet launch.
+            Join the Noderr network today. Stake your tokens, run a node, and start earning sustainable, real yield from autonomous trading.
           </motion.p>
-        </motion.div>
 
-        {/* Waitlist form */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5 }}
-          className="p-8 rounded-2xl bg-card/50 backdrop-blur-sm border border-border"
-        >
-          <WaitlistForm />
+          {/* CTA Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <a
+              href={DAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group px-8 py-4 bg-primary hover:bg-primary/90 rounded-xl font-semibold transition-all shadow-lg shadow-primary/20 inline-flex items-center gap-2"
+            >
+              Launch dApp
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a
+              href={GITBOOK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-primary/10 hover:bg-primary/20 border border-primary/30 rounded-xl font-semibold text-primary transition-all"
+            >
+              Read Documentation
+            </a>
+          </motion.div>
         </motion.div>
 
         {/* Trust indicators */}
@@ -101,7 +117,7 @@ export function FinalCTA() {
         >
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary" />
-            <span>Testnet Live on Base Sepolia</span>
+            <span>Built on Base L2</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-accent" />

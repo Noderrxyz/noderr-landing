@@ -1,26 +1,27 @@
 import { motion } from 'framer-motion';
-import { Gift, Users, Trophy, Zap } from 'lucide-react';
+import { Gift, Users, Trophy, Zap, ArrowRight } from 'lucide-react';
+import { DAPP_URL } from '@/const';
 
 const advantages = [
   {
     icon: Gift,
-    title: 'Free Testnet Tokens',
-    description: 'Get 1,000 NODR tokens every 24 hours from the faucet. Test all node tiers without cost.',
+    title: 'Get Testnet Tokens',
+    description: 'Claim 1,000 free NODR tokens every 24 hours from the faucet to test all node tiers and governance features without cost.',
   },
   {
     icon: Users,
-    title: 'Community Feedback',
-    description: 'Help shape the protocol by providing feedback on node operations and governance features.',
+    title: 'Shape the Protocol',
+    description: 'Your feedback is invaluable. Help us refine node operations, dApp user experience, and governance mechanisms.',
   },
   {
     icon: Trophy,
-    title: 'Early Node Operators',
-    description: 'Build your reputation early. Testnet trust scores may influence mainnet benefits.',
+    title: 'Become an Early Operator',
+    description: 'Build your on-chain reputation (TrustFingerprint™) early. Strong testnet performance may lead to mainnet benefits and airdrops.',
   },
   {
     icon: Zap,
-    title: 'Risk-Free Testing',
-    description: 'Experiment with staking, governance, and vault strategies using testnet tokens on Base Sepolia.',
+    title: 'Explore Real Yield',
+    description: 'Experiment with staking, governance, and the ATE using testnet tokens on Base Sepolia. Understand the mechanics of real yield generation, risk-free.',
   },
 ];
 
@@ -37,14 +38,14 @@ export function TestnetAdvantages() {
         >
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6">
             <Zap className="w-4 h-4 text-primary" />
-            <span className="text-sm font-semibold text-primary">Testnet Live Now</span>
+            <span className="text-sm font-semibold text-primary">Testnet Live on Base Sepolia</span>
           </div>
           
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            Why Join the <span className="text-gradient">Testnet</span>?
+            Become an <span className="text-gradient">Early Participant</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Test the protocol, provide feedback, and prepare for mainnet launch.
+            Join the Noderr testnet to help secure the future of real, sustainable yield. Your participation is crucial.
           </p>
         </motion.div>
 
@@ -94,11 +95,17 @@ export function TestnetAdvantages() {
           <div className="inline-flex flex-col sm:flex-row items-center gap-4 p-8 rounded-2xl bg-gradient-to-r from-primary/10 to-accent/10 border border-primary/20">
             <div className="text-left">
               <h3 className="text-2xl font-bold mb-2">Ready to get started?</h3>
-              <p className="text-muted-foreground">Join the testnet and start earning rewards through merit-based participation.</p>
+              <p className="text-muted-foreground">Claim your free testnet tokens and start exploring the Noderr ecosystem today.</p>
             </div>
-            <button className="px-8 py-4 bg-primary hover:bg-primary/90 rounded-xl font-semibold whitespace-nowrap transition-all hover:scale-105">
-              Join Testnet Now
-            </button>
+            <a 
+              href={`${DAPP_URL}/faucet`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group px-8 py-4 bg-primary hover:bg-primary/90 rounded-xl font-semibold whitespace-nowrap transition-all hover:scale-105 inline-flex items-center gap-2"
+            >
+              Go to Faucet
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </div>
         </motion.div>
       </div>

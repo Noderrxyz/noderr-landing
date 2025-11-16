@@ -1,53 +1,61 @@
 import { motion } from 'framer-motion';
-import { Cpu, HardDrive, Wifi, Clock, AlertCircle } from 'lucide-react';
+import { Cpu, HardDrive, Wifi, Clock, AlertCircle, DollarSign } from 'lucide-react';
 
 const requirements = [
   {
     icon: Cpu,
     title: 'CPU & Memory',
-    micro: '2 cores, 4GB RAM',
-    validator: '4 cores, 8GB RAM',
-    guardian: '8 cores, 16GB RAM',
-    oracle: '16 cores, 32GB RAM',
+    micro: '2-core, 2GB RAM',
+    validator: '8-core, 32GB RAM',
+    guardian: '16-core, 64GB RAM',
+    oracle: '32-core, 128GB RAM',
   },
   {
     icon: HardDrive,
     title: 'Storage',
-    micro: '50GB SSD',
-    validator: '100GB SSD',
-    guardian: '250GB SSD',
-    oracle: '500GB NVMe',
+    micro: '10GB',
+    validator: '1TB NVMe SSD',
+    guardian: '2TB NVMe SSD',
+    oracle: '4TB NVMe SSD',
   },
   {
     icon: Wifi,
     title: 'Network',
     micro: '10 Mbps',
-    validator: '50 Mbps',
-    guardian: '100 Mbps',
+    validator: '100 Mbps',
+    guardian: '500 Mbps',
     oracle: '1 Gbps',
   },
   {
     icon: Clock,
     title: 'Uptime',
-    micro: '90%+',
-    validator: '95%+',
-    guardian: '98%+',
+    micro: 'No minimum',
+    validator: '99%+',
+    guardian: '99.5%+',
     oracle: '99.9%+',
+  },
+  {
+    icon: DollarSign,
+    title: 'Monthly Cost',
+    micro: '$0-5',
+    validator: '$55-336',
+    guardian: '$100-500',
+    oracle: '$500-2000',
   },
 ];
 
 const additionalInfo = [
   {
     title: 'Time Commitment',
-    description: 'Micro nodes require minimal monitoring. Higher tiers need active participation in governance and strategy validation.',
+    description: 'Micro nodes require minimal monitoring. Validators need active uptime management. Guardians and Oracles require 10-20 hours/week for governance and strategy review.',
   },
   {
     title: 'Risk Factors',
-    description: 'Slashing may occur for extended downtime or malicious behavior. Testnet has no real financial risk.',
+    description: 'Slashing may occur for extended downtime or malicious behavior. Higher tiers have higher accountability and slashing penalties.',
   },
   {
     title: 'Expected Rewards',
-    description: 'Rewards scale with tier and TrustScore. Higher tiers earn 1.5x-3x base rewards. Exact APY varies with network activity.',
+    description: 'Micro Nodes earn 5-12% APY. Validators, Guardians, and Oracles earn 25-35% APY, with Guardians and Oracles receiving additional stipends and profit share.',
   },
 ];
 
@@ -66,7 +74,7 @@ export function NodeRequirements() {
             Node <span className="text-gradient">Requirements</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Hardware and network requirements vary by tier. Choose the tier that matches your infrastructure.
+            Hardware and network requirements vary by tier. Choose the tier that matches your infrastructure and commitment level.
           </p>
         </motion.div>
 
@@ -134,20 +142,6 @@ export function NodeRequirements() {
             </motion.div>
           ))}
         </div>
-
-        {/* Note */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.8 }}
-          className="mt-12 p-6 rounded-xl bg-primary/5 border border-primary/20"
-        >
-          <p className="text-center text-muted-foreground">
-            <span className="font-semibold text-foreground">Testnet Note:</span> Hardware requirements are relaxed for testnet. 
-            You can run any tier on a standard VPS or home computer for testing purposes.
-          </p>
-        </motion.div>
       </div>
     </section>
   );

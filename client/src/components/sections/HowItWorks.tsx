@@ -11,7 +11,7 @@ const steps = [
   {
     icon: ShieldCheck,
     title: '2. Curate & Approve',
-    description: 'The top-performing strategies (0.37% survival rate) are promoted to the Guardian Council. These elected experts perform rigorous code reviews and risk assessments, ensuring only the most robust and secure algorithms proceed. A 4/5 majority vote is required for approval.',
+    description: 'The top-performing strategies (0.37% survival rate) are promoted to the Guardian Council. These elected experts perform rigorous code reviews and risk assessments, ensuring the most robust and secure algorithms proceed. A 4/5 majority vote is required for approval.',
     color: 'accent',
   },
   {
@@ -43,7 +43,7 @@ export function HowItWorks() {
             From <span className="text-gradient">Idea to Execution</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Noderr employs a rigorous, multi-stage validation pipeline that ensures only the highest-quality trading strategies ever manage protocol capital. This is how we turn algorithmic concepts into sustainable yield.
+            Noderr employs a rigorous, multi-stage validation pipeline that ensures the highest-quality trading strategies manage protocol capital. This is how we turn algorithmic concepts into sustainable yield.
           </p>
         </motion.div>
 

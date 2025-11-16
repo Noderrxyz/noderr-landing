@@ -1,7 +1,14 @@
-import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, Shield, TrendingUp, Lock } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { GITBOOK_URL } from '@/const';
+import { motion } from "framer-motion";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { GITBOOK_URL, DAPP_URL } from "@/const";
+
+const stats = [
+  { value: "5-35%", label: "Real APY Range" },
+  { value: "100M", label: "Fixed Supply" },
+  { value: "0%", label: "Operational Inflation" },
+  { value: "$5B+", label: "Est. Attack Cost" },
+];
 
 export function Hero() {
   return (
@@ -47,19 +54,6 @@ export function Hero() {
           transition={{ duration: 0.8 }}
           className="space-y-8"
         >
-          {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-primary/20 backdrop-blur-sm"
-          >
-            <Sparkles className="w-4 h-4 text-primary" />
-            <a href="/faucet" className="text-sm font-medium hover:text-primary transition-colors">
-              Testnet Now Live - Get Free Tokens
-            </a>
-          </motion.div>
-
           {/* Main headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -89,22 +83,12 @@ export function Hero() {
             transition={{ delay: 0.7 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto pt-4"
           >
-            <div className="space-y-2 p-4 bg-card/50 rounded-lg border border-border">
-              <div className="text-3xl font-bold text-gradient">8-15%</div>
-              <div className="text-sm text-muted-foreground">Target APY</div>
-            </div>
-            <div className="space-y-2 p-4 bg-card/50 rounded-lg border border-border">
-              <div className="text-3xl font-bold text-gradient">100M</div>
-              <div className="text-sm text-muted-foreground">Fixed Supply</div>
-            </div>
-            <div className="space-y-2 p-4 bg-card/50 rounded-lg border border-border">
-              <div className="text-3xl font-bold text-gradient">0%</div>
-              <div className="text-sm text-muted-foreground">Inflation</div>
-            </div>
-            <div className="space-y-2 p-4 bg-card/50 rounded-lg border border-border">
-              <div className="text-3xl font-bold text-gradient">$5B+</div>
-              <div className="text-sm text-muted-foreground">Attack Cost</div>
-            </div>
+            {stats.map((stat) => (
+              <div key={stat.label} className="space-y-2 p-4 bg-card/50 rounded-lg border border-border">
+                <div className="text-3xl font-bold text-gradient">{stat.value}</div>
+                <div className="text-sm text-muted-foreground">{stat.label}</div>
+              </div>
+            ))}
           </motion.div>
 
           {/* CTA Buttons */}
@@ -119,8 +103,8 @@ export function Hero() {
               asChild
               className="group px-8 py-6 text-lg font-semibold bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
             >
-              <a href="#modes">
-                Become a Node Operator
+              <a href={DAPP_URL} target="_blank" rel="noopener noreferrer">
+                Launch dApp
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>

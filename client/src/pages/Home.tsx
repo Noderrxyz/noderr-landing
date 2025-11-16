@@ -7,7 +7,7 @@ import { ProprietaryTech } from '@/components/sections/ProprietaryTech';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { ModesForEveryUser } from '@/components/sections/ModesForEveryUser';
 import { TestnetAdvantages } from '@/components/sections/TestnetAdvantages';
-import { SecurityAndTrust } from '@/components/sections/SecurityAndTrust';
+import { Security } from '@/components/sections/Security';
 import { NodeRequirements } from '@/components/sections/NodeRequirements';
 import { FAQ } from '@/components/sections/FAQ';
 import { FinalCTA } from '@/components/sections/FinalCTA';
@@ -30,7 +30,7 @@ export default function Home() {
         </div>
         <TestnetAdvantages />
         <div id="security">
-          <SecurityAndTrust />
+          <Security />
         </div>
         <NodeRequirements />
         <FAQ />

@@ -42,7 +42,7 @@ const technologies = [
       },
       {
         title: '0.37% Survival Rate',
-        text: 'Out of over 15,000 strategies tested historically, only 0.37% were promoted to the Live Swarm, ensuring only the most robust and profitable algorithms manage protocol capital.'
+        text: 'Out of over 15,000 strategies tested historically, 0.37% were promoted to the Live Swarm, ensuring the most robust and profitable algorithms manage protocol capital.'
       }
     ]
   },
@@ -50,7 +50,7 @@ const technologies = [
     id: 'trustfingerprint',
     name: 'TrustFingerprint™',
     icon: ShieldCheck,
-    description: 'A multi-dimensional, time-weighted reputation system that makes governance takeover economically and practically infeasible. Trust cannot be bought, only earned.',
+    description: 'A multi-dimensional, time-weighted reputation system that makes governance takeover economically and practically infeasible. Trust cannot be bought—it must be earned.',
     docUrl: `${GITBOOK_URL}/protocol/trustfingerprint`,
     details: [
       {

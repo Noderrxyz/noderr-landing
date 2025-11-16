@@ -1,17 +1,15 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Droplet } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { GitBookPanel } from '@/components/GitBookPanel';
+import { DAPP_URL } from '@/const';
 
 const navLinks = [
   { name: 'Features', href: '#features' },
   { name: 'How It Works', href: '#how-it-works' },
   { name: 'Modes', href: '#modes' },
   { name: 'Security', href: '#security' },
-  { name: 'Community', href: '#community' },
-  { name: 'Careers', href: '/careers' },
-  { name: 'Partnerships', href: '/partnerships' },
 ];
 
 export function Navigation() {
@@ -67,7 +65,7 @@ export function Navigation() {
             </div>
 
             {/* Desktop CTA Buttons */}
-            <div className="hidden md:flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-3">
               <Button
                 variant="outline"
                 size="sm"
@@ -77,11 +75,22 @@ export function Navigation() {
                 Docs
               </Button>
               <Button
+                variant="outline"
+                size="sm"
+                asChild
+                className="border-accent/30 hover:bg-accent/10 text-accent hover:text-accent"
+              >
+                <a href={`${DAPP_URL}/faucet`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                  <Droplet className="w-4 h-4" />
+                  Faucet
+                </a>
+              </Button>
+              <Button
                 size="sm"
                 asChild
                 className="bg-primary hover:bg-primary/90"
               >
-                <a href="https://app.noderr.xyz" target="_blank" rel="noopener noreferrer">
+                <a href={DAPP_URL} target="_blank" rel="noopener noreferrer">
                   Launch dApp
                 </a>
               </Button>
@@ -136,10 +145,20 @@ export function Navigation() {
                   Documentation
                 </Button>
                 <Button
+                  variant="outline"
+                  className="w-full border-accent/30 hover:bg-accent/10 text-accent"
+                  asChild
+                >
+                  <a href={`${DAPP_URL}/faucet`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
+                    <Droplet className="w-4 h-4" />
+                    Get Testnet Tokens
+                  </a>
+                </Button>
+                <Button
                   className="w-full bg-primary hover:bg-primary/90"
                   asChild
                 >
-                  <a href="https://app.noderr.xyz" target="_blank" rel="noopener noreferrer">
+                  <a href={DAPP_URL} target="_blank" rel="noopener noreferrer">
                     Launch dApp
                   </a>
                 </Button>

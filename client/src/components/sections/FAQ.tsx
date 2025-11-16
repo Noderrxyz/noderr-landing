@@ -1,39 +1,32 @@
 import { motion } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
 import { useState } from 'react';
+import { GITBOOK_URL } from '@/const';
 
 const faqs = [
   {
     question: 'What is TrustFingerprint™?',
-    answer: 'TrustFingerprint™ is our proprietary on-chain reputation system that tracks node performance, uptime, and reliability over time. It\'s calculated using zero-knowledge proofs to ensure privacy while providing verifiable trust scores. Higher TrustScores unlock tier upgrades and increased rewards.',
+    answer: 'TrustFingerprint™ is our proprietary on-chain reputation system that tracks node performance, uptime, and reliability over time. It is calculated using zero-knowledge proofs to ensure privacy while providing verifiable trust scores. Higher TrustFingerprint™ scores unlock tier upgrades and increased rewards.',
   },
   {
     question: 'How much NODR do I need to start?',
-    answer: 'You can start with as little as 10,000 NODR for a Micro Node. Validator requires 50k, Guardian 100k, and Oracle 500k NODR. For testnet, you can get free tokens from the faucet (1,000 NODR every 24 hours).',
+    answer: 'You can run a Micro Node with no minimum stake. For higher tiers, the requirements are: Validator (50,000 NODR), Guardian (100,000 NODR), and Oracle (500,000 NODR). You can get free tokens from the faucet to experiment with all tiers on the testnet.',
   },
   {
     question: 'Can I upgrade my node tier later?',
-    answer: 'Yes! You can upgrade from Micro → Validator → Guardian → Oracle by staking additional NODR and meeting the TrustScore requirements (0.60 for Validator, 0.75 for Guardian, 0.90 for Oracle). Guardian and Oracle upgrades require governance approval.',
+    answer: 'Yes. The protocol is designed for progressive advancement. You can upgrade from Micro → Validator → Guardian → Oracle by meeting the stake and TrustFingerprint™ requirements for each tier. Guardian and Oracle roles are elected positions, requiring nomination and a vote from their peers.',
   },
   {
     question: 'What happens if my node goes offline?',
-    answer: 'Brief downtime is acceptable, but extended outages will lower your TrustScore and may result in reduced rewards. Testnet has no slashing penalties, but mainnet will implement slashing for malicious behavior or excessive downtime.',
-  },
-  {
-    question: 'Do I need DevOps experience?',
-    answer: 'No! Noderr offers one-click deployment on Base L2. You just need to stake NODR, deploy your node, and the system handles the rest. Automated monitoring and updates keep your node running smoothly.',
+    answer: 'Brief downtime is acceptable, but extended outages will lower your TrustFingerprint™ score and may result in reduced rewards. While there are no financial penalties on the testnet, mainnet will implement slashing for malicious behavior or excessive downtime to ensure network security.',
   },
   {
     question: 'How are rewards calculated?',
-    answer: 'Rewards are based on your tier (1x for Micro, 1.5x for Validator, 2x for Guardian, 3x for Oracle) multiplied by your TrustScore. Higher performance and longer uptime earn higher rewards. Exact APY varies with network activity.',
+    answer: 'Rewards are based on your tier, your stake, and your TrustFingerprint™ score. Micro Nodes earn 5-12% APY, while higher tiers earn 25-35% APY plus additional stipends and profit sharing. Higher performance and longer uptime earn higher rewards.',
   },
   {
-    question: 'What is the testnet timeline?',
-    answer: 'Testnet is currently live on Base Sepolia. We\'re running for at least 3-6 months to test all features, gather feedback, and build a strong operator community before mainnet launch.',
-  },
-  {
-    question: 'Is there any risk?',
-    answer: 'Testnet uses test tokens with no real value, so there\'s no financial risk. Mainnet will implement slashing for malicious behavior, but honest operators who maintain uptime have minimal risk. Your stake remains yours unless you violate protocol rules.',
+    question: 'What is the purpose of the testnet?',
+    answer: 'The testnet is a live environment on Base Sepolia for the community to test all protocol features, from running a node to participating in governance. It allows us to gather feedback, build a strong operator community, and ensure stability before the mainnet launch.',
   },
 ];
 
@@ -54,7 +47,7 @@ export function FAQ() {
             Frequently Asked <span className="text-gradient">Questions</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Everything you need to know about running a Noderr node
+            Everything you need to know about participating in the Noderr network.
           </p>
         </motion.div>
 
@@ -109,7 +102,7 @@ export function FAQ() {
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
             <a
-              href="https://docs.noderr.xyz"
+              href={GITBOOK_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-card border border-border hover:border-primary/30 rounded-xl font-semibold transition-all hover:scale-105"
@@ -117,7 +110,7 @@ export function FAQ() {
               Read the Docs
             </a>
             <a
-              href="https://discord.gg/noderr"
+              href="https://discord.com/invite/noderr"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-primary hover:bg-primary/90 rounded-xl font-semibold transition-all hover:scale-105"
