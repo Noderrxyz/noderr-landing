@@ -2,7 +2,7 @@ import { Navigation } from '@/components/Navigation';
 import { BackToTop } from '@/components/BackToTop';
 import { SkipToContent } from '@/components/SkipToContent';
 import { Hero } from '@/components/sections/Hero';
-import { ProblemSolution } from '@/components/sections/ProblemSolution';
+import { ComparisonShowcase } from '@/components/sections/ComparisonShowcase';
 import { ProprietaryTech } from '@/components/sections/ProprietaryTech';
 import { YieldVaults } from '@/components/sections/YieldVaults';
 import { HowItWorks } from '@/components/sections/HowItWorks';
@@ -22,7 +22,7 @@ export default function Home() {
       <Navigation />
       <main id="main-content">
         <Hero />
-        <ProblemSolution />
+        <ComparisonShowcase />
         <ProprietaryTech />
         <YieldVaults />
         <div id="how-it-works">
