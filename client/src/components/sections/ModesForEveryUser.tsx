@@ -164,7 +164,7 @@ export function ModesForEveryUser() {
         >
           <div className="inline-block p-6 rounded-2xl bg-card border border-border max-w-3xl">
             <p className="text-sm text-muted-foreground">
-              <span className="text-foreground font-semibold">Note:</span> Guardians and Oracles are elected by their peers, ensuring that only the most trusted and aligned participants can join these councils. This social layer makes governance takeover effectively impossible.
+              <span className="text-foreground font-semibold">Note:</span> Guardians and Oracles are elected by their peers, ensuring that only the most trusted and aligned participants can join these councils. This meritocratic structure, where influence must be earned over time, makes governance takeover effectively impossible.
             </p>
           </div>
         </motion.div>

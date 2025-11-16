@@ -5,10 +5,31 @@ import { GITBOOK_URL } from '@/const';
 
 const technologies = [
   {
+    id: 'nft-zk',
+    name: 'Soulbound NFT & ZK Proofs',
+    icon: ShieldCheck, // Or a more specific icon if available
+    description: 'Noderr pioneers a revolutionary security architecture combining Soulbound Utility NFTs with Groth16 ZK-SNARKs to create a verifiable, private, and Sybil-resistant ecosystem.',
+    docUrl: `${GITBOOK_URL}/protocol/security`,
+    details: [
+      {
+        title: 'Soulbound Utility NFT',
+        text: 'Each node is represented by a non-transferable NFT, permanently binding its identity, reputation (TrustFingerprint™), and stake to a single wallet. This prevents Sybil attacks and creates a permanent, on-chain history of participation.'
+      },
+      {
+        title: 'Groth16 ZK-SNARKs',
+        text: 'We use Groth16 zero-knowledge proofs for a multitude of on-chain actions, including private governance voting, strategy validation without revealing logic, and verifiable node execution. This ensures both privacy and integrity throughout the protocol.'
+      },
+      {
+        title: 'Verifiable Reputation',
+        text: 'ZK proofs are used to verify TrustFingerprint™ score updates, ensuring that all reputation changes are valid and auditable without revealing the underlying data.'
+      }
+    ]
+  },
+  {
     id: 'ate',
     name: 'Autonomous Trading Engine',
     icon: Cpu,
-    description: 'Noderr\'s ATE operates on a dual-system architecture, combining the stability of a Floor Engine with the alpha-generating potential of competitive third-party strategies.',
+    description: 'NThe Autonomous Trading Engine (ATE) is the core of the Noderr protocol. It operates on a dual-system architecture, combining the stability of a Floor Engine with the alpha-generating potential of competitive third-party strategies.',
     docUrl: `${GITBOOK_URL}/protocol/ate`,
     details: [
       {
@@ -77,7 +98,7 @@ const technologies = [
       },
       {
         title: 'Elected Governance',
-        text: 'Guardians and Oracles cannot buy their positions; they must be elected by their peers. This social consensus layer makes the cost of a malicious governance takeover effectively infinite.'
+        text: 'Guardians and Oracles cannot buy their positions; they must be elected by their peers. This social consensus layer, where trust cannot be bought, makes the cost of a malicious governance takeover effectively infinite.'
       }
     ]
   },
