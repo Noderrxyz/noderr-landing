@@ -6,7 +6,7 @@ import { GITBOOK_URL } from '@/const';
 const faqs = [
   {
     question: 'What is TrustFingerprint™?',
-    answer: 'TrustFingerprint™ is our proprietary on-chain reputation system that tracks node performance, uptime, and reliability over time. It is calculated using zero-knowledge proofs to ensure privacy while providing verifiable trust scores. Higher TrustFingerprint™ scores unlock tier upgrades and increased rewards.',
+    answer: 'TrustFingerprint™ is the on-chain reputation system that tracks node performance, uptime, and reliability over time. It is calculated using zero-knowledge proofs for privacy and verifiable trust scores. A higher TrustFingerprint™ score unlocks tier upgrades and increased rewards.',
   },
   {
     question: 'How much NODR do I need to start?',
@@ -14,11 +14,11 @@ const faqs = [
   },
   {
     question: 'Can I upgrade my node tier later?',
-    answer: 'Yes. The protocol enables progressive advancement. You can upgrade from Micro → Validator → Guardian → Oracle by meeting the stake and TrustFingerprint™ requirements for each tier. Guardian and Oracle roles require election by peers through nomination and voting.',
+    answer: 'Yes. You can upgrade from Micro → Validator → Guardian → Oracle by meeting the stake and TrustFingerprint™ requirements for each tier. Guardian and Oracle roles require election by peers through nomination and voting.',
   },
   {
     question: 'What happens if my node goes offline?',
-    answer: 'Brief downtime is acceptable, but extended outages will lower your TrustFingerprint™ score and may result in reduced rewards. While there are no financial penalties on the testnet, mainnet will implement slashing for malicious behavior or excessive downtime to ensure network security.',
+    answer: 'Brief downtime is acceptable, but extended outages will lower your TrustFingerprint™ score and may result in reduced rewards. While there are no financial penalties on the testnet, mainnet will implement slashing for malicious behavior or excessive downtime to maintain network security.',
   },
   {
     question: 'How are rewards calculated?',
@@ -26,7 +26,7 @@ const faqs = [
   },
   {
     question: 'What is the purpose of the testnet?',
-    answer: 'The testnet is a live environment on Base Sepolia for the community to test all protocol features, from running a node to participating in governance. It allows us to gather feedback, build a strong operator community, and ensure stability before the mainnet launch.',
+    answer: 'The testnet is a live environment on Base Sepolia for the community to test all protocol features, from running a node to participating in governance. It allows us to gather feedback, build a strong operator community, and promote stability before the mainnet launch.',
   },
 ];
 

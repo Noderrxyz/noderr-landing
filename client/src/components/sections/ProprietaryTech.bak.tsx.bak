@@ -1,23 +1,40 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Cpu, Users, GitBranch, ShieldCheck, Scale, ArrowRight, Layers, Database } from 'lucide-react';
+import { Cpu, Users, GitBranch, ShieldCheck, Scale, ArrowRight } from 'lucide-react';
 import { GITBOOK_URL } from '@/const';
 
 const technologies = [
   {
-    id: 'ats',
-    name: 'Autonomous Trading System',
-    icon: Layers,
-    description: 'The complete, closed-loop system for generating, validating, and executing alpha-generating strategies with sustainable, real-world yields.',
-    docUrl: `${GITBOOK_URL}/protocol/ats`,
+    id: 'nft-zk',
+    name: 'Soulbound NFT & ZK Proofs',
+    icon: ShieldCheck, // Or a more specific icon if available
+    description: 'Noderr pioneers a revolutionary security architecture combining Soulbound Utility NFTs with Groth16 ZK-SNARKs to create a verifiable, private, and Sybil-resistant ecosystem.',
+    docUrl: `${GITBOOK_URL}/protocol/security`,
     details: [
       {
-        title: 'Autonomous Trading Engine (ATE)',
-        text: 'The ATE is the strategy generation core of the system. It uses Genetic Programming and Reinforcement Learning (Q-learning) to continuously evolve and adapt thousands of novel trading strategies, preventing performance decay.'
+        title: 'Soulbound Utility NFT',
+        text: 'Each node is represented by a non-transferable NFT, permanently binding its identity, reputation (TrustFingerprint™), and stake to a single wallet. This prevents Sybil attacks and creates a permanent, on-chain history of participation.'
       },
       {
-        title: 'Floor Engine (12 DeFi Protocol Adapters)',
-        text: 'The Floor Engine provides a consistent 5-8% APY baseline by integrating with 12 battle-tested DeFi protocols across lending, staking, and yield farming. This diversified, market-neutral approach creates a stable foundation for protocol revenue.',
+        title: 'Groth16 ZK-SNARKs',
+        text: 'We use Groth16 zero-knowledge proofs for a multitude of on-chain actions, including private governance voting, strategy validation without revealing logic, and verifiable node execution. This ensures both privacy and integrity throughout the protocol.'
+      },
+      {
+        title: 'Verifiable Reputation',
+        text: 'ZK proofs are used to verify TrustFingerprint™ score updates, ensuring that all reputation changes are valid and auditable without revealing the underlying data.'
+      }
+    ]
+  },
+  {
+    id: 'ate',
+    name: 'Autonomous Trading Engine',
+    icon: Cpu,
+    description: 'NThe Autonomous Trading Engine (ATE) is the core of the Noderr protocol. It operates on a dual-system architecture, combining the stability of a Floor Engine with the alpha-generating potential of competitive third-party strategies.',
+    docUrl: `${GITBOOK_URL}/protocol/ate`,
+    details: [
+      {
+        title: 'Floor Engine (10+ DeFi Protocol Adapters)',
+        text: 'Provides a consistent 5-8% APY baseline by integrating with 10+ battle-tested DeFi protocols across lending, staking, and yield farming. This diversified, market-neutral approach ensures a stable foundation for protocol revenue.',
         protocols: [
           { name: 'Aave V3', url: 'https://aave.com' },
           { name: 'Compound V3', url: 'https://compound.finance' },
@@ -35,28 +52,32 @@ const technologies = [
       },
       {
         title: 'Third-Party Strategies (20% Profit Share)',
-        text: 'External quants and data scientists contribute advanced algorithms to our open marketplace. If their strategies pass the 4-stage validation process (0.37% survival rate), they earn a 20% profit share on all generated returns, paid quarterly via smart contract.'
+        text: 'External quants and data scientists contribute advanced algorithms to our open marketplace. If their strategies pass the rigorous 4-stage validation process (0.37% survival rate), they earn a 20% profit share on all generated returns, paid quarterly via smart contract.'
+      },
+      {
+        title: 'Evolutionary AI Core',
+        text: 'Uses Genetic Programming and Reinforcement Learning (Q-learning) to continuously evolve and adapt strategies, preventing decay and optimizing performance against real-time market conditions.'
       }
     ]
   },
   {
-    id: 'nft-zk',
-    name: 'Soulbound NFT & ZK Proofs',
-    icon: ShieldCheck,
-    description: 'A novel security architecture combining Soulbound Utility NFTs with Groth16 ZK-SNARKs to build a verifiable, private, and Sybil-resistant ecosystem.',
-    docUrl: `${GITBOOK_URL}/protocol/security`,
+    id: 'swarm',
+    name: 'Shadow Data Swarm™',
+    icon: Users,
+    description: 'A massively parallel, high-fidelity simulated environment where thousands of algorithms compete, adapt, and prove their viability before touching real capital.',
+    docUrl: `${GITBOOK_URL}/protocol/shadow-data-swarm`,
     details: [
       {
-        title: 'Soulbound Utility NFT',
-        text: 'Each node is represented by a non-transferable NFT, permanently binding its identity, reputation (TrustFingerprint™), and stake to a single wallet. This prevents Sybil attacks and creates a permanent, on-chain history of participation.'
+        title: 'Massively Parallel Testing',
+        text: 'Leverages the distributed power of Micro Nodes to backtest thousands of strategies simultaneously, creating a competitive crucible for algorithmic evolution.'
       },
       {
-        title: 'Groth16 ZK-SNARKs',
-        text: 'We use Groth16 zero-knowledge proofs for a multitude of on-chain actions, including private governance voting, strategy validation without revealing logic, and verifiable node execution. This provides both privacy and integrity throughout the protocol.'
+        title: '4-Stage Validation Pipeline',
+        text: 'Strategies must pass a rigorous 4-stage process: Shadow (automated screening), Guardian Review (human code audit), Paper Trading (live data simulation), and finally Live (Oracle approval).'
       },
       {
-        title: 'Verifiable Reputation',
-        text: 'ZK proofs are used to verify TrustFingerprint™ score updates, which makes all reputation changes valid and auditable without revealing the underlying data.'
+        title: '0.37% Survival Rate',
+        text: 'Out of over 15,000 strategies tested historically, 0.37% were promoted to the Live Swarm, ensuring the most robust and profitable algorithms manage protocol capital.'
       }
     ]
   },
@@ -82,31 +103,10 @@ const technologies = [
     ]
   },
   {
-    id: 'swarm',
-    name: 'Shadow Data Swarm™',
-    icon: Users,
-    description: 'A massively parallel, high-fidelity simulated environment where thousands of algorithms compete, adapt, and prove their viability before touching real capital.',
-    docUrl: `${GITBOOK_URL}/protocol/shadow-data-swarm`,
-    details: [
-      {
-        title: 'Massively Parallel Testing',
-        text: 'Leverages the distributed power of Micro Nodes to backtest thousands of strategies simultaneously, creating a competitive environment for algorithmic evolution.'
-      },
-      {
-        title: '4-Stage Validation Pipeline',
-        text: 'Strategies must pass a 4-stage process: Shadow (automated screening), Guardian Review (human code audit), Paper Trading (live data simulation), and finally Live (Oracle approval).'
-      },
-      {
-        title: '0.37% Survival Rate',
-        text: 'Out of over 15,000 strategies tested historically, 0.37% were promoted to the Live Swarm, ensuring the most profitable algorithms manage protocol capital.'
-      }
-    ]
-  },
-  {
     id: 'governor',
     name: 'Base-Rate Governor',
     icon: Scale,
-    description: 'A sustainability mechanism that ensures the protocol never distributes more rewards than it earns, guaranteeing long-term treasury health and preventing inflation.',
+    description: 'A unique sustainability mechanism that ensures the protocol never distributes more rewards than it earns, guaranteeing long-term treasury health and preventing inflation.',
     docUrl: `${GITBOOK_URL}/protocol/base-rate-governor`,
     details: [
       {
@@ -115,7 +115,7 @@ const technologies = [
       },
       {
         title: 'Smooths Reward Volatility',
-        text: 'By averaging revenue over a longer time horizon, the governor provides predictable and stable yields for node operators, avoiding boom-and-bust reward cycles.'
+        text: 'By averaging revenue over a longer time horizon, the governor provides more predictable and stable yields for node operators, avoiding boom-and-bust reward cycles.'
       },
       {
         title: 'Zero Operational Inflation',

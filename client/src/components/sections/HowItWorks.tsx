@@ -5,19 +5,19 @@ const steps = [
   {
     icon: GitBranch,
     title: '1. Generate & Test',
-    description: 'The Autonomous Trading Engine (ATE) uses evolutionary algorithms to generate thousands of novel trading strategies. These strategies are then submitted to the Shadow Data Swarm™, where they are rigorously backtested and refined by a decentralized network of Micro Nodes.',
+    description: 'The Autonomous Trading Engine (ATE) uses evolutionary algorithms to generate thousands of novel trading strategies. These strategies are then submitted to the Shadow Data Swarm™, where they are backtested and refined by a decentralized network of Micro Nodes.',
     color: 'primary',
   },
   {
     icon: ShieldCheck,
     title: '2. Curate & Approve',
-    description: 'The top-performing strategies (0.37% survival rate) are promoted to the Guardian Council. These elected experts perform rigorous code reviews and risk assessments, ensuring the most robust and secure algorithms proceed. A 4/5 majority vote is required for approval.',
+    description: 'The top-performing strategies (0.37% survival rate) are promoted to the Guardian Council. These elected experts perform code reviews and risk assessments, selecting the most robust and secure algorithms to proceed. A 4/5 majority vote is required for approval.',
     color: 'accent',
   },
   {
     icon: Paperclip,
     title: '3. Paper Trade & Validate',
-    description: 'Approved strategies enter a 4-12 week paper trading phase, executing trades with simulated capital against live market data. This crucial step validates performance in real-world conditions before any protocol capital is deployed.',
+    description: 'Approved strategies enter a 4-12 week paper trading phase, executing trades with simulated capital against live market data. This step validates performance in real-world conditions before any protocol capital is deployed.',
     color: 'chart-3',
   },
   {
@@ -43,7 +43,7 @@ export function HowItWorks() {
             From <span className="text-gradient">Idea to Execution</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Noderr employs a rigorous, multi-stage validation pipeline that ensures the highest-quality trading strategies manage protocol capital. This is how we turn algorithmic concepts into sustainable yield.
+            Noderr uses a multi-stage validation pipeline to select the highest-quality trading strategies for managing protocol capital. This is how we turn algorithmic concepts into sustainable yield.
           </p>
         </motion.div>
 

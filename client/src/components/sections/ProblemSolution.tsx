@@ -16,7 +16,7 @@ export function ProblemSolution() {
             Beyond Inflationary Yields: <span className="text-gradient">The Problem with Modern DeFi</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Most DeFi protocols rely on unsustainable token emissions to attract liquidity. This creates a vicious cycle where high initial yields attract mercenary capital, but constant sell pressure from emissions drives token prices down, eventually collapsing the entire system. Noderr breaks this cycle with a fundamentally different economic model.
+            Most DeFi protocols rely on inflationary token emissions to attract liquidity. This creates a vicious cycle where high initial yields attract mercenary capital, but constant sell pressure from emissions drives token prices down, eventually collapsing the system. Noderr breaks this cycle with a sustainable, revenue-driven economic model.
           </p>
         </motion.div>
 
@@ -28,12 +28,11 @@ export function ProblemSolution() {
           transition={{ delay: 0.2 }}
           className="mb-16"
         >
-          <div className="rounded-2xl overflow-hidden border border-border bg-card p-4">
-            <img 
-              src="/defi-comparison-pro.png" 
-              alt="Traditional DeFi vs Noderr Model Comparison" 
-              className="w-full h-auto"
-            />
+                    <div className="rounded-2xl border border-border bg-card p-4">
+            {/* TODO: Replace with world-class interactive diagram component */}
+            <div className="w-full h-[400px] flex items-center justify-center bg-muted/50 rounded-lg">
+              <p className="text-muted-foreground">[New Diagram Coming Soon]</p>
+            </div>
           </div>
         </motion.div>
 
@@ -158,7 +157,7 @@ export function ProblemSolution() {
         >
           <div className="inline-block p-6 rounded-2xl bg-primary/5 border border-primary/20 max-w-3xl">
             <p className="text-lg text-foreground font-semibold mb-2">
-              The result? A protocol that can sustain itself indefinitely.
+              The result is a protocol built for long-term sustainability.
             </p>
             <p className="text-sm text-muted-foreground">
               Noderr's economic model aligns incentives for long-term participation, not short-term extraction. This is how DeFi should work.

@@ -12,7 +12,7 @@ const stats = [
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-32">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-28">
       {/* Animated gradient background */}
       <div className="absolute inset-0 gradient-hero opacity-10" />
       
@@ -73,7 +73,7 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
           >
-            Noderr is a decentralized autonomous trading system powered by a sophisticated Autonomous Trading Engine (ATE). The ATE generates sustainable, real-world yields through a three-layer architecture, ensuring pure performance with no inflationary emissions.
+            Noderr is a decentralized autonomous trading system that generates sustainable, real-world yields. Its dual-component Autonomous Trading Engine (ATE) — combining a Floor Engine for baseline stability and a competitive marketplace for third-party strategies — produces pure, transparent performance with zero inflationary emissions.
           </motion.p>
 
           {/* Key Stats */}

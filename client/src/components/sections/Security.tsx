@@ -5,7 +5,7 @@ const securityFeatures = [
   {
     icon: Shield,
     title: 'Zero-Knowledge Proofs',
-    description: 'Privacy-preserving validation ensures node operations are verified without exposing sensitive data.',
+    description: 'Privacy-preserving validation allows node operations to be verified without exposing sensitive data.',
   },
   {
     icon: Lock,
@@ -15,7 +15,7 @@ const securityFeatures = [
   {
     icon: Eye,
     title: 'Transparent Trust Scores',
-    description: 'On-chain reputation system provides verifiable performance metrics for all nodes.',
+    description: 'The on-chain reputation system provides verifiable performance metrics for all nodes.',
   },
   {
     icon: CheckCircle,
@@ -53,7 +53,7 @@ export function Security() {
             Built with <span className="text-gradient">Security</span> at the Core
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Security and transparency are foundational. ZK proofs, verifiable on-chain activity, and community governance ensure trust.
+            Security and transparency are foundational. ZK proofs, verifiable on-chain activity, and community governance build trust.
           </p>
         </motion.div>
 
