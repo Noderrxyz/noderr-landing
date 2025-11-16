@@ -7,12 +7,12 @@ const stats = [
   { value: "8-15%", label: "Target APY" },
   { value: "100M", label: "Fixed Supply" },
   { value: "0%", label: "Inflation" },
-  { value: "$5-50B", label: "Est. Attack Cost" },
+  { value: "$5B+", label: "Est. Attack Cost" },
 ];
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background pt-24">
       {/* Animated gradient background */}
       <div className="absolute inset-0 gradient-hero opacity-10" />
       
@@ -127,7 +127,7 @@ export function Hero() {
             transition={{ delay: 1.3 }}
             className="text-sm text-muted-foreground pt-8"
           >
-            Built on <span className="text-foreground font-semibold">Base L2</span> • Powered by <span className="text-foreground font-semibold">Evolutionary Algorithms</span> • Secured by <span className="text-foreground font-semibold">Elected Oracles</span>
+            Built on <span className="text-foreground font-semibold">Base L2</span> • Powered by <span className="text-foreground font-semibold">Evolutionary Algorithms</span> • Secured by <span className="text-foreground font-semibold">the DAO</span>
           </motion.p>
         </motion.div>
       </div>

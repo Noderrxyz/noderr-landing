@@ -12,8 +12,22 @@ const technologies = [
     docUrl: `${GITBOOK_URL}/protocol/ate`,
     details: [
       {
-        title: 'Floor Engine (7 DeFi Protocol Adapters)',
-        text: 'Provides a consistent 5-8% APY baseline by integrating with 7 battle-tested DeFi protocols (Aave, Balancer, Curve, GMX, Uniswap V3, dYdX). This diversified, market-neutral approach ensures a stable foundation for protocol revenue.'
+        title: 'Floor Engine (10+ DeFi Protocol Adapters)',
+        text: 'Provides a consistent 5-8% APY baseline by integrating with 10+ battle-tested DeFi protocols across lending, staking, and yield farming. This diversified, market-neutral approach ensures a stable foundation for protocol revenue.',
+        protocols: [
+          { name: 'Aave V3', url: 'https://aave.com' },
+          { name: 'Compound V3', url: 'https://compound.finance' },
+          { name: 'Morpho Blue', url: 'https://morpho.org' },
+          { name: 'Spark', url: 'https://spark.fi' },
+          { name: 'Lido', url: 'https://lido.fi' },
+          { name: 'Rocket Pool', url: 'https://rocketpool.net' },
+          { name: 'Balancer', url: 'https://balancer.fi' },
+          { name: 'Curve', url: 'https://curve.fi' },
+          { name: 'Convex', url: 'https://convexfinance.com' },
+          { name: 'Uniswap V3', url: 'https://uniswap.org' },
+          { name: 'GMX', url: 'https://gmx.io' },
+          { name: 'dYdX', url: 'https://dydx.exchange' }
+        ]
       },
       {
         title: 'Third-Party Strategies (20% Profit Share)',
@@ -160,6 +174,21 @@ export function ProprietaryTech() {
                         <div>
                           <h4 className="font-semibold text-foreground">{detail.title}</h4>
                           <p className="text-sm text-muted-foreground">{detail.text}</p>
+                          {detail.protocols && (
+                            <div className="mt-3 flex flex-wrap gap-2">
+                              {detail.protocols.map((protocol, pIndex) => (
+                                <a
+                                  key={pIndex}
+                                  href={protocol.url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium hover:bg-primary/20 transition-colors"
+                                >
+                                  {protocol.name}
+                                </a>
+                              ))}
+                            </div>
+                          )}
                         </div>
                       </div>
                     ))}

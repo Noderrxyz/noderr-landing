@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Cpu, HardDrive, Wifi, Clock, AlertCircle, DollarSign } from 'lucide-react';
+import { Cpu, HardDrive, Wifi, Clock, AlertCircle } from 'lucide-react';
 
 const requirements = [
   {
@@ -34,21 +34,10 @@ const requirements = [
     guardian: '99.5%+',
     oracle: '99.9%+',
   },
-  {
-    icon: DollarSign,
-    title: 'Monthly Cost',
-    micro: '$0-5',
-    validator: '$55-336',
-    guardian: '$100-500',
-    oracle: '$500-2000',
-  },
+
 ];
 
 const additionalInfo = [
-  {
-    title: 'Time Commitment',
-    description: 'Micro nodes require minimal monitoring. Validators need active uptime management. Guardians and Oracles require 10-20 hours/week for governance and strategy review.',
-  },
   {
     title: 'Risk Factors',
     description: 'Slashing may occur for extended downtime or malicious behavior. Higher tiers have higher accountability and slashing penalties.',
@@ -122,7 +111,7 @@ export function NodeRequirements() {
         </div>
 
         {/* Additional information */}
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {additionalInfo.map((info, index) => (
             <motion.div
               key={info.title}
