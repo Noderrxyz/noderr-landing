@@ -11,7 +11,7 @@ const advantages = [
   {
     icon: Users,
     title: 'Shape the Protocol',
-    description: 'Your feedback is invaluable. Help us refine node operations, dApp user experience, and governance mechanisms.',
+    description: 'Your feedback helps us refine node operations, dApp user experience, and governance mechanisms.',
   },
   {
     icon: Trophy,
@@ -21,7 +21,7 @@ const advantages = [
   {
     icon: Zap,
     title: 'Explore Real Yield',
-    description: 'Experiment with staking, governance, and the ATE using testnet tokens on Base Sepolia. Understand the mechanics of real yield generation, risk-free.',
+    description: 'Experiment with staking, governance, and the ATE using testnet tokens on Base Sepolia. Learn the mechanics of real yield generation, risk-free.',
   },
 ];
 
@@ -45,7 +45,7 @@ export function TestnetAdvantages() {
             Become an <span className="text-gradient">Early Participant</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join the Noderr testnet to help secure the future of real, sustainable yield. Your participation is crucial.
+            Join the Noderr testnet to help build the future of real, sustainable yield. Your participation matters.
           </p>
         </motion.div>
 

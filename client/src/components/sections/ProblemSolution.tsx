@@ -28,11 +28,12 @@ export function ProblemSolution() {
           transition={{ delay: 0.2 }}
           className="mb-16"
         >
-                    <div className="rounded-2xl border border-border bg-card p-4">
-            {/* TODO: Replace with world-class interactive diagram component */}
-            <div className="w-full h-[400px] flex items-center justify-center bg-muted/50 rounded-lg">
-              <p className="text-muted-foreground">[New Diagram Coming Soon]</p>
-            </div>
+          <div className="rounded-2xl overflow-hidden border border-border bg-card p-4">
+            <img 
+              src="/defi-comparison-pro.png" 
+              alt="Traditional DeFi vs Noderr Protocol Comparison" 
+              className="w-full h-auto"
+            />
           </div>
         </motion.div>
 
