@@ -4,6 +4,7 @@ import { SkipToContent } from '@/components/SkipToContent';
 import { Hero } from '@/components/sections/Hero';
 import { ProblemSolution } from '@/components/sections/ProblemSolution';
 import { ProprietaryTech } from '@/components/sections/ProprietaryTech';
+import { HowYouEarn } from '@/components/sections/HowYouEarn';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { ModesForEveryUser } from '@/components/sections/ModesForEveryUser';
 import { TestnetAdvantages } from '@/components/sections/TestnetAdvantages';
@@ -22,6 +23,7 @@ export default function Home() {
         <Hero />
         <ProblemSolution />
         <ProprietaryTech />
+        <HowYouEarn />
         <div id="how-it-works">
           <HowItWorks />
         </div>
