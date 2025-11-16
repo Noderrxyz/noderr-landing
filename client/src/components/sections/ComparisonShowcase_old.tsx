@@ -1,54 +1,90 @@
 import { motion } from 'framer-motion';
-import { TrendingDown, TrendingUp, Shield, Zap, Lock, Target, ArrowRight, X, Check } from 'lucide-react';
+import { TrendingDown, TrendingUp, Shield, Zap, Lock, Target } from 'lucide-react';
 
 const comparisons = [
   {
     category: 'Yield Source',
     icon: Zap,
-    problem: 'Token Emissions',
-    problemDetail: 'Minting new tokens to pay rewards',
-    solution: 'Real Trading Profits',
-    solutionDetail: 'Autonomous trading generates revenue',
+    traditional: {
+      label: 'Token Emissions',
+      description: 'Minting new tokens to pay rewards',
+      status: 'bad',
+    },
+    noderr: {
+      label: 'Real Trading Profits',
+      description: 'Autonomous trading generates revenue',
+      status: 'good',
+    },
   },
   {
     category: 'APY',
     icon: TrendingUp,
-    problem: '100-300%',
-    problemDetail: 'Unsustainable, collapses quickly',
-    solution: '8-28%',
-    solutionDetail: 'Sustainable, real-world yields',
+    traditional: {
+      label: '100-300%',
+      description: 'Unsustainable, collapses quickly',
+      status: 'bad',
+    },
+    noderr: {
+      label: '8-28%',
+      description: 'Sustainable, real-world yields',
+      status: 'good',
+    },
   },
   {
     category: 'Inflation',
     icon: TrendingDown,
-    problem: 'Constant Dilution',
-    problemDetail: 'Token supply increases forever',
-    solution: 'Zero Inflation',
-    solutionDetail: 'Fixed 100M supply, deflationary buybacks',
+    traditional: {
+      label: 'Constant Dilution',
+      description: 'Token supply increases forever',
+      status: 'bad',
+    },
+    noderr: {
+      label: 'Zero Inflation',
+      description: 'Fixed 100M supply, deflationary buybacks',
+      status: 'good',
+    },
   },
   {
     category: 'Strategy Validation',
     icon: Target,
-    problem: 'None',
-    problemDetail: 'No backtesting or validation',
-    solution: '3-Stage Pipeline',
-    solutionDetail: '0.37% survival rate ensures quality',
+    traditional: {
+      label: 'None',
+      description: 'No backtesting or validation',
+      status: 'bad',
+    },
+    noderr: {
+      label: '3-Stage Pipeline',
+      description: '0.37% survival rate ensures quality',
+      status: 'good',
+    },
   },
   {
     category: 'Governance',
     icon: Shield,
-    problem: 'Token-Weighted',
-    problemDetail: 'Whales control everything',
-    solution: 'Merit-Based',
-    solutionDetail: 'TrustFingerprint™ earned over time',
+    traditional: {
+      label: 'Token-Weighted',
+      description: 'Whales control everything',
+      status: 'bad',
+    },
+    noderr: {
+      label: 'Merit-Based',
+      description: 'TrustFingerprint™ earned over time',
+      status: 'good',
+    },
   },
   {
     category: 'Security',
     icon: Lock,
-    problem: 'Flash Loan Vulnerable',
-    problemDetail: 'Token-weighted voting exploits',
-    solution: '$5B+ Attack Cost',
-    solutionDetail: 'Soulbound NFTs + ZK Proofs',
+    traditional: {
+      label: 'Flash Loan Vulnerable',
+      description: 'Token-weighted voting exploits',
+      status: 'bad',
+    },
+    noderr: {
+      label: '$5B+ Attack Cost',
+      description: 'Soulbound NFTs + ZK Proofs',
+      status: 'good',
+    },
   },
 ];
 
@@ -71,7 +107,7 @@ export function ComparisonShowcase() {
           </p>
         </motion.div>
 
-        {/* Comparison cards - NO REPETITION */}
+        {/* Comparison grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {comparisons.map((comparison, index) => {
             const Icon = comparison.icon;
@@ -84,8 +120,8 @@ export function ComparisonShowcase() {
                 transition={{ delay: 0.1 + index * 0.05 }}
                 className="group relative"
               >
-                <div className="p-6 rounded-2xl bg-card border border-border h-full hover:border-primary/30 transition-all duration-300">
-                  {/* Category header with icon */}
+                <div className="p-6 rounded-2xl bg-card border border-border h-full">
+                  {/* Category header */}
                   <div className="flex items-center gap-3 mb-6">
                     <div className="p-2 rounded-lg bg-primary/10">
                       <Icon className="w-5 h-5 text-primary" />
@@ -93,31 +129,24 @@ export function ComparisonShowcase() {
                     <h3 className="text-lg font-bold text-foreground">{comparison.category}</h3>
                   </div>
 
-                  {/* Problem (red) */}
-                  <div className="mb-3 p-4 rounded-lg bg-destructive/5 border border-destructive/20 relative">
-                    <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-destructive/10 border-2 border-destructive flex items-center justify-center">
-                      <X className="w-4 h-4 text-destructive" />
+                  {/* Traditional DeFi */}
+                  <div className="mb-4 p-4 rounded-lg bg-destructive/5 border border-destructive/20">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-2 h-2 rounded-full bg-destructive"></div>
+                      <span className="text-sm font-semibold text-destructive">Traditional DeFi</span>
                     </div>
-                    <div className="ml-6">
-                      <div className="text-base font-bold text-foreground mb-1">{comparison.problem}</div>
-                      <div className="text-sm text-muted-foreground">{comparison.problemDetail}</div>
-                    </div>
+                    <div className="text-base font-bold text-foreground mb-1">{comparison.traditional.label}</div>
+                    <div className="text-sm text-muted-foreground">{comparison.traditional.description}</div>
                   </div>
 
-                  {/* Arrow */}
-                  <div className="flex justify-center my-2">
-                    <ArrowRight className="w-5 h-5 text-primary" />
-                  </div>
-
-                  {/* Solution (cyan) */}
-                  <div className="p-4 rounded-lg bg-primary/5 border border-primary/20 relative">
-                    <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center">
-                      <Check className="w-4 h-4 text-primary" />
+                  {/* Noderr Protocol */}
+                  <div className="p-4 rounded-lg bg-primary/5 border border-primary/20">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="w-2 h-2 rounded-full bg-primary"></div>
+                      <span className="text-sm font-semibold text-primary">Noderr Protocol</span>
                     </div>
-                    <div className="ml-6">
-                      <div className="text-base font-bold text-foreground mb-1">{comparison.solution}</div>
-                      <div className="text-sm text-muted-foreground">{comparison.solutionDetail}</div>
-                    </div>
+                    <div className="text-base font-bold text-foreground mb-1">{comparison.noderr.label}</div>
+                    <div className="text-sm text-muted-foreground">{comparison.noderr.description}</div>
                   </div>
                 </div>
               </motion.div>
@@ -133,7 +162,7 @@ export function ComparisonShowcase() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="p-6 rounded-2xl bg-card border border-destructive/30 hover:border-destructive/50 transition-all duration-300"
+            className="p-6 rounded-2xl bg-card border border-destructive/30"
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-destructive/10 flex items-center justify-center">
@@ -152,7 +181,7 @@ export function ComparisonShowcase() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.4 }}
-            className="p-6 rounded-2xl bg-card border border-primary/30 hover:border-primary/50 transition-all duration-300"
+            className="p-6 rounded-2xl bg-card border border-primary/30"
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
