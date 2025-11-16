@@ -4,7 +4,7 @@ import { SkipToContent } from '@/components/SkipToContent';
 import { Hero } from '@/components/sections/Hero';
 import { ProblemSolution } from '@/components/sections/ProblemSolution';
 import { ProprietaryTech } from '@/components/sections/ProprietaryTech';
-import { HowYouEarn } from '@/components/sections/HowYouEarn';
+import { YieldVaults } from '@/components/sections/YieldVaults';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { ModesForEveryUser } from '@/components/sections/ModesForEveryUser';
 import { TestnetAdvantages } from '@/components/sections/TestnetAdvantages';
@@ -24,7 +24,7 @@ export default function Home() {
         <Hero />
         <ProblemSolution />
         <ProprietaryTech />
-        <HowYouEarn />
+        <YieldVaults />
         <div id="how-it-works">
           <HowItWorks />
         </div>
