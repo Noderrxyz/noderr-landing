@@ -28,11 +28,11 @@ export default function Home() {
         <div id="modes">
           <ModesForEveryUser />
         </div>
+        <NodeRequirements />
         <TestnetAdvantages />
         <div id="security">
           <Security />
         </div>
-        <NodeRequirements />
         <FAQ />
         <FinalCTA />
       </main>

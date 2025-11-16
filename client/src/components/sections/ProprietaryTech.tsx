@@ -93,7 +93,7 @@ const technologies = [
         text: 'Leverages the distributed power of Micro Nodes to backtest thousands of strategies simultaneously, creating a competitive environment for algorithmic evolution.'
       },
       {
-        title: '4-Stage Validation Pipeline',
+        title: '3-Stage Validation Pipeline',
         text: 'Strategies must pass a 3-stage promotion process: Shadow Data Swarm™ backtesting (automated), Guardian Review (expert assessment), and Live Deployment (gradual allocation with Oracle oversight).'
       },
       {
@@ -131,7 +131,7 @@ export function ProprietaryTech() {
   const activeTech = technologies.find(tech => tech.id === activeTab);
 
   return (
-    <section className="section-padding bg-background">
+    <section id="features" className="section-padding bg-background">
       <div className="container max-w-7xl mx-auto px-4">
         {/* Section header */}
         <motion.div

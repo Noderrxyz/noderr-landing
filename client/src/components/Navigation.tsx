@@ -8,8 +8,9 @@ import { DAPP_URL, FAUCET_URL } from '@/const';
 const navLinks = [
   { name: 'Features', href: '#features' },
   { name: 'How It Works', href: '#how-it-works' },
-  { name: 'Modes', href: '#modes' },
+  { name: 'Node Tiers', href: '#modes' },
   { name: 'Security', href: '#security' },
+  { name: 'FAQ', href: '#faq' },
 ];
 
 export function Navigation() {

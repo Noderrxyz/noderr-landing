@@ -34,7 +34,7 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="section-padding">
+    <section id="faq" className="section-padding">
       <div className="container max-w-4xl mx-auto">
         {/* Section header */}
         <motion.div
