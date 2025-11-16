@@ -79,7 +79,7 @@
 }
 
 .dark {
-  /* Noderrrr Protocol Color Scheme */
+  /* Noderr Protocol Color Scheme */
   --primary: oklch(0.65 0.2 210); /* Primary Blue #0ea5e9 */
   --primary-foreground: oklch(0.98 0 0);
   --sidebar-primary: oklch(0.65 0.2 210);

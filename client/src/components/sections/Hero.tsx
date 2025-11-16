@@ -73,7 +73,7 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
           >
-            Noderrrr is a decentralized autonomous trading system that generates sustainable, real-world yields. Its dual-component Autonomous Trading Engine (ATE), combining a Floor Engine for baseline stability and a competitive marketplace for third-party strategies, produces pure, transparent performance with zero inflationary emissions.
+            Noderr is a decentralized autonomous trading system that generates sustainable, real-world yields. Its dual-component Autonomous Trading Engine (ATE), combining a Floor Engine for baseline stability and a competitive marketplace for third-party strategies, produces pure, transparent performance with zero inflationary emissions.
           </motion.p>
 
           {/* Key Stats */}

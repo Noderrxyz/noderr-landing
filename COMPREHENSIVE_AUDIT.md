@@ -1,13 +1,13 @@
 # Comprehensive Landing Page Audit
 **Date:** November 7, 2025  
-**Project:** Noderrrr Protocol Landing Page  
+**Project:** Noderr Protocol Landing Page  
 **Auditor:** Manus AI
 
 ---
 
 ## Executive Summary
 
-This audit examines the Noderrrr Protocol landing page across seven key dimensions: visual design, content accuracy, performance, accessibility, UX, mobile responsiveness, and code quality. The goal is to identify meaningful improvements that enhance user experience without over-engineering.
+This audit examines the Noderr Protocol landing page across seven key dimensions: visual design, content accuracy, performance, accessibility, UX, mobile responsiveness, and code quality. The goal is to identify meaningful improvements that enhance user experience without over-engineering.
 
 ---
 

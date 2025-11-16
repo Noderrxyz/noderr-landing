@@ -130,7 +130,7 @@ export function Security() {
         >
           <h3 className="text-2xl font-bold mb-3">Bug Bounty Program</h3>
           <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
-            Help us keep Noderrrr secure. Report vulnerabilities and earn up to $100,000 in rewards.
+            Help us keep Noderr secure. Report vulnerabilities and earn up to $100,000 in rewards.
           </p>
           <a 
             href="mailto:security@noderr.io"

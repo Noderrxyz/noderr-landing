@@ -49,7 +49,7 @@ export function GitBookPanel({ isOpen, onClose }: GitBookPanelProps) {
             {/* Content */}
             <div className="flex-1 overflow-y-auto p-6 space-y-4">
               <p className="text-sm text-muted-foreground">
-                Access comprehensive documentation for Noderrrr Protocol, including guides, API references, and tutorials.
+                Access comprehensive documentation for Noderr Protocol, including guides, API references, and tutorials.
               </p>
 
               {/* Documentation Links */}
@@ -82,7 +82,7 @@ export function GitBookPanel({ isOpen, onClose }: GitBookPanelProps) {
                       Protocol Overview
                     </h3>
                     <p className="text-xs text-muted-foreground mt-1">
-                      Understanding the Noderrrr architecture
+                      Understanding the Noderr architecture
                     </p>
                   </div>
                   <ExternalLink className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
@@ -171,7 +171,7 @@ export function GitBookPanel({ isOpen, onClose }: GitBookPanelProps) {
                   </a>{' '}
                   or reach out on{' '}
                   <a
-                    href="https://t.me/NoderrrrSupp"
+                    href="https://t.me/NoderrSupp"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary hover:underline"

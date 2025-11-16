@@ -67,7 +67,7 @@ All `.io` references were replaced with `.xyz` in commit `b7876ec`.
 ## Official Terminology (FROM TERMINOLOGY_GUIDE.md - Nov 14, 2025)
 
 ### Autonomous Trading System (ATS)
-**Definition:** The complete Noderrrr Protocol intelligent trading ecosystem encompassing all components from strategy generation to execution and yield optimization.
+**Definition:** The complete Noderr Protocol intelligent trading ecosystem encompassing all components from strategy generation to execution and yield optimization.
 
 **Scope:** 100% of protocol operations
 

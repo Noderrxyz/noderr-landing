@@ -61,7 +61,7 @@ export default function Careers() {
           <div className="text-center mb-12">
             <div className="flex items-center justify-center gap-3 mb-4">
               <Briefcase className="h-12 w-12 text-primary" />
-              <h1 className="text-4xl font-bold">Careers at Noderrrr</h1>
+              <h1 className="text-4xl font-bold">Careers at Noderr</h1>
             </div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Join our team and help build the future of decentralized node operator infrastructure. We're looking for talented individuals who are passionate about Web3 and DeFi.
@@ -124,7 +124,7 @@ export default function Careers() {
           {/* Why Join Us */}
           <Card className="bg-muted/50">
             <CardHeader>
-              <CardTitle>Why Join Noderrrr?</CardTitle>
+              <CardTitle>Why Join Noderr?</CardTitle>
               <CardDescription>
                 We're building the future of decentralized infrastructure
               </CardDescription>
@@ -161,7 +161,7 @@ export default function Careers() {
           <div className="mt-12 text-center">
             <h2 className="text-2xl font-bold mb-4">Don't See a Perfect Fit?</h2>
             <p className="text-muted-foreground mb-6">
-              We're always looking for talented individuals. Send us your resume and let us know how you can contribute to Noderrrr.
+              We're always looking for talented individuals. Send us your resume and let us know how you can contribute to Noderr.
             </p>
             <Button asChild size="lg">
               <a href="mailto:nod@noderr.xyz?subject=General Application">

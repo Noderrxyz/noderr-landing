@@ -1,7 +1,7 @@
-# Noderrrr X/Twitter Account - Actual Brand Messaging
+# Noderr X/Twitter Account - Actual Brand Messaging
 
-**Account:** @NoderrrrProtocol
-**URL:** https://twitter.com/NoderrrrProtocol
+**Account:** @NoderrProtocol
+**URL:** https://twitter.com/NoderrProtocol
 
 ## Official Bio/Slogan
 

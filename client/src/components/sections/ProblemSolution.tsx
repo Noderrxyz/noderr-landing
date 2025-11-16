@@ -15,7 +15,7 @@ export function ProblemSolution() {
             Beyond Inflationary Yields: <span className="text-gradient">The Problem with Modern DeFi</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Most DeFi protocols rely on inflationary token emissions to attract liquidity. This creates a vicious cycle where high initial yields attract mercenary capital, but constant sell pressure from emissions drives token prices down, eventually collapsing the system. Noderrrr breaks this cycle with a sustainable, revenue-driven economic model.
+            Most DeFi protocols rely on inflationary token emissions to attract liquidity. This creates a vicious cycle where high initial yields attract mercenary capital, but constant sell pressure from emissions drives token prices down, eventually collapsing the system. Noderr breaks this cycle with a sustainable, revenue-driven economic model.
           </p>
         </motion.div>
 
@@ -30,7 +30,7 @@ export function ProblemSolution() {
           <div className="rounded-2xl overflow-hidden border border-border bg-card p-6">
             <img 
               src="/unified-comparison.png" 
-              alt="Traditional DeFi vs Noderrrr Protocol: The Evolution from Inflationary Death Spiral to Sustainable Revenue" 
+              alt="Traditional DeFi vs Noderr Protocol: The Evolution from Inflationary Death Spiral to Sustainable Revenue" 
               className="w-full h-auto"
             />
           </div>
@@ -49,7 +49,7 @@ export function ProblemSolution() {
               The result is a protocol built for long-term sustainability.
             </p>
             <p className="text-sm text-muted-foreground">
-              Noderrrr's economic model aligns incentives for long-term participation, not short-term extraction. This is how DeFi should work.
+              Noderr's economic model aligns incentives for long-term participation, not short-term extraction. This is how DeFi should work.
             </p>
           </div>
         </motion.div>

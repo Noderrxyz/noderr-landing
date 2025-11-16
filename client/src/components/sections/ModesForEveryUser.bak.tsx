@@ -10,7 +10,7 @@ const tiers = [
     stake: '0 NODR minimum',
     audience: 'Retail Participants, Students, Hobbyists',
     valueProposition: 'Put your old devices to work. Earn real yield.',
-    description: 'Micro Nodes operate as AI agents in a mesh network, providing compute resources to the Noderrrr Protocol when overhead capacity is reached. Put your old Androids and iPhones to use, or install our browser extension.',
+    description: 'Micro Nodes operate as AI agents in a mesh network, providing compute resources to the Noderr Protocol when overhead capacity is reached. Put your old Androids and iPhones to use, or install our browser extension.',
     functions: [
       'Operate as AI agents in a distributed mesh network',
       'Provide compute resources when overhead capacity is reached',
@@ -93,10 +93,10 @@ export function ModesForEveryUser() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
-            The Noderrrr Network: <span className="text-gradient">A Role for Everyone</span>
+            The Noderr Network: <span className="text-gradient">A Role for Everyone</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Noderrrr's multi-tier architecture maximizes decentralization and security through specialized roles for every level of participation. Whether you are a casual user, a professional infrastructure operator, or a DeFi governance expert, you can contribute meaningfully and earn real rewards.
+            Noderr's multi-tier architecture maximizes decentralization and security through specialized roles for every level of participation. Whether you are a casual user, a professional infrastructure operator, or a DeFi governance expert, you can contribute meaningfully and earn real rewards.
           </p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">

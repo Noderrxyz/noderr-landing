@@ -1,27 +1,46 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import NotFound from "@/pages/NotFound";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import Home from "./pages/Home";
-import Apply from "./pages/Apply";
-import Faucet from "./pages/Faucet";
-import Careers from "./pages/Careers";
-import Partnerships from "./pages/Partnerships";
+
+// Lazy load pages for better performance
+const Home = lazy(() => import("./pages/Home"));
+const Apply = lazy(() => import("./pages/Apply"));
+const Faucet = lazy(() => import("./pages/Faucet"));
+const Careers = lazy(() => import("./pages/Careers"));
+const Partnerships = lazy(() => import("./pages/Partnerships"));
+const Terms = lazy(() => import("./pages/Terms"));
+const Privacy = lazy(() => import("./pages/Privacy"));
+const NotFound = lazy(() => import("@/pages/NotFound"));
+
+// Loading fallback component
+const PageLoader = () => (
+  <div className="flex items-center justify-center min-h-screen bg-background">
+    <div className="flex flex-col items-center gap-4">
+      <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin" />
+      <p className="text-muted-foreground">Loading...</p>
+    </div>
+  </div>
+);
 
 function Router() {
   return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/apply"} component={Apply} />
-      <Route path={"/faucet"} component={Faucet} />
-      <Route path={"/careers"} component={Careers} />
-      <Route path={"/partnerships"} component={Partnerships} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
+    <Suspense fallback={<PageLoader />}>
+      <Switch>
+        <Route path={"/"} component={Home} />
+        <Route path={"/apply"} component={Apply} />
+        <Route path={"/faucet"} component={Faucet} />
+        <Route path={"/careers"} component={Careers} />
+        <Route path={"/partnerships"} component={Partnerships} />
+        <Route path={"/terms"} component={Terms} />
+        <Route path={"/privacy"} component={Privacy} />
+        <Route path={"/404"} component={NotFound} />
+        {/* Final fallback route */}
+        <Route component={NotFound} />
+      </Switch>
+    </Suspense>
   );
 }
 

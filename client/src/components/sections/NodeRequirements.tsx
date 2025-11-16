@@ -68,8 +68,9 @@ export function NodeRequirements() {
         </motion.div>
 
         {/* Requirements table */}
-        <div className="overflow-x-auto mb-12">
-          <table className="w-full border-collapse">
+        <div className="overflow-x-auto mb-12 -mx-4 px-4">
+          <div className="inline-block min-w-full align-middle">
+            <table className="w-full border-collapse min-w-[800px]">
             <thead>
               <tr className="border-b border-border">
                 <th className="text-left p-4 text-muted-foreground font-semibold">Requirement</th>
@@ -108,6 +109,7 @@ export function NodeRequirements() {
               })}
             </tbody>
           </table>
+          </div>
         </div>
 
         {/* Additional information */}

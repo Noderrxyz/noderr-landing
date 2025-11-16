@@ -47,7 +47,7 @@ export function FAQ() {
             Frequently Asked <span className="text-gradient">Questions</span>
           </h2>
           <p className="text-xl text-muted-foreground">
-            Everything you need to know about participating in the Noderrrr network.
+            Everything you need to know about participating in the Noderr network.
           </p>
         </motion.div>
 

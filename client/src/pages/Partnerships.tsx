@@ -47,7 +47,7 @@ const partnershipTypes = [
     title: 'Infrastructure Providers',
     icon: TrendingUp,
     color: 'text-green-600',
-    description: 'Provide services to the Noderrrr network and earn revenue.',
+    description: 'Provide services to the Noderr network and earn revenue.',
     examples: [
       'Chainlink',
       'The Graph',
@@ -88,7 +88,7 @@ export default function Partnerships() {
               <h1 className="text-4xl font-bold">Partnerships</h1>
             </div>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Partner with Noderrrr to build the future of decentralized finance. We're looking for innovative projects and organizations to collaborate with.
+              Partner with Noderr to build the future of decentralized finance. We're looking for innovative projects and organizations to collaborate with.
             </p>
           </div>
 
@@ -160,7 +160,7 @@ export default function Partnerships() {
               <div>
                 <h3 className="font-semibold mb-2">📊 SDK & API Access</h3>
                 <p className="text-sm text-muted-foreground">
-                  Developer tools to integrate Noderrrr's trust scoring, risk management, and strategy validation into your protocol.
+                  Developer tools to integrate Noderr's trust scoring, risk management, and strategy validation into your protocol.
                 </p>
               </div>
               <div>

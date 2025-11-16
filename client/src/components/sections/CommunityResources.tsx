@@ -13,14 +13,14 @@ const resources = [
     icon: Send,
     name: 'Telegram',
     description: 'Get instant updates and support',
-    link: 'https://t.me/NoderrrrSupp',
+    link: 'https://t.me/NoderrSupp',
     color: 'from-[#0088cc] to-[#0088cc]',
   },
   {
     icon: Twitter,
     name: 'Twitter',
     description: 'Follow for news and announcements',
-    link: 'https://twitter.com/NoderrrrProtocol',
+    link: 'https://twitter.com/NoderrProtocol',
     color: 'from-[#1DA1F2] to-[#1DA1F2]',
   },
   {
@@ -64,7 +64,7 @@ export function CommunityResources() {
             Join the <span className="text-gradient">Community</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Connect with node operators, developers, and the Noderrrr team across multiple platforms.
+            Connect with node operators, developers, and the Noderr team across multiple platforms.
           </p>
         </motion.div>
 

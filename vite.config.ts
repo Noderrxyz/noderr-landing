@@ -5,8 +5,36 @@ import fs from "node:fs";
 import path from "path";
 import { defineConfig } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
+import viteCompression from 'vite-plugin-compression';
+import { visualizer } from 'rollup-plugin-visualizer';
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime()];
+const plugins = [
+  react(),
+  tailwindcss(),
+  jsxLocPlugin(),
+  vitePluginManusRuntime(),
+  // Gzip compression for production
+  viteCompression({
+    algorithm: 'gzip',
+    ext: '.gz',
+    threshold: 10240, // Only compress files > 10KB
+    deleteOriginFile: false,
+  }),
+  // Brotli compression for production (better than gzip)
+  viteCompression({
+    algorithm: 'brotliCompress',
+    ext: '.br',
+    threshold: 10240,
+    deleteOriginFile: false,
+  }),
+  // Bundle analyzer (generates stats.html)
+  visualizer({
+    filename: './dist/stats.html',
+    open: false,
+    gzipSize: true,
+    brotliSize: true,
+  }),
+];
 
 export default defineConfig({
   plugins,
@@ -30,17 +58,39 @@ export default defineConfig({
         drop_debugger: true,
       },
     },
-    // Code splitting for better caching
+    // Advanced code splitting for optimal caching and performance
     rollupOptions: {
       output: {
-        manualChunks: {
-          'vendor-react': ['react', 'react-dom'],
-          'vendor-motion': ['framer-motion'],
-          'vendor-icons': ['lucide-react'],
+        manualChunks(id) {
+          // Vendor chunks for better caching
+          if (id.includes('node_modules')) {
+            if (id.includes('react') || id.includes('react-dom')) {
+              return 'vendor-react';
+            }
+            if (id.includes('framer-motion')) {
+              return 'vendor-motion';
+            }
+            if (id.includes('lucide-react')) {
+              return 'vendor-icons';
+            }
+            // Group all other node_modules into vendor chunk
+            return 'vendor';
+          }
+          // Split large sections into separate chunks
+          if (id.includes('/components/sections/')) {
+            const sectionName = id.split('/sections/')[1]?.split('.')[0];
+            if (sectionName) {
+              return `section-${sectionName.toLowerCase()}`;
+            }
+          }
         },
+        // Optimize chunk naming for better caching
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
+        assetFileNames: 'assets/[name]-[hash].[ext]',
       },
     },
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 500,
     sourcemap: false,
   },
   // Optimize dependencies

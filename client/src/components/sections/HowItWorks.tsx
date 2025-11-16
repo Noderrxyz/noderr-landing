@@ -43,14 +43,14 @@ export function HowItWorks() {
             From <span className="text-gradient">Idea to Execution</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Noderrrr uses a multi-stage validation pipeline to select the highest-quality trading strategies for managing protocol capital. This is how we turn algorithmic concepts into sustainable yield.
+            Noderr uses a multi-stage validation pipeline to select the highest-quality trading strategies for managing protocol capital. This is how we turn algorithmic concepts into sustainable yield.
           </p>
         </motion.div>
 
         {/* Steps timeline */}
         <div className="relative max-w-3xl mx-auto">
           {/* Vertical line */}
-          <div className="absolute left-8 top-8 bottom-8 w-0.5 bg-border" />
+          <div className="absolute left-8 top-16 bottom-16 w-0.5 bg-border" />
 
           <div className="space-y-12">
             {steps.map((step, index) => {
@@ -65,9 +65,11 @@ export function HowItWorks() {
                   className="relative flex items-start gap-6"
                 >
                   {/* Icon */}
-                  <div className="relative z-10">
-                    <div className={`w-16 h-16 rounded-full bg-${step.color}/10 border-2 border-${step.color}/30 flex items-center justify-center`}>
-                      <Icon className={`w-8 h-8 text-${step.color}`} />
+                  <div className="relative z-10 flex-shrink-0">
+                    <div className="w-20 h-20 rounded-full bg-background flex items-center justify-center">
+                      <div className={`w-16 h-16 rounded-full bg-${step.color}/10 border-2 border-${step.color}/30 flex items-center justify-center`}>
+                        <Icon className={`w-8 h-8 text-${step.color}`} />
+                      </div>
                     </div>
                   </div>
 

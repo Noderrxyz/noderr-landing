@@ -50,10 +50,10 @@ export function CompetitiveComparison() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            How <span className="text-gradient">Noderrrr</span> Compares
+            How <span className="text-gradient">Noderr</span> Compares
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            See why node operators choose Noderrrr's decentralized infrastructure.
+            See why node operators choose Noderr's decentralized infrastructure.
           </p>
         </motion.div>
 
@@ -70,7 +70,7 @@ export function CompetitiveComparison() {
             <div className="font-semibold text-foreground">Feature</div>
             <div className="text-center">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20">
-                <span className="font-semibold text-primary">Noderrrr</span>
+                <span className="font-semibold text-primary">Noderr</span>
               </div>
             </div>
             <div className="text-center font-medium text-muted-foreground">Centralized Nodes</div>
@@ -107,7 +107,7 @@ export function CompetitiveComparison() {
             Experience the difference yourself
           </p>
           <button className="px-8 py-4 bg-primary hover:bg-primary/90 rounded-xl font-semibold transition-all hover:scale-105">
-            Try Noderrrr Free
+            Try Noderr Free
           </button>
         </motion.div>
       </div>

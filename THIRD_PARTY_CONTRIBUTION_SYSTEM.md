@@ -4,11 +4,11 @@
 
 ## Overview
 
-Noderrrr Protocol has a **contributor pathway** that allows external data scientists, quantitative researchers, and developers to contribute trading strategies to the Shadow Data Swarm™ and earn **20% profit share** if their strategies are approved and deployed.
+Noderr Protocol has a **contributor pathway** that allows external data scientists, quantitative researchers, and developers to contribute trading strategies to the Shadow Data Swarm™ and earn **20% profit share** if their strategies are approved and deployed.
 
 ## Contributor Pathway (8 Steps)
 
-1. **Join Noderrrr Community** - Discord, forums, GitHub
+1. **Join Noderr Community** - Discord, forums, GitHub
 2. **Access Shadow Data Swarm™** - Request contributor access
 3. **Develop Strategy** - Use Python/Rust, leverage AI tools (LLMs)
 4. **Submit for Testing** - Upload to Shadow Data Swarm™
@@ -50,7 +50,7 @@ Paid in NODR tokens (or stablecoins, DAO-configurable)
 
 ## Key Differentiator
 
-This is a **MAJOR differentiator** that sets Noderrrr apart from other DeFi protocols:
+This is a **MAJOR differentiator** that sets Noderr apart from other DeFi protocols:
 
 1. **Open Innovation** - Anyone can contribute strategies, not just the core team
 2. **Meritocratic** - Strategies are judged by performance, not by who submitted them

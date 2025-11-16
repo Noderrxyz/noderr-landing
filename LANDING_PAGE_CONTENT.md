@@ -1,4 +1,4 @@
-# Noderrrr Landing Page Content
+# Noderr Landing Page Content
 
 **Version**: 1.0
 **Audience**: Primary: Institutional Investors, DAO Treasuries; Secondary: Node Operators, Developers
@@ -14,7 +14,7 @@
 
 **Subheadline**:
 
-Noderrrr combines evolutionary trading algorithms with merit-based node operations to generate 8-28% APY from real market activity—not token emissions.
+Noderr combines evolutionary trading algorithms with merit-based node operations to generate 8-28% APY from real market activity—not token emissions.
 
 **Key Stats Bar**:
 
@@ -40,14 +40,14 @@ Noderrrr combines evolutionary trading algorithms with merit-based node operatio
 
 For years, the promise of decentralized finance has been accompanied by staggering APYs, often exceeding 1,000%. However, these returns are frequently fueled by inflationary token emissions, creating a cycle of dilution that erodes long-term value. Protocols print new tokens to pay rewards, attracting liquidity in the short term but ultimately leading to hyperinflation and the collapse of token value. This model is fundamentally unsustainable, rewarding early speculators at the expense of long-term holders and creating a system where the yield source is the very instrument being devalued.
 
-Noderrrr was built on a different premise: **real yields must come from real economic activity.**
+Noderr was built on a different premise: **real yields must come from real economic activity.**
 
 **Visuals**:
 - A simple chart showing a declining token price against a rising token supply (labeled "The Inflationary Death Spiral").
-- A contrasting chart showing a stable token supply with a steady, non-volatile yield (labeled "The Noderrrr Model: Sustainable Revenue").
+- A contrasting chart showing a stable token supply with a steady, non-volatile yield (labeled "The Noderr Model: Sustainable Revenue").
 
 ---
-## 3. The Noderrrr Engine: A New Economic Primitive
+## 3. The Noderr Engine: A New Economic Primitive
 
 **Section Headline**:
 
@@ -55,7 +55,7 @@ Noderrrr was built on a different premise: **real yields must come from real eco
 
 **Body Copy**:
 
-Noderrrr introduces a suite of proprietary technologies that work in concert to create a self-sustaining, autonomous, and merit-based economic system. This is not another yield farm; it is a fully integrated quantitative trading operation built on decentralized rails.
+Noderr introduces a suite of proprietary technologies that work in concert to create a self-sustaining, autonomous, and merit-based economic system. This is not another yield farm; it is a fully integrated quantitative trading operation built on decentralized rails.
 
 **Sub-sections (as interactive tabs or scrolling animated sections)**:
 
@@ -93,7 +93,7 @@ Noderrrr introduces a suite of proprietary technologies that work in concert to 
 - **Self-Reinforcing Quality**: Systematically rewards and promotes the most reliable operators, continuously improving network health and security.
 
 ---
-## 4. How It Works: The Lifecycle of a Noderrrr Trade
+## 4. How It Works: The Lifecycle of a Noderr Trade
 
 **Section Headline**:
 
@@ -101,7 +101,7 @@ Noderrrr introduces a suite of proprietary technologies that work in concert to 
 
 **Body Copy**:
 
-The Noderrrr Protocol operates as a continuous, self-sustaining loop that translates decentralized computation into real-world alpha. Each component plays a critical role in a system designed for security, efficiency, and sustainable growth.
+The Noderr Protocol operates as a continuous, self-sustaining loop that translates decentralized computation into real-world alpha. Each component plays a critical role in a system designed for security, efficiency, and sustainable growth.
 
 **(Visual: A circular infographic with 4 steps)**
 
@@ -122,7 +122,7 @@ The Noderrrr Protocol operates as a continuous, self-sustaining loop that transl
 - **Outcome**: Participants are rewarded with sustainable yields backed by economic value creation. The DAO treasury grows, funding future development and ensuring the long-term health of the protocol.
 
 ---
-## 5. The Noderrrr Network: A Role for Everyone
+## 5. The Noderr Network: A Role for Everyone
 
 **Section Headline**:
 
@@ -130,7 +130,7 @@ The Noderrrr Protocol operates as a continuous, self-sustaining loop that transl
 
 **Body Copy**:
 
-Noderrrr's multi-tier architecture is designed for maximum decentralization and security, with specialized roles for every level of participation. Whether you are a casual user, a professional infrastructure operator, or a DeFi governance expert, there is a meaningful way to contribute and be rewarded.
+Noderr's multi-tier architecture is designed for maximum decentralization and security, with specialized roles for every level of participation. Whether you are a casual user, a professional infrastructure operator, or a DeFi governance expert, there is a meaningful way to contribute and be rewarded.
 
 **(Visual: Four distinct cards, each detailing a node tier)**
 
@@ -150,7 +150,7 @@ Noderrrr's multi-tier architecture is designed for maximum decentralization and 
 
 - **Primary Audience**: Professional Node Operators, Staking-as-a-Service Providers
 - **Value Proposition**: "Secure the network. Earn 1.5x base rewards."
-- **Description**: Validators are the professional operators responsible for maintaining the integrity of the Noderrrr blockchain. They produce blocks, validate transactions, and participate in consensus. This tier is for experienced operators who can meet high uptime and performance standards.
+- **Description**: Validators are the professional operators responsible for maintaining the integrity of the Noderr blockchain. They produce blocks, validate transactions, and participate in consensus. This tier is for experienced operators who can meet high uptime and performance standards.
 - **Requirements**:
   - **Stake**: 50,000 NODR
   - **Hardware**: Validator-grade server (e.g., 8-core CPU, 32GB RAM, 1TB NVMe)
@@ -174,7 +174,7 @@ Noderrrr's multi-tier architecture is designed for maximum decentralization and 
 
 - **Primary Audience**: Long-term Strategic Partners, Protocol Politicians, Industry Leaders
 - **Value Proposition**: "Govern the future of autonomous finance."
-- **Description**: Oracles hold the highest level of responsibility and influence within the Noderrrr DAO. They have the final authority on strategy approvals, protocol parameter changes, and constitutional amendments. This role is reserved for the most trusted, long-term aligned participants who have demonstrated an unwavering commitment to the protocol's success.
+- **Description**: Oracles hold the highest level of responsibility and influence within the Noderr DAO. They have the final authority on strategy approvals, protocol parameter changes, and constitutional amendments. This role is reserved for the most trusted, long-term aligned participants who have demonstrated an unwavering commitment to the protocol's success.
 - **Requirements**:
   - **Stake**: 500,000 NODR
   - **TrustFingerprint™**: ≥ 0.90
@@ -217,20 +217,20 @@ A clean, professional dashboard showcasing the following target metrics:
 
 **Body Copy**:
 
-In an ecosystem where exploits are common, security cannot be an afterthought. Noderrrr’s security model is a fortress built with multiple, independent layers of defense. We combine cutting-edge cryptography with economic incentives and social consensus to create a system where the cost of an attack is not just economically prohibitive, but practically impossible.
+In an ecosystem where exploits are common, security cannot be an afterthought. Noderr’s security model is a fortress built with multiple, independent layers of defense. We combine cutting-edge cryptography with economic incentives and social consensus to create a system where the cost of an attack is not just economically prohibitive, but practically impossible.
 
 **Sub-sections (as interactive tabs or scrolling animated sections)**:
 
 #### **Economic Security: The Cost of Malice**
 
-An attack on a traditional Proof-of-Stake network requires acquiring 51% of the staked tokens. At Noderrrr, this is just the beginning. Our **10% entity vote cap** means that even an attacker who acquires a majority of the token supply cannot control the network. This forces an attacker to pursue a far more expensive, multi-faceted strategy.
+An attack on a traditional Proof-of-Stake network requires acquiring 51% of the staked tokens. At Noderr, this is just the beginning. Our **10% entity vote cap** means that even an attacker who acquires a majority of the token supply cannot control the network. This forces an attacker to pursue a far more expensive, multi-faceted strategy.
 
 - **Estimated 51% Attack Cost**: **$5 - $50 Billion**
   - *This calculation accounts for the extreme market impact of acquiring 51% of the total token supply, combined with the necessity of building a high TrustFingerprint™ score over several years.*
 
 #### **Temporal Security: The Value of Time**
 
-Trust cannot be bought. At Noderrrr, it must be earned over time. The **TrustFingerprint™** system requires years of flawless operation to achieve a high score. An attacker cannot simply buy their way into a position of influence; they must dedicate years to building a reputation, with any malicious action instantly destroying their investment of time and capital.
+Trust cannot be bought. At Noderr, it must be earned over time. The **TrustFingerprint™** system requires years of flawless operation to achieve a high score. An attacker cannot simply buy their way into a position of influence; they must dedicate years to building a reputation, with any malicious action instantly destroying their investment of time and capital.
 
 - **Time to High Trust**: **3+ Years**
   - *The time required to build a TrustFingerprint™ score sufficient to become a Guardian or Oracle, representing a significant long-term commitment.*
@@ -251,7 +251,7 @@ The highest levels of governance are protected by social consensus. **Guardians 
 
 **Body Copy**:
 
-Noderrrr's governance model is designed to prevent the pitfalls of traditional token-weighted voting, which can lead to plutocracy and short-term decision-making. Our hybrid on-chain/off-chain system with multi-layered security ensures that the protocol is guided by a council of proven, long-term-aligned stewards.
+Noderr's governance model is designed to prevent the pitfalls of traditional token-weighted voting, which can lead to plutocracy and short-term decision-making. Our hybrid on-chain/off-chain system with multi-layered security ensures that the protocol is guided by a council of proven, long-term-aligned stewards.
 
 **Key Governance Features**:
 
@@ -269,7 +269,7 @@ Noderrrr's governance model is designed to prevent the pitfalls of traditional t
 
 **Body Copy**:
 
-Noderrrr is on a multi-year journey to build a fully autonomous, self-sustaining financial ecosystem. Our roadmap is divided into clear, deliberate phases, each designed to build upon the last and progressively decentralize the protocol.
+Noderr is on a multi-year journey to build a fully autonomous, self-sustaining financial ecosystem. Our roadmap is divided into clear, deliberate phases, each designed to build upon the last and progressively decentralize the protocol.
 
 **(Visual: A timeline graphic with four distinct phases)**
 
@@ -284,7 +284,7 @@ Noderrrr is on a multi-year journey to build a fully autonomous, self-sustaining
 - **Status**: Upcoming
 
 **Phase 3: Full Decentralization & Governance Handover**
-- **Focus**: Remove all centralized controls and hand over full authority to the Noderrrr DAO.
+- **Focus**: Remove all centralized controls and hand over full authority to the Noderr DAO.
 - **Goals**: Enable permissionless strategy submission to the Shadow Data Swarm™, activate on-chain governance for all protocol parameters, and expand to additional blockchain networks.
 - **Status**: Planned
 
@@ -295,7 +295,7 @@ Noderrrr is on a multi-year journey to build a fully autonomous, self-sustaining
 
 ---
 
-## 10. Join the Noderrrr Ecosystem
+## 10. Join the Noderr Ecosystem
 
 **Section Headline**:
 
@@ -303,7 +303,7 @@ Noderrrr is on a multi-year journey to build a fully autonomous, self-sustaining
 
 **Body Copy**:
 
-Whether you are an institutional investor seeking sustainable yields, a developer with a passion for quantitative finance, or a crypto enthusiast looking to contribute to a meaningful project, there is a place for you in the Noderrrr ecosystem. The journey to build a truly autonomous financial future is just beginning.
+Whether you are an institutional investor seeking sustainable yields, a developer with a passion for quantitative finance, or a crypto enthusiast looking to contribute to a meaningful project, there is a place for you in the Noderr ecosystem. The journey to build a truly autonomous financial future is just beginning.
 
 **Primary CTA**:
 - **Button**: `Launch the Testnet dApp` (links to the dApp)

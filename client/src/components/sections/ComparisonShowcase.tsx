@@ -94,13 +94,15 @@ export function ComparisonShowcase() {
                   </div>
 
                   {/* Problem (red) */}
-                  <div className="mb-3 p-4 rounded-lg bg-destructive/5 border border-destructive/20 relative">
-                    <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-destructive/10 border-2 border-destructive flex items-center justify-center">
-                      <X className="w-4 h-4 text-destructive" />
-                    </div>
-                    <div className="ml-6">
-                      <div className="text-base font-bold text-foreground mb-1">{comparison.problem}</div>
-                      <div className="text-sm text-muted-foreground">{comparison.problemDetail}</div>
+                  <div className="mb-3 p-4 rounded-lg bg-destructive/5 border border-destructive/20">
+                    <div className="flex items-start gap-3">
+                      <div className="flex-shrink-0 w-7 h-7 rounded-full bg-destructive/10 border-2 border-destructive flex items-center justify-center mt-0.5">
+                        <X className="w-4 h-4 text-destructive" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="text-base font-bold text-foreground mb-1">{comparison.problem}</div>
+                        <div className="text-sm text-muted-foreground">{comparison.problemDetail}</div>
+                      </div>
                     </div>
                   </div>
 
@@ -110,13 +112,15 @@ export function ComparisonShowcase() {
                   </div>
 
                   {/* Solution (cyan) */}
-                  <div className="p-4 rounded-lg bg-primary/5 border border-primary/20 relative">
-                    <div className="absolute -left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center">
-                      <Check className="w-4 h-4 text-primary" />
-                    </div>
-                    <div className="ml-6">
-                      <div className="text-base font-bold text-foreground mb-1">{comparison.solution}</div>
-                      <div className="text-sm text-muted-foreground">{comparison.solutionDetail}</div>
+                  <div className="p-4 rounded-lg bg-primary/5 border border-primary/20">
+                    <div className="flex items-start gap-3">
+                      <div className="flex-shrink-0 w-7 h-7 rounded-full bg-primary/10 border-2 border-primary flex items-center justify-center mt-0.5">
+                        <Check className="w-4 h-4 text-primary" />
+                      </div>
+                      <div className="flex-1">
+                        <div className="text-base font-bold text-foreground mb-1">{comparison.solution}</div>
+                        <div className="text-sm text-muted-foreground">{comparison.solutionDetail}</div>
+                      </div>
                     </div>
                   </div>
                 </div>

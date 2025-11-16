@@ -1,4 +1,4 @@
-# Noderrrr Protocol - Social Media Links
+# Noderr Protocol - Social Media Links
 
 Extracted from linktr.ee/noderr on 2025-01-07
 
@@ -6,15 +6,15 @@ Extracted from linktr.ee/noderr on 2025-01-07
 
 - **Website**: https://www.noderr.xyz/
 - **Discord**: https://discord.com/invite/noderr (Note: Invite may be expired/invalid)
-- **Telegram**: @NoderrrrSupp (https://t.me/NoderrrrSupp)
-- **Twitter/X**: @NoderrrrProtocol (from X screenshot)
-- **Instagram**: @Noderrrr
+- **Telegram**: @NoderrSupp (https://t.me/NoderrSupp)
+- **Twitter/X**: @NoderrProtocol (from X screenshot)
+- **Instagram**: @Noderr
 - **GitHub**: (Need to search for official repo)
 
 ## X/Twitter Profile Info
 From screenshot:
-- Handle: @NoderrrrProtocol
-- Name: Noderrrr | Infrastructure DAO
+- Handle: @NoderrProtocol
+- Name: Noderr | Infrastructure DAO
 - Bio: "Trust-weighted infrastructure. ZK-governed. DAO-controlled. | Coming Soon: The Future of Decentralized Orchestration"
 - Location: On-Chain, Blockchain
 - Link: linktr.ee/noderr

@@ -124,7 +124,7 @@ export function WaitlistForm() {
 
       {/* Privacy note */}
       <p className="text-xs text-muted-foreground text-center">
-        By joining, you agree to receive updates about Noderrrr Protocol. We respect your privacy and will never share your information.
+        By joining, you agree to receive updates about Noderr Protocol. We respect your privacy and will never share your information.
       </p>
     </form>
   );

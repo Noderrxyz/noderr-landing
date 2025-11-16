@@ -141,7 +141,7 @@ export function ProprietaryTech() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            The <span className="text-gradient">Noderrrr Difference</span>
+            The <span className="text-gradient">Noderr Difference</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Our protocol combines proprietary, interconnected technologies that deliver security, sustainability, and performance.

@@ -9,7 +9,7 @@ const tiers = [
     icon: Sparkles,
     name: 'Micro Nodes',
     subtitle: 'The Foundation of the Swarm',
-    description: 'Micro Nodes operate as AI agents in a mesh network, providing compute resources to the Noderrrr Protocol when overhead capacity is reached. Put your old Android and iOS devices to work, or install our browser extension to earn passive, real-world yield.',
+    description: 'Micro Nodes operate as AI agents in a mesh network, providing compute resources to the Noderr Protocol when overhead capacity is reached. Put your old Android and iOS devices to work, or install our browser extension to earn passive, real-world yield.',
     functions: [
       'Run AI-driven automation tasks as distributed agents',
       'Provide compute resources for strategy backtesting in the Shadow Data Swarm™',
@@ -85,10 +85,10 @@ export function ModesForEveryUser() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            The Noderrrr Network: <span className="text-gradient">A Role for Everyone</span>
+            The Noderr Network: <span className="text-gradient">A Role for Everyone</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Noderrrr's multi-tier architecture maximizes decentralization and security through specialized roles for every level of participation.
+            Noderr's multi-tier architecture maximizes decentralization and security through specialized roles for every level of participation.
           </p>
         </motion.div>
 
@@ -159,19 +159,6 @@ export function ModesForEveryUser() {
             </AnimatePresence>
           </div>
         </div>
-         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="text-center mt-12"
-        >
-          <div className="inline-block p-4 rounded-xl bg-card border border-border max-w-2xl">
-            <p className="text-sm text-muted-foreground">
-              <span className="text-foreground font-semibold">Note:</span> Guardians and Oracles are elected by their peers. This meritocratic structure, where influence must be earned over time, makes governance takeover effectively impossible.
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

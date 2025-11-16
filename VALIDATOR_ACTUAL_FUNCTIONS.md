@@ -59,7 +59,7 @@ Based on the actual validator node client code, Validators perform the following
 
 ### 5. Network Participation
 - **Blockchain Connection:** Maintain connection to Base L2 network
-- **Contract Interaction:** Interact with Noderrrr Protocol smart contracts
+- **Contract Interaction:** Interact with Noderr Protocol smart contracts
 - **Transaction Monitoring:** Monitor and record transaction success/failure
 - **Metrics Collection:** Collect and report node performance metrics
 
@@ -74,7 +74,7 @@ Based on the actual validator node client code, Validators perform the following
 - Optimize data queries
 - Track risk metrics
 
-**Conclusion:** Noderrrr runs on Base L2 (which handles consensus), so Validators do NOT produce blocks or validate blockchain transactions. Instead, they perform governance, data management, and analytics functions for the Noderrrr Protocol.
+**Conclusion:** Noderr runs on Base L2 (which handles consensus), so Validators do NOT produce blocks or validate blockchain transactions. Instead, they perform governance, data management, and analytics functions for the Noderr Protocol.
 
 ## Technical Stack
 
