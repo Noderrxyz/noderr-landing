@@ -64,7 +64,7 @@ const tiers = [
       'Oversee Base-Rate Governor parameters and sustainability metrics',
       'Must be elected by peers from the Guardian pool (TrustFingerprint™ ≥0.90)',
     ],
-    rewards: '28-28% APY, plus a $50,000 stipend and 10% of strategy profit share',
+    rewards: '28-28% APY, plus stipend and 10% of strategy profit share',
     cta: 'Express Interest in Oracle Role',
     ctaUrl: 'https://form.typeform.com/to/01KA5J8C7F4Q5MWWH1928GJB3R',
   },
