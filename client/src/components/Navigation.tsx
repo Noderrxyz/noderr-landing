@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Droplet } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { GitBookPanel } from '@/components/GitBookPanel';
-import { DAPP_URL } from '@/const';
+import { DAPP_URL, FAUCET_URL } from '@/const';
 
 const navLinks = [
   { name: 'Features', href: '#features' },
@@ -80,7 +80,7 @@ export function Navigation() {
                 asChild
                 className="border-accent/30 hover:bg-accent/10 text-accent hover:text-accent"
               >
-                <a href={`${DAPP_URL}/faucet`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
+                <a href={FAUCET_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2">
                   <Droplet className="w-4 h-4" />
                   Faucet
                 </a>
@@ -149,7 +149,7 @@ export function Navigation() {
                   className="w-full border-accent/30 hover:bg-accent/10 text-accent"
                   asChild
                 >
-                  <a href={`${DAPP_URL}/faucet`} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
+                  <a href={FAUCET_URL} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2">
                     <Droplet className="w-4 h-4" />
                     Get Testnet Tokens
                   </a>

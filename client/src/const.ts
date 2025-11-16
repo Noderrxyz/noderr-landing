@@ -24,6 +24,7 @@ export const getLoginUrl = () => {
 
 export const GITBOOK_URL = "https://docs.noderr.xyz";
 export const DAPP_URL = "https://app.noderr.xyz";
+export const FAUCET_URL = "https://faucet.noderr.xyz";
 export const TYPEFORM_URL = "https://form.typeform.com/to/01KA5J8C7F4Q5MWWH1928GJB3R";
 export const NODE_DOWNLOAD_URL = "https://app.noderr.xyz/nodes";
 export const VALIDATOR_APPLICATION_URL = "https://app.noderr.xyz/stake";

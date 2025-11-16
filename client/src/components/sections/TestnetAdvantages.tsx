@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { Gift, Users, Trophy, Zap, ArrowRight } from 'lucide-react';
-import { DAPP_URL } from '@/const';
+import { FAUCET_URL } from '@/const';
 
 const advantages = [
   {
@@ -98,7 +98,7 @@ export function TestnetAdvantages() {
               <p className="text-muted-foreground">Claim your free testnet tokens and start exploring the Noderr ecosystem today.</p>
             </div>
             <a 
-              href={`${DAPP_URL}/faucet`}
+              href={FAUCET_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="group px-8 py-4 bg-primary hover:bg-primary/90 rounded-xl font-semibold whitespace-nowrap transition-all hover:scale-105 inline-flex items-center gap-2"
