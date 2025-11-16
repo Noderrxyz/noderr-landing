@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question: 'Can I upgrade my node tier later?',
-    answer: 'Yes. The protocol is designed for progressive advancement. You can upgrade from Micro → Validator → Guardian → Oracle by meeting the stake and TrustFingerprint™ requirements for each tier. Guardian and Oracle roles are elected positions, requiring nomination and a vote from their peers.',
+    answer: 'Yes. The protocol enables progressive advancement. You can upgrade from Micro → Validator → Guardian → Oracle by meeting the stake and TrustFingerprint™ requirements for each tier. Guardian and Oracle roles require election by peers through nomination and voting.',
   },
   {
     question: 'What happens if my node goes offline?',

@@ -96,7 +96,7 @@ export function ModesForEveryUser() {
             The Noderr Network: <span className="text-gradient">A Role for Everyone</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Noderr's multi-tier architecture is designed for maximum decentralization and security, with specialized roles for every level of participation. Whether you are a casual user, a professional infrastructure operator, or a DeFi governance expert, there is a meaningful way to contribute and be rewarded.
+            Noderr's multi-tier architecture maximizes decentralization and security through specialized roles for every level of participation. Whether you are a casual user, a professional infrastructure operator, or a DeFi governance expert, you can contribute meaningfully and earn real rewards.
           </p>
         </motion.div>
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">

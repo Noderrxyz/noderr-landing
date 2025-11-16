@@ -12,12 +12,12 @@ const technologies = [
     docUrl: `${GITBOOK_URL}/protocol/ate`,
     details: [
       {
-        title: 'Floor Engine (Stable Baseline Yield)',
-        text: 'Provides a consistent 5-8% APY baseline through conservative, market-neutral strategies like yield farming and arbitrage. This engine is always active, ensuring a stable foundation for protocol revenue.'
+        title: 'Floor Engine (7 DeFi Protocol Adapters)',
+        text: 'Provides a consistent 5-8% APY baseline by integrating with 7 battle-tested DeFi protocols (Aave, Balancer, Curve, GMX, Uniswap V3, dYdX). This diversified, market-neutral approach ensures a stable foundation for protocol revenue.'
       },
       {
-        title: 'Third-Party Strategies (Alpha Generation)',
-        text: 'External quants and developers submit advanced algorithms that compete in the Shadow Data Swarm™. Only 0.37% of strategies survive the rigorous 4-stage approval process, with contributors earning a 20% profit share.'
+        title: 'Third-Party Strategies (20% Profit Share)',
+        text: 'External quants and data scientists contribute advanced algorithms to our open marketplace. If their strategies pass the rigorous 4-stage validation process (0.37% survival rate), they earn a 20% profit share on all generated returns, paid quarterly via smart contract.'
       },
       {
         title: 'Evolutionary AI Core',
@@ -109,7 +109,7 @@ export function ProprietaryTech() {
             The <span className="text-gradient">Noderr Difference</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Our protocol is built on a foundation of proprietary, interconnected technologies designed for security, sustainability, and performance.
+            Our protocol combines proprietary, interconnected technologies that deliver security, sustainability, and performance.
           </p>
         </motion.div>
 
