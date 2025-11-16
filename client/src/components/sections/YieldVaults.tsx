@@ -112,6 +112,9 @@ export function YieldVaults() {
           <h2 className="text-4xl sm:text-5xl font-bold mb-6">
             Automated Yield Vaults
           </h2>
+          <div className="inline-block px-4 py-2 mb-4 rounded-full bg-primary/10 border border-primary/20">
+            <span className="text-sm font-semibold text-primary">Coming Soon - Q1 2027 (Mainnet Launch)</span>
+          </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Deposit into our Autonomous Trading Engine. Earn passive yield without running a node. Choose your risk, we handle the rest.
           </p>
