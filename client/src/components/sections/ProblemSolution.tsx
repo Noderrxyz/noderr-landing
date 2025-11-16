@@ -30,7 +30,7 @@ export function ProblemSolution() {
         >
           <div className="rounded-2xl overflow-hidden border border-border bg-card p-4">
             <img 
-              src="/defi-comparison.png" 
+              src="/defi-comparison-pro.png" 
               alt="Traditional DeFi vs Noderr Model Comparison" 
               className="w-full h-auto"
             />

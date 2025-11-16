@@ -50,7 +50,7 @@ const technologies = [
     id: 'trustfingerprint',
     name: 'TrustFingerprint™',
     icon: ShieldCheck,
-    description: 'A multi-dimensional, time-weighted reputation system that makes governance takeover economically and practically infeasible. Trust cannot be bought—it must be earned.',
+    description: 'A multi-dimensional, time-weighted reputation system that makes governance takeover economically and practically infeasible. Trust cannot be bought; it must be earned.',
     docUrl: `${GITBOOK_URL}/protocol/trustfingerprint`,
     details: [
       {

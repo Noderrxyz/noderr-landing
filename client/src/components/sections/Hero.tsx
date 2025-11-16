@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button";
 import { GITBOOK_URL, DAPP_URL } from "@/const";
 
 const stats = [
-  { value: "5-35%", label: "Real APY Range" },
+  { value: "8-15%", label: "Target APY" },
   { value: "100M", label: "Fixed Supply" },
-  { value: "0%", label: "Operational Inflation" },
-  { value: "$5B+", label: "Est. Attack Cost" },
+  { value: "0%", label: "Inflation" },
+  { value: "$5-50B", label: "Est. Attack Cost" },
 ];
 
 export function Hero() {
@@ -73,7 +73,7 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
           >
-            Noderr is the first protocol to generate sustainable, high-quality yield from autonomous trading—not inflationary token emissions. This is real yield, from real economic activity.
+            Noderr is a decentralized autonomous trading system that generates sustainable, real-world yields through a sophisticated three-layer architecture. No inflationary emissions, just pure performance.
           </motion.p>
 
           {/* Key Stats */}
