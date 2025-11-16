@@ -45,7 +45,7 @@ const bottomRowVaults = [
     id: 'hedged',
     name: 'Hedged Vault',
     icon: BarChart3,
-    apy: '8-15%',
+    apy: '8-18%',
     risk: 'Low-Medium',
     riskColor: 'text-blue-500',
     bgColor: 'bg-blue-500/10',
