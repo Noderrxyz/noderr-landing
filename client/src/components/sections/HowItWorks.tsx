@@ -1,29 +1,29 @@
 import { motion } from 'framer-motion';
-import { GitBranch, ShieldCheck, Paperclip, Zap } from 'lucide-react';
+import { GitBranch, ShieldCheck, Paperclip, Zap, BrainCircuit, Scale, TestTube, FileJson } from 'lucide-react';
 
 const steps = [
   {
-    icon: GitBranch,
-    title: '1. Generate & Test',
-    description: 'The Autonomous Trading Engine (ATE) uses evolutionary algorithms to generate thousands of novel trading strategies. These strategies are then submitted to the Shadow Data Swarm™, where they are backtested and refined by a decentralized network of Micro Nodes.',
+    icon: BrainCircuit,
+    title: '1. Strategy Generation & Genetic Evolution',
+    description: 'The Autonomous Trading Engine (ATE) leverages evolutionary algorithms and Transformer-based language models to generate thousands of novel trading strategies. Each strategy is encoded as a unique genome, allowing for genetic evolution and continuous improvement within the Shadow Data Swarm™.',
     color: 'primary',
   },
   {
-    icon: ShieldCheck,
-    title: '2. Curate & Approve',
-    description: 'Top-performing strategies (0.37% survival rate) undergo Guardian code review and risk assessment. Approved strategies are automatically deployed to the Live Swarm with gradual capital allocation, monitored by Oracle oversight.',
+    icon: TestTube,
+    title: '2. Decentralized Backtesting & Statistical Validation',
+    description: 'Strategies are submitted to a decentralized network of Micro Nodes for massively parallel backtesting. We employ rigorous statistical methods like Moving Block Bootstrap and White\'s Reality Check to prevent overfitting and validate strategy robustness against data snooping bias.',
     color: 'accent',
   },
   {
-    icon: Paperclip,
-    title: '3. Paper Trade & Validate',
-    description: 'Strategies that pass Guardian review are deployed with gradual capital allocation, starting with minimal capital and scaling up only after proven live performance over 30-90 days.',
+    icon: Scale,
+    title: '3. Guardian Review & Paper Trading',
+    description: 'Top-performing strategies (0.37% survival rate) undergo Guardian code review and risk assessment. Approved strategies are deployed to the Live Swarm with gradual capital allocation, starting with minimal capital and scaling up only after proven live performance over 30-90 days.',
     color: 'chart-3',
   },
   {
-    icon: Zap,
-    title: '4. Execute & Distribute',
-    description: 'Oracles provide final oversight on high-risk decisions and treasury management. Profits from the Live Swarm are automatically routed to the treasury and distributed to node operators as real, sustainable yield.',
+    icon: FileJson,
+    title: '4. ZK-Proof Generation & On-Chain Verification',
+    description: 'For full transparency, the performance of validated strategies is proven on-chain using Groth16 ZK-SNARKs. This allows anyone to verify the legitimacy of our backtest results without revealing the proprietary strategy itself.',
     color: 'chart-5',
   },
 ];
@@ -43,7 +43,7 @@ export function HowItWorks() {
             From <span className="text-gradient">Idea to Execution</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Noderr uses a multi-stage validation pipeline to select the highest-quality trading strategies for managing protocol capital. This is how we turn algorithmic concepts into sustainable yield.
+            Noderr\'s ATE Shadow Swarm™ is a sophisticated, multi-stage validation pipeline that turns algorithmic concepts into institutional-grade, sustainable yield. This is how we ensure only the highest-quality strategies manage protocol capital.
           </p>
         </motion.div>
 
