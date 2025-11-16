@@ -21,3 +21,5 @@ export const getLoginUrl = () => {
 
   return url.toString();
 };
+
+export const GITBOOK_URL = "https://docs.noderr.xyz";

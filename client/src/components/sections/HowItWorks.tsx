@@ -1,104 +1,86 @@
 import { motion } from 'framer-motion';
-import { Wallet, Server, TrendingUp } from 'lucide-react';
+import { GitBranch, ShieldCheck, Paperclip, Zap } from 'lucide-react';
 
 const steps = [
   {
-    icon: Wallet,
-    number: '01',
-    title: 'Stake NODR Tokens',
-    description: 'Choose your node tier and stake the required amount of NODR tokens. Higher tiers unlock enhanced rewards and governance power.',
+    icon: GitBranch,
+    title: '1. Generate & Test',
+    description: 'The Autonomous Trading Engine (ATE) uses evolutionary algorithms to generate thousands of novel trading strategies. These strategies are then submitted to the Shadow Data Swarm™, where they are rigorously backtested and refined by a decentralized network of Micro Nodes.',
+    color: 'primary',
   },
   {
-    icon: Server,
-    number: '02',
-    title: 'Run Your Node',
-    description: 'Deploy your node and start validating operations. Build your trust fingerprint through consistent performance and reliability.',
+    icon: ShieldCheck,
+    title: '2. Curate & Approve',
+    description: 'The top-performing strategies (0.37% survival rate) are promoted to the Guardian Council. These elected experts perform rigorous code reviews and risk assessments, ensuring only the most robust and secure algorithms proceed. A 4/5 majority vote is required for approval.',
+    color: 'accent',
   },
   {
-    icon: TrendingUp,
-    number: '03',
-    title: 'Earn Rewards',
-    description: 'Receive rewards based on your tier and trust score. Participate in vault strategies and governance decisions to maximize returns.',
+    icon: Paperclip,
+    title: '3. Paper Trade & Validate',
+    description: 'Approved strategies enter a 4-12 week paper trading phase, executing trades with simulated capital against live market data. This crucial step validates performance in real-world conditions before any protocol capital is deployed.',
+    color: 'chart-3',
+  },
+  {
+    icon: Zap,
+    title: '4. Execute & Distribute',
+    description: 'After a final 66% approval vote from the Oracle council, strategies are deployed to the Live Swarm with a gradual capital allocation. Profits are automatically routed to the treasury and distributed to node operators as real, sustainable yield.',
+    color: 'chart-5',
   },
 ];
 
 export function HowItWorks() {
   return (
-    <section className="section-padding bg-card/20">
-      <div className="container max-w-7xl mx-auto">
+    <section className="section-padding bg-background">
+      <div className="container max-w-7xl mx-auto px-4">
         {/* Section header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-20"
+          className="text-center mb-16"
         >
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4">
-            How <span className="text-gradient">Noderr</span> Works
+          <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+            From <span className="text-gradient">Idea to Execution</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Join the decentralized node operator network in three simple steps.
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            Noderr employs a rigorous, multi-stage validation pipeline that ensures only the highest-quality trading strategies ever manage protocol capital. This is how we turn algorithmic concepts into sustainable yield.
           </p>
         </motion.div>
 
-        {/* Steps */}
-        <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
-          {steps.map((step, index) => {
-            const Icon = step.icon;
-            return (
-              <motion.div
-                key={step.number}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ delay: index * 0.2, duration: 0.6 }}
-                className="relative"
-              >
-                {/* Connector line (desktop only) */}
-                {index < steps.length - 1 && (
-                  <div className="hidden lg:block absolute top-16 left-[60%] w-[80%] h-0.5 bg-gradient-to-r from-primary/50 to-transparent" />
-                )}
+        {/* Steps timeline */}
+        <div className="relative max-w-3xl mx-auto">
+          {/* Vertical line */}
+          <div className="absolute left-8 top-8 bottom-8 w-0.5 bg-border" />
 
-                {/* Card */}
-                <div className="relative p-8 rounded-2xl bg-card border border-border hover:border-primary/30 transition-all duration-300 group">
-                  {/* Step number */}
-                  <div className="absolute -top-4 -right-4 w-16 h-16 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center backdrop-blur-sm">
-                    <span className="text-2xl font-bold text-primary">{step.number}</span>
-                  </div>
-
+          <div className="space-y-12">
+            {steps.map((step, index) => {
+              const Icon = step.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, x: 20 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true, margin: '-100px' }}
+                  transition={{ duration: 0.5, delay: index * 0.1 }}
+                  className="relative flex items-start gap-6"
+                >
                   {/* Icon */}
-                  <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-primary/20 transition-all duration-300">
-                    <Icon className="w-8 h-8 text-primary" />
+                  <div className="relative z-10">
+                    <div className={`w-16 h-16 rounded-full bg-${step.color}/10 border-2 border-${step.color}/30 flex items-center justify-center`}>
+                      <Icon className={`w-8 h-8 text-${step.color}`} />
+                    </div>
                   </div>
 
                   {/* Content */}
-                  <h3 className="text-2xl font-bold mb-4 text-foreground">
-                    {step.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
-              </motion.div>
-            );
-          })}
+                  <div className="pt-1">
+                    <h3 className="text-2xl font-bold mb-2 text-foreground">{step.title}</h3>
+                    <p className="text-muted-foreground leading-relaxed">{step.description}</p>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
         </div>
-
-        {/* CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.8 }}
-          className="text-center mt-16"
-        >
-          <p className="text-lg text-muted-foreground mb-6">
-            Ready to experience the future of DeFi trading?
-          </p>
-          <button className="px-8 py-4 bg-primary hover:bg-primary/90 rounded-xl font-semibold transition-all hover:scale-105">
-            Start Trading Now
-          </button>
-        </motion.div>
       </div>
     </section>
   );

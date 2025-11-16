@@ -1,10 +1,11 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles, TrendingUp } from 'lucide-react';
+import { ArrowRight, Sparkles, Shield, TrendingUp, Lock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { GITBOOK_URL } from '@/const';
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-background">
       {/* Animated gradient background */}
       <div className="absolute inset-0 gradient-hero opacity-10" />
       
@@ -39,7 +40,7 @@ export function Hero() {
       />
       
       {/* Content */}
-      <div className="container relative z-10 max-w-6xl mx-auto text-center">
+      <div className="container relative z-10 max-w-6xl mx-auto text-center px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -54,8 +55,8 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-card border border-primary/20 backdrop-blur-sm"
           >
             <Sparkles className="w-4 h-4 text-primary" />
-            <a href="https://app.noderr.xyz/faucet" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-primary transition-colors">
-              Testnet Now Live - Get Tokens
+            <a href="/faucet" className="text-sm font-medium hover:text-primary transition-colors">
+              Testnet Now Live - Get Free Tokens
             </a>
           </motion.div>
 
@@ -66,11 +67,9 @@ export function Hero() {
             transition={{ delay: 0.3, duration: 0.8 }}
             className="text-5xl sm:text-6xl lg:text-7xl font-bold leading-tight"
           >
-            Decentralized Node Operator
+            The Yield Protocol That
             <br />
-            <span className="text-gradient">Network</span>
-            <br />
-            with Trust-Weighted DeFi Infrastructure
+            <span className="text-gradient">Actually Yields.</span>
           </motion.h1>
 
           {/* Subheadline */}
@@ -80,29 +79,31 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed"
           >
-            Trust-weighted infrastructure. ZK-governed. DAO-controlled. Built on Base L2 for optimal performance and low fees.
+            Noderr is the first protocol to generate sustainable, high-quality yield from autonomous trading—not inflationary token emissions. This is real yield, from real economic activity.
           </motion.p>
 
-          {/* Key Features */}
+          {/* Key Stats */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.7 }}
-            className="flex flex-wrap items-center justify-center gap-8 text-sm"
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto pt-4"
           >
-            <div className="flex items-center gap-2">
-              <Sparkles className="w-5 h-5 text-primary" />
-              <span className="text-muted-foreground">ZK Proofs</span>
+            <div className="space-y-2 p-4 bg-card/50 rounded-lg border border-border">
+              <div className="text-3xl font-bold text-gradient">8-15%</div>
+              <div className="text-sm text-muted-foreground">Target APY</div>
             </div>
-            <div className="h-4 w-px bg-border" />
-            <div className="flex items-center gap-2">
-              <TrendingUp className="w-5 h-5 text-accent" />
-              <span className="text-muted-foreground">Multi-Tier Nodes</span>
+            <div className="space-y-2 p-4 bg-card/50 rounded-lg border border-border">
+              <div className="text-3xl font-bold text-gradient">100M</div>
+              <div className="text-sm text-muted-foreground">Fixed Supply</div>
             </div>
-            <div className="h-4 w-px bg-border" />
-            <div className="flex items-center gap-2">
-              <TrendingUp className="w-5 h-5 text-chart-3" />
-              <span className="text-muted-foreground">Automated Vaults</span>
+            <div className="space-y-2 p-4 bg-card/50 rounded-lg border border-border">
+              <div className="text-3xl font-bold text-gradient">0%</div>
+              <div className="text-sm text-muted-foreground">Inflation</div>
+            </div>
+            <div className="space-y-2 p-4 bg-card/50 rounded-lg border border-border">
+              <div className="text-3xl font-bold text-gradient">$5B+</div>
+              <div className="text-sm text-muted-foreground">Attack Cost</div>
             </div>
           </motion.div>
 
@@ -110,27 +111,27 @@ export function Hero() {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9 }}
+            transition={{ delay: 1.1 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4"
           >
             <Button
               size="lg"
               asChild
-              className="group px-8 py-6 text-lg font-semibold bg-primary hover:bg-primary/90 transition-all"
+              className="group px-8 py-6 text-lg font-semibold bg-primary hover:bg-primary/90 transition-all shadow-lg shadow-primary/20"
             >
-              <a href="/apply">
-                Apply to Become a Node Operator
+              <a href="#modes">
+                Become a Node Operator
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
             <Button
               size="lg"
               variant="outline"
-              className="px-8 py-6 text-lg font-semibold border-primary/20 hover:bg-primary/10"
+              className="px-8 py-6 text-lg font-semibold border-border hover:bg-card/80 hover:border-primary/30"
               asChild
             >
-              <a href="/faucet">
-                Get Testnet Tokens
+              <a href={GITBOOK_URL} target="_blank" rel="noopener noreferrer">
+                Read the Docs
               </a>
             </Button>
           </motion.div>
@@ -139,10 +140,10 @@ export function Hero() {
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.1 }}
+            transition={{ delay: 1.3 }}
             className="text-sm text-muted-foreground pt-8"
           >
-            Built on <span className="text-foreground font-semibold">Base L2</span> • Powered by <span className="text-foreground font-semibold">Zero-Knowledge Proofs</span> • <span className="text-foreground font-semibold">DAO Governed</span>
+            Built on <span className="text-foreground font-semibold">Base L2</span> • Powered by <span className="text-foreground font-semibold">Evolutionary Algorithms</span> • Secured by <span className="text-foreground font-semibold">Elected Oracles</span>
           </motion.p>
         </motion.div>
       </div>
