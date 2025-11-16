@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     question: 'How are rewards calculated?',
-    answer: 'Rewards are based on your tier, your stake, and your TrustFingerprint™ score. Micro Nodes earn 5-12% APY, while higher tiers earn 28-28% APY plus additional stipends and profit sharing. Higher performance and longer uptime earn higher rewards.',
+    answer: 'Rewards are based on your tier, your stake, and your TrustFingerprint™ score. Micro Nodes earn 5-10% APY, Validators earn 10-15% APY, Guardians earn 15-20% APY, and Oracles earn 20-25% APY, plus additional stipends and profit sharing for higher tiers. Higher performance and longer uptime earn higher rewards.',
   },
   {
     question: 'What is the purpose of the testnet?',

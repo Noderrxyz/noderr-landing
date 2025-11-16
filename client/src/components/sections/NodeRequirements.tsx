@@ -44,7 +44,7 @@ const additionalInfo = [
   },
   {
     title: 'Expected Rewards',
-    description: 'Micro Nodes earn 5-12% APY. Validators, Guardians, and Oracles earn 28-28% APY, with Guardians and Oracles receiving additional stipends and profit share.',
+    description: 'Micro Nodes earn 5-10% APY. Validators earn 10-15% APY, Guardians earn 15-20% APY, and Oracles earn 20-25% APY, with Guardians and Oracles receiving additional stipends and profit share.',
   },
 ];
 
