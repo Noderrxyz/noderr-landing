@@ -2,6 +2,7 @@ import express from "express";
 import { createServer } from "http";
 import path from "path";
 import { fileURLToPath } from "url";
+import { applySecurity } from "./security.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -9,6 +10,13 @@ const __dirname = path.dirname(__filename);
 async function startServer() {
   const app = express();
   const server = createServer(app);
+
+  // Apply security middleware FIRST
+  applySecurity(app);
+
+  // Parse JSON with size limit (prevent memory exhaustion DoS)
+  app.use(express.json({ limit: "1mb" }));
+  app.use(express.urlencoded({ extended: true, limit: "1mb" }));
 
   // Serve static files from dist/public in production
   const staticPath =
@@ -26,7 +34,9 @@ async function startServer() {
   const port = process.env.PORT || 3000;
 
   server.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}/`);
+    console.log(`🚀 Server running on http://localhost:${port}/`);
+    console.log(`📁 Serving static files from: ${staticPath}`);
+    console.log(`🔒 Security: ${process.env.NODE_ENV === "production" ? "PRODUCTION MODE" : "DEVELOPMENT MODE"}`);
   });
 }
 
