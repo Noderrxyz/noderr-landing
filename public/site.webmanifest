@@ -1,0 +1,91 @@
+{
+  "name": "Noderr Protocol",
+  "short_name": "Noderr",
+  "description": "Institutional-grade DeFi infrastructure with evolutionary AI trading and decentralized validation. Sustainable 8-28% APY.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["finance", "business", "productivity", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Launch dApp",
+      "short_name": "dApp",
+      "description": "Open Noderr dApp to manage nodes and vaults",
+      "url": "https://app.noderr.xyz",
+      "icons": [
+        {
+          "src": "/shortcut-dapp.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Documentation",
+      "short_name": "Docs",
+      "description": "Read Noderr Protocol documentation",
+      "url": "https://docs.noderr.xyz",
+      "icons": [
+        {
+          "src": "/shortcut-docs.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Join Discord",
+      "short_name": "Discord",
+      "description": "Join the Noderr community",
+      "url": "https://discord.com/invite/noderr",
+      "icons": [
+        {
+          "src": "/shortcut-discord.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Noderr Protocol Dashboard"
+    },
+    {
+      "src": "/screenshot-mobile.png",
+      "sizes": "750x1334",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Noderr Protocol Mobile"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

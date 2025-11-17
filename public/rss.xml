@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Noderr Protocol Updates</title>
+    <link>https://noderr.xyz</link>
+    <description>Latest updates from Noderr Protocol - Institutional-grade DeFi infrastructure with evolutionary AI trading</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Nov 2025 00:00:00 GMT</lastBuildDate>
+    <atom:link href="https://noderr.xyz/rss.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://noderr.xyz/logo.png</url>
+      <title>Noderr Protocol</title>
+      <link>https://noderr.xyz</link>
+    </image>
+    
+    <!-- Example Item - Replace with actual blog posts -->
+    <item>
+      <title>Welcome to Noderr Protocol</title>
+      <link>https://noderr.xyz/blog/welcome</link>
+      <description>Introducing institutional-grade DeFi infrastructure powered by evolutionary AI trading and Pyth Network oracles. Learn how Noderr delivers sustainable 8-28% APY with zero inflation.</description>
+      <pubDate>Sat, 16 Nov 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://noderr.xyz/blog/welcome</guid>
+      <dc:creator>Noderr Protocol Team</dc:creator>
+      <category>DeFi</category>
+      <category>AI Trading</category>
+      <category>Blockchain</category>
+    </item>
+    
+    <item>
+      <title>Testnet Launch on Base Sepolia</title>
+      <link>https://noderr.xyz/blog/testnet-launch</link>
+      <description>Noderr Protocol testnet is now live on Base Sepolia. Join our community to test node operations, governance, and earn testnet rewards. Free faucet tokens available for all tiers.</description>
+      <pubDate>Sat, 16 Nov 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://noderr.xyz/blog/testnet-launch</guid>
+      <dc:creator>Noderr Protocol Team</dc:creator>
+      <category>Testnet</category>
+      <category>Base Network</category>
+    </item>
+    
+    <item>
+      <title>Pyth Network Integration: Enterprise-Grade Oracle Solution</title>
+      <link>https://noderr.xyz/blog/pyth-integration</link>
+      <description>Discover how Noderr Protocol leverages Pyth Network for real-time, high-fidelity price feeds. Learn about sub-second updates, cryptographic signatures, and institutional-grade price discovery.</description>
+      <pubDate>Sat, 16 Nov 2025 00:00:00 GMT</pubDate>
+      <guid isPermaLink="true">https://noderr.xyz/blog/pyth-integration</guid>
+      <dc:creator>Noderr Protocol Team</dc:creator>
+      <category>Oracles</category>
+      <category>Pyth Network</category>
+      <category>Integration</category>
+    </item>
+  </channel>
+</rss>
