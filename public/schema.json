@@ -1,0 +1,156 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://noderr.io/#organization",
+      "name": "Noderr Protocol",
+      "url": "https://noderr.io",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://noderr.io/logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "description": "Decentralized infrastructure platform enabling secure, scalable, and efficient blockchain operations. Powered by Pyth Network for real-time oracle data.",
+      "foundingDate": "2024",
+      "sameAs": [
+        "https://twitter.com/NoderrProtocol",
+        "https://github.com/Noderrxyz",
+        "https://discord.gg/noderr",
+        "https://t.me/NoderrProtocol",
+        "https://medium.com/@noderr"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Support",
+        "email": "support@noderr.io",
+        "availableLanguage": ["English"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "US"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://noderr.io/#website",
+      "url": "https://noderr.io",
+      "name": "Noderr Protocol",
+      "description": "Decentralized infrastructure platform for blockchain operations",
+      "publisher": {
+        "@id": "https://noderr.io/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://noderr.io/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://noderr.io/#application",
+      "name": "Noderr Protocol",
+      "applicationCategory": "BlockchainApplication",
+      "operatingSystem": "Web, Ethereum, Arbitrum, Optimism, Base",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "Decentralized infrastructure platform with real-time oracle integration via Pyth Network",
+      "softwareVersion": "1.0",
+      "releaseNotes": "Production release with comprehensive security features",
+      "author": {
+        "@id": "https://noderr.io/#organization"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "150",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://noderr.io/whitepaper#article",
+      "headline": "Noderr Protocol: Decentralized Infrastructure Whitepaper",
+      "description": "Technical whitepaper detailing the architecture, security, and economics of Noderr Protocol",
+      "author": {
+        "@id": "https://noderr.io/#organization"
+      },
+      "datePublished": "2024-01-01",
+      "dateModified": "2025-11-16",
+      "publisher": {
+        "@id": "https://noderr.io/#organization"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://noderr.io/faq#faqpage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is Noderr Protocol?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Noderr Protocol is a decentralized infrastructure platform enabling secure, scalable, and efficient blockchain operations. We provide enterprise-grade infrastructure powered by Pyth Network for real-time oracle data and NodeGuru for professional validator operations."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which blockchains does Noderr support?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Noderr Protocol supports Ethereum, Arbitrum, Optimism, and Base, with plans to expand to additional EVM-compatible chains."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does Noderr ensure security?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Noderr implements Fortune 500-grade security including comprehensive smart contract audits, rate limiting, DDoS protection, HSM key management, and real-time monitoring. Our infrastructure is operated by NodeGuru with 99.9% uptime SLA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What oracle solution does Noderr use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Noderr uses Pyth Network as its primary oracle solution, providing real-time, high-fidelity price feeds with 400ms update frequency and institutional-grade data from 95+ first-party publishers."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://noderr.io/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://noderr.io/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Documentation",
+          "item": "https://noderr.io/docs"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Developers",
+          "item": "https://noderr.io/developers"
+        }
+      ]
+    }
+  ]
+}

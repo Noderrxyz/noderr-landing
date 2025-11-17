@@ -1,0 +1,45 @@
+# Noderr Protocol - Robots.txt
+# https://noderr.io
+
+User-agent: *
+Allow: /
+
+# Optimize crawl budget
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Sitemaps
+Sitemap: https://noderr.io/sitemap.xml
+
+# Specific bot instructions
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# AI/LLM Crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Crawl delay (be respectful)
+Crawl-delay: 1
