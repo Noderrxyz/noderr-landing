@@ -8,7 +8,7 @@ const comparisons = [
     problem: 'Token Emissions',
     problemDetail: 'Minting new tokens to pay rewards',
     solution: 'Real Trading Profits',
-    solutionDetail: 'Autonomous trading generates revenue',
+    solutionDetail: 'Autonomous trading system revenue',
   },
   {
     category: 'APY',
@@ -67,7 +67,7 @@ export function ComparisonShowcase() {
             Why Noderr is <span className="text-gradient">Different</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Traditional DeFi relies on unsustainable token emissions. Noderr generates real revenue from autonomous trading.
+            Traditional DeFi relies on unsustainable token emissions. Noderr generates real revenue from our autonomous trading system.
           </p>
         </motion.div>
 
